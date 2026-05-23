@@ -1,15 +1,12 @@
-@import "tailwindcss";
-
 /* Portfolio 2023 - Font Imports */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+@import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 
-  /* Portfolio 2023 - ChatGPT Theme Colors */
+  /* Portfolio 2023 - Theme Colors */
   --color-forest-dark: #1c4f20;
   --color-forest-mid: #237d32;
   --color-forest-light: #c1eac6;
@@ -50,6 +47,30 @@
   --color-wedding-sparkling-rose: #e78a43;
   --color-wedding-storm: #6f7e8f;
   --color-wedding-tie-light: #b4a5c5; */
+}
+
+@theme {
+  /* Colors */
+  --color-forest-dark: #1C4F20;
+  --color-forest-mid: #237D32;
+  --color-forest-light: #C1EAC6;
+  --color-mist-dark: #324A63;
+  --color-mist-mid: #607A93;
+  --color-mist-light: #DCE8F3;
+  --color-ocean-dark: #00505E;
+  --color-ocean-mid: #007C91;
+  --color-ocean-light: #B2E2E5;
+  --color-purple-dark: #3A1F4E;
+  --color-purple-mid: #6F4C7B;
+  --color-purple-light: #D8CFE8;
+  --color-sand-dark: #A8906C;
+  --color-sand-mid: #D2B48C;
+  --color-sand-light: #F5EBDD;
+  --color-neutral-dark: #2A2D31;
+  --color-neutral-mid: #B0B7BD;
+  --color-neutral-balanced-light: #F9FAF9;
+  --color-neutral-cool-light: #FAFCFD;
+  --color-neutral-warm-light: #FCFAF7;
 }
 
 @theme inline {

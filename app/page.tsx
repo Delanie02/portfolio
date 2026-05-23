@@ -1,65 +1,67 @@
-import Image from "next/image";
+import NavSimple from './components/navigation/NavSimple';
+import ProjectCard from './components/ProjectCard';
+
+const projects = [
+  {
+    theme: 'sand' as const,
+    title: 'Capterra',
+    description:
+      'I led a cross-functional initiative to uncover the largest UX opportunity areas to reverse declining organic traffic and improve user retention for Capterra, a software reviews platform serving over 9 million active monthly users.',
+    image: '/images/capterra.png',
+    href: '/projects/capterra',
+  },
+  {
+    theme: 'mist' as const,
+    title: 'Rapid Prototype Testing',
+    description:
+      'As Associate Director, UX at Gartner, I partnered with product and design leads to pilot a rapid and continuous way of doing research. As a result, we tripled the number of user tests run quarter-over-quarter.',
+    image: '/images/rapid-prototype.png',
+    href: '/projects/rapid-prototype-testing',
+  },
+  {
+    theme: 'ocean' as const,
+    title: 'Ford BlueCruise',
+    description:
+      "I redesigned the subscription experience in FordPass, Ford's consumer mobile app. From the product details page to the manage flow, I made it easier for customers to find, learn about, and activate services like BlueCruise.",
+    image: '/images/ford-bluecruise.png',
+    href: '/projects/ford-bluecruise',
+  },
+  {
+    theme: 'purple' as const,
+    title: 'FiscalNote',
+    description:
+      'I led a cross-functional team to envision a unified future-state product for FiscalNote, a B2B policy intelligence platform.',
+    image: '/images/fiscalnote.png',
+    href: '/projects/fiscalnote',
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="min-h-screen bg-neutral-balanced-light">
+      <NavSimple />
+
+      <div className="px-8 lg:px-16 py-16">
+        {/* Heading */}
+        <h2 className="text-neutral-dark mb-6">
+          Hi. I&apos;m{' '}
+          <span className="h2-bold text-purple-mid">Delanie Heck.</span>
+        </h2>
+
+        {/* Bio */}
+        <p className="body-lg text-neutral-dark mb-12">
+          I am a product design leader with 10+ years of experience leading
+          high-performing teams, scaling design systems and operations, and
+          delivering exceptional user experiences across platforms.
+        </p>
+
+        {/* Project Cards */}
+        <div className="flex flex-col gap-6">
+          {projects.map((project) => (
+            <ProjectCard key={project.href} {...project} />
+          ))}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </div>
+    </main>
   );
 }
