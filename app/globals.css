@@ -1,15 +1,60 @@
 @import "tailwindcss";
 
+/* Portfolio 2023 - Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Portfolio 2023 - ChatGPT Theme Colors */
+  --color-forest-dark: #1c4f20;
+  --color-forest-mid: #237d32;
+  --color-forest-light: #c1eac6;
+  --color-mist-dark: #324a63;
+  --color-mist-mid: #607a93;
+  --color-mist-light: #dce8f3;
+  --color-ocean-dark: #00505e;
+  --color-ocean-mid: #007c91;
+  --color-ocean-light: #b2e2e5;
+  --color-purple-dark: #3a1f4e;
+  --color-purple-mid: #6f4c7b;
+  --color-purple-light: #d8cfe8;
+  --color-sand-dark: #a8906c;
+  --color-sand-mid: #d2b48c;
+  --color-sand-light: #f5ebdd;
+  --color-neutral-dark: #2a2d31;
+  --color-neutral-mid: #b0b7bd;
+  --color-neutral-balanced-light: #f9faf9;
+  --color-neutral-cool-light: #fafcfd;
+  --color-neutral-warm-light: #fcfaf7;
+
+  /* Portfolio 2023 - Wedding Theme Colors */
+  /* --color-wedding-apple-port: #6b2907;
+  --color-wedding-blue-jean-jacket: #307396;
+  --color-wedding-blue-jean-light: #62b2db;
+  --color-wedding-bouquet: #82012f;
+  --color-wedding-casey-folder: #124d47;
+  --color-wedding-charcoal: #3e4650;
+  --color-wedding-dc-engagement: #0f4245;
+  --color-wedding-engagement-dress: #0b1c1c;
+  --color-wedding-matt-boutineer: #c9767e;
+  --color-wedding-matt-engagement-shirt: #4a3547;
+  --color-wedding-matt-tie: #8f7da3;
+  --color-wedding-orange-rose: #be2e22;
+  --color-wedding-rings: #9f6749;
+  --color-wedding-rings-light: #e09b76;
+  --color-wedding-smoke: #f8fafb;
+  --color-wedding-sparkling-rose: #e78a43;
+  --color-wedding-storm: #6f7e8f;
+  --color-wedding-tie-light: #b4a5c5; */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +67,241 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ======================== */
+/* HEADING STYLES (Merriweather Sans) */
+/* ======================== */
+
+.h1,
+h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 5rem;
+  line-height: 7.5rem;
+  font-weight: 400;
+}
+
+.h1-bold,
+h1.bold {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 5rem;
+  line-height: 7.5rem;
+  font-weight: 700;
+}
+
+.h1-italic,
+h1.italic {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 5rem;
+  line-height: 7.5rem;
+  font-style: italic;
+}
+
+.h2,
+h2 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 3.125rem;
+  line-height: 4.6875rem;
+  font-weight: 400;
+}
+
+.h2-bold,
+h2.bold {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 3.125rem;
+  line-height: 4.6875rem;
+  font-weight: 700;
+}
+
+.h2-italic,
+h2.italic {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 3.125rem;
+  line-height: 4.6875rem;
+  font-style: italic;
+}
+
+.h3,
+h3 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 300;
+}
+
+.h3-bold,
+h3.bold {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 700;
+}
+
+.h3-italic,
+h3.italic {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-style: italic;
+}
+
+.h4,
+h4 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 300;
+}
+
+.h4-bold,
+h4.bold {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+.h5,
+h5 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+.h5-bold,
+h5.bold {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.h5-italic,
+h5.italic {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-style: italic;
+}
+
+.h5-extrabold {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 800;
+}
+
+/* ======================== */
+/* BODY STYLES (Lora) */
+/* ======================== */
+
+.body-xs {
+  font-family: 'Lora', serif;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  font-weight: 400;
+}
+
+.body-xs-bold {
+  font-family: 'Lora', serif;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  font-weight: 600;
+}
+
+.body-sm {
+  font-family: 'Lora', serif;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+}
+
+.body-sm-bold {
+  font-family: 'Lora', serif;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  font-weight: 600;
+}
+
+.body-sm-italic {
+  font-family: 'Lora', serif;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  font-style: italic;
+}
+
+.body-base {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.body-base-bold {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.body-base-italic {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-style: italic;
+}
+
+.body-lg {
+  font-family: 'Lora', serif;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-weight: 400;
+}
+
+.body-lg-bold {
+  font-family: 'Lora', serif;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-weight: 600;
+}
+
+.body-lg-italic {
+  font-family: 'Lora', serif;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-style: italic;
+}
+
+.body-lg-medium-italic {
+  font-family: 'Lora', serif;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* ======================== */
+/* RESUME STYLES (Source Sans Pro) */
+/* ======================== */
+
+.resume-body-xs {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  font-weight: 300;
+}
+
+.resume-body-xs-regular {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  font-weight: 400;
+}
+
+.resume-body-xs-semibold {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  font-weight: 600;
 }
