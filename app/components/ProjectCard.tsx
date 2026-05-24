@@ -46,7 +46,7 @@ export default function ProjectCard({
   return (
     <Link
       href={href}
-      className={`flex items-stretch rounded-2xl overflow-hidden ${styles.bg} ${styles.outline} transition-all`}
+      className={`flex items-stretch rounded-2xl overflow-hidden max-w-[784px] ${styles.bg} ${styles.outline} transition-all`}
     >
       {/* Image — left 40% */}
       <div className="relative w-2/5 min-h-[220px]">
@@ -59,7 +59,7 @@ export default function ProjectCard({
       </div>
 
       {/* Text — right 60% */}
-      <div className="w-3/5 px-10 py-8 flex flex-col justify-center">
+      <div className="w-3/5 pl-6 pt-12 pr-12 pb-14 flex flex-col justify-center">
         <h4 className={`h4-bold ${styles.title} mb-3`}>{title}</h4>
         <p className="body-base text-neutral-dark">{description}</p>
       </div>
