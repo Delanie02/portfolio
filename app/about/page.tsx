@@ -1,9 +1,12 @@
-'use client';
-
 import Hero from '../components/Hero';
 import Quote from '../components/Quote';
 import ProjectCard from '../components/ProjectCard';
 import NavSimple from '../components/navigation/NavSimple';
+
+export const metadata = {
+  title: 'About | Delanie Heck',
+  description: 'Learn more about Delanie Heck, a product design leader with over twelve years of experience managing teams of designers and researchers in organizations ranging from startups to Fortune 500s, in industries spanning international development, finance, SaaS, and automotive.',
+};
 
 export default function About() {
   return (
@@ -83,25 +86,25 @@ export default function About() {
                     </p>
                 </div>
                 </section>
+            
+                {/* How Others Describe Me Section */}
+                <section className="py-12 md:py-12 lg:py-12">
+                    <h3 className="h3-bold text-purple-mid mb-6 md:mb-6 lg:mb-6">
+                    How others describe me
+                    </h3>
+                    <p className="body-base text-neutral-dark">
+                    Below are some quotes I've gotten from performance reviews and LinkedIn recommendations.
+                    </p>
+                </section>
             </div>
 
-            {/* How Others Describe Me Section */}
-            <div className="py-12 md:py-16 lg:py-24">
-                <h3 className="h3-bold text-purple-mid mb-6 md:mb-8 lg:mb-12">
-                How others describe me
-                </h3>
-                <p className="body-base text-neutral-dark mb-12 md:mb-16 lg:mb-16">
-                Below are some quotes I've gotten from performance reviews and LinkedIn recommendations.
-                </p>
-
-                {/* Quotes */}
-                <div className="space-y-8 md:space-y-12 lg:space-y-12">
+            {/* Quotes */}
+            <div className="space-y-8 md:space-y-12 lg:space-y-12">
                 <div className="flex items-center gap-4 md:gap-6 lg:gap-6 mb-8 md:mb-12 lg:mb-12">
                     <div className="flex-1 h-px bg-neutral-dark opacity-30" />
                     <span className="text-2xl md:text-3xl lg:text-3xl text-purple-dark">⁂</span>
                     <div className="flex-1 h-px bg-neutral-dark opacity-30" />
                 </div>
-
                 <Quote
                     text='"Her **focus, guidance, and clarity have been instrumental** in establishing our new team and defining priorities. Her feedback is consistently clear, actionable, and demonstrates a strong ability to understand and address the needs of the users."'
                     theme="purple"
@@ -120,20 +123,20 @@ export default function About() {
                     <span className="text-2xl md:text-3xl lg:text-3xl text-purple-dark">⁂</span>
                     <div className="flex-1 h-px bg-neutral-dark opacity-30" />
                 </div>
-                </div>
             </div>
 
             {/* Outside of Work Section */}
-            <div className="py-12 md:py-12 lg:py-12">
-                <h3 className="h3-bold text-purple-mid mb-8 md:mb-12 lg:mb-12">
+            <div className="py-12 md:py-12 lg:py-12 max-w-[580px] mx-auto">
+                <h3 className="h3-bold text-purple-mid mb-6 md:mb-6 lg:mb-6">
                 Outside of work
                 </h3>
-                <p className="body-base text-neutral-dark mb-8 md:mb-12 lg:mb-12">
+                <p className="body-base text-neutral-dark">
                 When I'm not designing, I enjoy spending time outside, cooking, trying new restaurants, and catching up with friends and family. I also took up running after adopting a high-energy border collie mix named Pepper, and have since finished two marathons. She has turned out to be quite the personal trainer!
                 </p>
-
-                {/* Three Portrait Images Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-8">
+            </div>
+            
+            {/* Three Portrait Images Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-8 pb-24">
                 <div className="relative h-[300px] md:h-[280px] lg:h-[340px] rounded-lg overflow-hidden">
                     <img
                     src="/images/about/Pepper-crop-2.jpeg"
@@ -155,12 +158,11 @@ export default function About() {
                     className="w-full h-full object-cover"
                     />
                 </div>
-                </div>
             </div>
 
             {/* Explore More of My Work Section */}
-            <div className="py-12 md:py-16 lg:py-24 border-t border-neutral-mid">
-                <h3 className="h3-bold text-purple-mid mb-8 md:mb-12 lg:mb-12">
+            <div className="py-12 md:py-16 lg:py-24 border-t-2 border-neutral-dark">
+                <h3 className="h3-bold text-neutral-dark mb-8 md:mb-12 lg:mb-12 text-center">
                 Explore more of my work
                 </h3>
 

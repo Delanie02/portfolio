@@ -2,20 +2,28 @@ import Image from 'next/image';
 
 type ThemeColor = 'purple' | 'sand' | 'mist' | 'ocean' | 'forest';
 
+interface ProjectMeta {
+  role?: string;
+  team?: string;
+  reach?: string;
+  timeline?: string;
+}
+
 interface HeroProps {
   title: string;
   subtitle?: string;
-  imageUrl: string;
+  imageUrl?: string;
   theme?: ThemeColor;
   imagePosition?: 'right' | 'left';
+  meta?: ProjectMeta;
 }
 
-const themeColors: Record<ThemeColor, string> = {
-  purple: 'bg-purple-light',
-  sand: 'bg-sand-light',
-  mist: 'bg-mist-light',
-  ocean: 'bg-ocean-light',
-  forest: 'bg-forest-light',
+const themeColors: Record<ThemeColor, { bg: string; textDark: string; textMid: string }> = {
+  purple: { bg: 'bg-purple-light', textDark: 'text-purple-dark', textMid: 'text-purple-mid' },
+  sand:   { bg: 'bg-sand-light',   textDark: 'text-neutral-dark', textMid: 'text-neutral-dark' },
+  mist:   { bg: 'bg-mist-light',   textDark: 'text-neutral-dark', textMid: 'text-neutral-dark' },
+  ocean:  { bg: 'bg-ocean-light',  textDark: 'text-neutral-dark', textMid: 'text-neutral-dark' },
+  forest: { bg: 'bg-forest-light', textDark: 'text-neutral-dark', textMid: 'text-neutral-dark' },
 };
 
 export default function Hero({
@@ -23,66 +31,73 @@ export default function Hero({
   subtitle,
   imageUrl,
   theme = 'purple',
-  imagePosition = 'right',
+  meta,
 }: HeroProps) {
-  const bgColor = themeColors[theme];
+  const { bg, textDark, textMid } = themeColors[theme];
 
   return (
-<div className={`${bgColor} w-screen -mx-[calc((100vw-100%)/2)] overflow-hidden flex flex-col sm:flex-row sm:items-center sm:min-h-[420px] lg:min-h-[523px]`}>
+    <div className={`${bg} w-screen -mx-[calc((100vw-100%)/2)] overflow-hidden flex flex-col sm:flex-row sm:items-center sm:min-h-[420px] lg:min-h-[523px]`}>
 
-  {/* Text Content */}
-  <div className="w-full sm:w-1/2 flex-shrink-0 flex items-center">
-    <div className="flex flex-col gap-4 px-6 py-8 sm:px-8 lg:px-12 lg:py-12 w-full text-center sm:text-right">
-      <h2 className="h2-bold text-purple-dark">
-        {title}
-        {subtitle && (
-          <>
-            <br />
-            {subtitle}
-          </>
-        )}
-      </h2>
+      {/* Text Content */}
+      <div className="w-full sm:w-1/2 flex-shrink-0 flex items-center">
+        <div className="flex flex-col gap-4 px-6 py-8 sm:px-8 lg:px-12 lg:py-12 w-full text-left sm:text-right">
+
+          {/* Title */}
+          <h2 className={`h2-bold ${textDark}`}>
+            {title}
+            {subtitle && (
+              <>
+                <br />
+                {subtitle}
+              </>
+            )}
+          </h2>
+
+          {/* Project Metadata — only renders if meta is passed */}
+          {meta && (
+            <div className="flex flex-col gap-2 mt-2">
+              {meta.role && (
+                <div className="flex gap-2 items-baseline justify-start sm:justify-end">
+                  <span className={`h5-bold ${textDark}`}>Role:</span>
+                  <span className={`h5 ${textDark}`}>{meta.role}</span>
+                </div>
+              )}
+              {meta.team && (
+                <div className="flex gap-2 items-baseline justify-start sm:justify-end">
+                  <span className={`h5-bold ${textDark}`}>Team:</span>
+                  <span className={`h5 ${textDark}`}>{meta.team}</span>
+                </div>
+              )}
+              {meta.reach && (
+                <div className="flex gap-2 items-baseline justify-start sm:justify-end">
+                  <span className={`h5-bold ${textDark}`}>Reach:</span>
+                  <span className={`h5 ${textDark}`}>{meta.reach}</span>
+                </div>
+              )}
+              {meta.timeline && (
+                <div className="flex gap-2 items-baseline justify-start sm:justify-end">
+                  <span className={`h5-bold ${textDark}`}>Timeline:</span>
+                  <span className={`h5 ${textDark}`}>{meta.timeline}</span>
+                </div>
+              )}
+            </div>
+          )}
+
+        </div>
+      </div>
+
+      {/* Image — only renders if imageUrl is passed */}
+      {imageUrl && (
+        <div className="relative w-full h-[300px] sm:w-1/2 sm:h-[420px] lg:h-[523px]">
+          <Image
+            src={imageUrl}
+            alt={title}
+            fill
+            className="object-contain object-bottom"
+          />
+        </div>
+      )}
+
     </div>
-  </div>
-
-  {/* Image */}
-  <div className="relative w-full h-[300px] sm:w-1/2 sm:h-[420px] lg:h-[523px]">
-    <Image
-      src={imageUrl}
-      alt={title}
-      fill
-      className="object-contain object-bottom"
-    />
-  </div>
-
-</div>
-
-
-    // <div className={`${bgColor} w-screen -mx-[calc((100vw-100%)/2)] overflow-hidden min-h-[360px] md:min-h-[420px] lg:min-h-[523px] flex items-center`}>
-    //   {/* Text Content - Left side, constrained width, vertically centered */}
-    //   <div className="w-1/2 flex-shrink-0">
-    //     <div className="flex flex-col gap-4 px-6 py-12 md:px-8 md:py-8 lg:px-12 lg:py-12 text-right">
-    //       <h2 className="h2-bold text-purple-dark">
-    //         {title}
-    //         {subtitle && (
-    //           <>
-    //             <br />
-    //             {subtitle}
-    //           </>
-    //         )}
-    //       </h2>
-    //     </div>
-    //   </div>
-
-    //   {/* Image Right - Extends to edge, flush to bottom */}
-    //   <div className="relative w-1/2 h-[523px] hidden lg:flex items-end max-h-[523px]">
-    //     <Image
-    //       src={imageUrl}
-    //       alt={title}
-    //       fill
-    //       className="object-cover object-bottom"
-    //     />
-    //   </div>
-    // </div>
   );
 }

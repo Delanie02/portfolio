@@ -241,28 +241,28 @@ h5.italic {
 .body-sm {
   font-family: 'Lora', serif;
   font-size: 0.75rem;
-  line-height: 1.125rem;
+  line-height: 1.25rem;
   font-weight: 400;
 }
 
 .body-sm-bold {
   font-family: 'Lora', serif;
   font-size: 0.75rem;
-  line-height: 1.125rem;
+  line-height: 1.25rem;
   font-weight: 600;
 }
 
 .body-sm-italic {
   font-family: 'Lora', serif;
   font-size: 0.75rem;
-  line-height: 1.125rem;
+  line-height: 1.25rem;
   font-style: italic;
 }
 
 .body-base {
   font-family: 'Lora', serif;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
   font-weight: 400;
 }
 

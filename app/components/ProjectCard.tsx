@@ -16,22 +16,22 @@ interface ProjectCardProps {
 const cardStyles: Record<CardTheme, { bg: string; outline: string; title: string }> = {
   sand: {
     bg: 'bg-sand-light',
-    outline: 'hover:outline hover:outline-4 hover:outline-sand-mid',
+    outline: 'ring-0 hover:ring-4 ring-sand-mid',
     title: 'text-sand-dark',
   },
   mist: {
     bg: 'bg-mist-light',
-    outline: 'hover:outline hover:outline-4 hover:outline-mist-mid',
+    outline: 'ring-0 hover:ring-4 ring-mist-mid',
     title: 'text-mist-dark',
   },
   ocean: {
     bg: 'bg-ocean-light',
-    outline: 'hover:outline hover:outline-4 hover:outline-ocean-mid',
+    outline: 'ring-0 hover:ring-4 ring-ocean-mid',
     title: 'text-ocean-dark',
   },
   purple: {
     bg: 'bg-purple-light',
-    outline: 'hover:outline hover:outline-4 hover:outline-purple-mid',
+    outline: 'ring-0 hover:ring-4 ring-purple-mid',
     title: 'text-purple-dark',
   },
 };
@@ -50,7 +50,7 @@ export default function ProjectCard({
     return (
       <Link
         href={href}
-        className={`flex flex-col items-stretch rounded-2xl overflow-hidden max-w-full w-full ${styles.bg} ${styles.outline} transition-all`}
+        className={`flex flex-col items-stretch rounded-2xl overflow-hidden max-w-full w-full ${styles.bg} ${styles.outline} transition-all duration-200 hover:scale-[1.02]`}
       >
         {/* Image — top */}
         <div className="relative w-full h-[220px] md:h-[240px] lg:h-[280px]">
@@ -75,7 +75,7 @@ export default function ProjectCard({
   return (
     <Link
       href={href}
-      className={`flex items-stretch rounded-2xl overflow-hidden max-w-[784px] ${styles.bg} ${styles.outline} transition-all`}
+      className={`flex items-stretch rounded-2xl overflow-hidden max-w-[784px] ${styles.bg} ${styles.outline} transition-all duration-200 hover:scale-[1.02]`}
     >
       {/* Image — left 40% */}
       <div className="relative w-2/5 min-h-[220px]">
