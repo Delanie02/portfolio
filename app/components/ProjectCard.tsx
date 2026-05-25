@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 type CardTheme = 'sand' | 'mist' | 'ocean' | 'purple';
+type CardLayout = 'horizontal' | 'vertical';
 
 interface ProjectCardProps {
   theme: CardTheme;
@@ -9,6 +10,7 @@ interface ProjectCardProps {
   description: string;
   image: string;
   href: string;
+  layout?: CardLayout;
 }
 
 const cardStyles: Record<CardTheme, { bg: string; outline: string; title: string }> = {
@@ -40,9 +42,36 @@ export default function ProjectCard({
   description,
   image,
   href,
+  layout = 'horizontal',
 }: ProjectCardProps) {
   const styles = cardStyles[theme];
 
+  if (layout === 'vertical') {
+    return (
+      <Link
+        href={href}
+        className={`flex flex-col items-stretch rounded-2xl overflow-hidden max-w-full w-full ${styles.bg} ${styles.outline} transition-all`}
+      >
+        {/* Image — top */}
+        <div className="relative w-full h-[220px] md:h-[240px] lg:h-[280px]">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            className="object-cover"
+          />
+        </div>
+
+        {/* Text — bottom */}
+        <div className="px-6 pt-6 pb-8 md:px-8 md:pt-8 md:pb-10 lg:px-8 lg:pt-8 lg:pb-10 flex flex-col justify-center">
+          <h5 className={`h5-bold ${styles.title} mb-2`}>{title}</h5>
+          <p className="body-sm md:body-base text-neutral-dark">{description}</p>
+        </div>
+      </Link>
+    );
+  }
+
+  // Default horizontal layout
   return (
     <Link
       href={href}

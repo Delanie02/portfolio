@@ -22,9 +22,13 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-neutral-balanced-light">
-        {children}
-        <Footer />
+      <body className="w-full bg-neutral-balanced-light">
+        <div className="w-full px-8 lg:px-16">
+          <div className="mx-auto max-w-[784px]">
+            {children}
+            <Footer />
+          </div>
+        </div>
       </body>
     </html>
   );

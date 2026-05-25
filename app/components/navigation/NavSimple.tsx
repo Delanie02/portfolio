@@ -7,7 +7,7 @@ export default function NavSimple() {
   const pathname = usePathname();
 
   return (
-    <nav className="w-full h-[4.5rem] flex items-center justify-end px-8 lg:px-16 bg-neutral-balanced-light">
+    <nav className="w-full h-[4.5rem] flex items-center justify-end bg-neutral-balanced-light">
       <div className="flex items-center gap-8">
         <Link
           href="/"

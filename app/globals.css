@@ -2,6 +2,10 @@
 
 @import "tailwindcss";
 
+html {
+  background-color: #f9faf9;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -71,6 +75,7 @@
   --color-neutral-balanced-light: #F9FAF9;
   --color-neutral-cool-light: #FAFCFD;
   --color-neutral-warm-light: #FCFAF7;
+  --width-card: 784px;
 }
 
 @theme inline {
@@ -86,8 +91,10 @@
 }
 
 body {
-  background: var(--background);
+  background: #f9faf9;
   color: var(--foreground);
+  margin: 0;
+  padding: 0;
 }
 
 /* ======================== */
@@ -170,7 +177,7 @@ h3.italic {
 h4 {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 1.5rem;
-  line-height: 2.25rem;
+  line-height: 2.5rem;
   font-weight: 300;
 }
 
