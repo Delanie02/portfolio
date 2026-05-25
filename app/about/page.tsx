@@ -100,7 +100,7 @@ export default function About() {
 
             {/* Quotes */}
             <div className="space-y-8 md:space-y-12 lg:space-y-12">
-                <div className="flex items-center gap-4 md:gap-6 lg:gap-6 mb-8 md:mb-12 lg:mb-12">
+                <div className="flex items-center gap-4 md:gap-6 lg:gap-6 mb-8 md:mb-8 lg:mb-8">
                     <div className="flex-1 h-px bg-neutral-dark opacity-30" />
                     <span className="text-2xl md:text-3xl lg:text-3xl text-purple-dark">⁂</span>
                     <div className="flex-1 h-px bg-neutral-dark opacity-30" />
@@ -118,7 +118,7 @@ export default function About() {
                     theme="purple"
                 />
 
-                <div className="flex items-center gap-4 md:gap-6 lg:gap-6 mt-8 md:mt-12 lg:mt-12">
+                <div className="flex items-center gap-4 md:gap-6 lg:gap-6 mt-8 md:mt-8 lg:mt-8">
                     <div className="flex-1 h-px bg-neutral-dark opacity-30" />
                     <span className="text-2xl md:text-3xl lg:text-3xl text-purple-dark">⁂</span>
                     <div className="flex-1 h-px bg-neutral-dark opacity-30" />
@@ -159,40 +159,47 @@ export default function About() {
                     />
                 </div>
             </div>
+        </div>
+        {/* Explore More of My Work Section */}
+        <div className="py-12 md:py-16 lg:py-24 max-w-[1280px] mx-auto px-6">
+            <h3 className="h3-bold text-neutral-dark mb-8 md:mb-12 lg:mb-12 text-center">
+            Explore more of my work
+            </h3>
 
-            {/* Explore More of My Work Section */}
-            <div className="py-12 md:py-16 lg:py-24 border-t-2 border-neutral-dark">
-                <h3 className="h3-bold text-neutral-dark mb-8 md:mb-12 lg:mb-12 text-center">
-                Explore more of my work
-                </h3>
-
-                {/* Case Study Cards - Vertical Layout */}
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-8">
-                <ProjectCard
-                    layout="vertical"
-                    theme="sand"
-                    title="Capterra"
-                    description="Uncovering UX opportunity areas to reverse declining organic traffic and improve user retention for Capterra."
-                    image="/images/capterra/cover.png"
-                    href="/projects/capterra"
-                />
-                <ProjectCard
-                    layout="vertical"
-                    theme="mist"
-                    title="Rapid Prototype Testing"
-                    description="Piloting a rapid and continuous way of doing research that tripled user tests run quarter-over-quarter."
-                    image="/images/rapid-prototype/cover.png"
-                    href="/projects/rapid-prototype-testing"
-                />
-                <ProjectCard
-                    layout="vertical"
-                    theme="ocean"
-                    title="Ford BlueCruise"
-                    description="Redesigning the subscription experience in FordPass to help customers find, learn about, and activate services."
-                    image="/images/ford-bluecruise/cover.png"
-                    href="/projects/ford-bluecruise"
-                />
-                </div>
+            {/* Case Study Cards - Vertical Layout */}
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-8">
+            <ProjectCard
+                layout="vertical"
+                theme="sand"
+                title="Capterra"
+                description="Uncovering UX opportunity areas to reverse declining organic traffic and improve user retention for Capterra."
+                image="/images/capterra/cover.png"
+                href="/projects/capterra"
+            />
+            <ProjectCard
+                layout="vertical"
+                theme="mist"
+                title="Rapid Prototype Testing"
+                description="Piloting a rapid and continuous way of doing research that tripled user tests run quarter-over-quarter."
+                image="/images/rapid-prototype/cover.png"
+                href="/projects/rapid-prototype-testing"
+            />
+            <ProjectCard
+                layout="vertical"
+                theme="purple"
+                title="FiscalNote"
+                description="I led a cross-functional team to envision a unified future-state unified product for FiscalNote, a B2B policy tracking SaaS company."
+                image="/images/fiscalnote/cover.png"
+                href="/projects/fiscalnote"
+            />
+            {/* <ProjectCard
+                layout="vertical"
+                theme="ocean"
+                title="Ford BlueCruise"
+                description="Redesigning the subscription experience in FordPass to help customers find, learn about, and activate services."
+                image="/images/ford-bluecruise/cover.png"
+                href="/projects/ford-bluecruise"
+            /> */}
             </div>
         </div>
     </>

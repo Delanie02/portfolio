@@ -13,7 +13,7 @@ interface ThreeImageRowProps {
 
 export default function ThreeImageRow({ items }: ThreeImageRowProps) {
   return (
-    <div className="flex flex-col md:flex-row gap-8 md:gap-6 lg:gap-8">
+    <div className="flex flex-col md:flex-row gap-8 md:gap-6 lg:gap-8 my-6">
       {items.map((item, index) => (
         <div key={index} className="flex flex-col flex-1">
 

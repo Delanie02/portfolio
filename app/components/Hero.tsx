@@ -55,7 +55,7 @@ export default function Hero({
 
           {/* Project Metadata — only renders if meta is passed */}
           {meta && (
-            <div className="flex flex-col gap-2 mt-2">
+            <div className="flex flex-col gap-2 mt-2 ps-24">
               {meta.role && (
                 <div className="flex gap-2 items-baseline justify-start sm:justify-end">
                   <span className={`h5-bold ${textDark}`}>Role:</span>

@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full bg-neutral-balanced-light py-6 flex items-center justify-between">
+    <footer className="w-full bg-neutral-balanced-light py-6 flex items-center justify-between px-16">
       <a
         href="https://www.linkedin.com/in/delanie-heck/"
         target="_blank"

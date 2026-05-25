@@ -41,28 +41,33 @@ export default function Home() {
     <main className="min-h-screen bg-neutral-balanced-light">
       <NavSimple />
 
-      <div className="py-16">
-        {/* Heading */}
-        <h2 className="text-neutral-dark mb-6">
-          Hi. I&apos;m{' '}
-          <span className="h2-bold text-purple-mid">Delanie Heck.</span>
-        </h2>
-    
-        {/* Bio */}
-        <p className="h4 text-neutral-dark mb-12">
-          I am a product design leader with 12+ years of experience leading high-performing teams and delivering measurable business impact across platforms. I am at my best when I am coaching designers and creating intuitive experiences for complex systems.
-          {/* I am a product design leader with 10+ years of experience leading
-          high-performing teams, scaling design systems and operations, and
-          delivering exceptional user experiences across platforms. */}
-        </p>
-    
-        {/* Project Cards */}
-        <div className="flex flex-col gap-6">
-          {projects.map((project) => (
-            <ProjectCard key={project.href} {...project} />
-          ))}
+      {/* All page content - centered wrapper */}
+      <div className="max-w-[800px] mx-auto px-6">
+        <div className="py-16">
+          {/* Heading */}
+          <h2 className="text-neutral-dark mb-6">
+            Hi. I&apos;m{' '}
+            <span className="h2-bold text-purple-mid">Delanie Heck.</span>
+          </h2>
+      
+          {/* Bio */}
+          <p className="h4 text-neutral-dark mb-12">
+            I am a product design leader with 12+ years of experience leading high-performing teams and delivering measurable business impact across platforms. I am at my best when I am coaching designers and creating intuitive experiences for complex systems.
+            {/* I am a product design leader with 10+ years of experience leading
+            high-performing teams, scaling design systems and operations, and
+            delivering exceptional user experiences across platforms. */}
+          </p>
+      
+          {/* Project Cards */}
+          <div className="flex flex-col gap-6">
+            {projects.map((project) => (
+              <ProjectCard key={project.href} {...project} />
+            ))}
+          </div>
         </div>
       </div>
+      
+      {/* Footer */}
     </main>
   );
 }
