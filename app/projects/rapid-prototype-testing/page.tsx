@@ -139,7 +139,7 @@ export default function RapidPrototypeTestingPage() {
                     },
                     {
                     header: "Mobile Test 2: June 16",
-                    subheader: "Is test 2's UX preferred over test 1?",
+                    subheader: "Is test 2's design preferred over test 1?",
                     src: "/images/rapid-prototype/CA Services Test 2.png",
                     alt: "A Capterra mobile screen showing the updated mobile interface used in the June 16 usability test.",
                     },
@@ -311,7 +311,7 @@ export default function RapidPrototypeTestingPage() {
 
             {/* Explore More of My Work Section */}
             <div className="py-12 md:py-16 lg:py-24">
-                <h3 className="h3-bold text-neutral-dark mb-8 md:mb-12 lg:mb-12 text-center">
+                <h3 className="h3-bold text-neutral-dark mb-8 md:mb-12 lg:mb-12 text-left md:text-center">
                 Explore more of my work
                 </h3>
 

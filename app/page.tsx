@@ -51,7 +51,7 @@ export default function Home() {
           </h2>
       
           {/* Bio */}
-          <p className="h4 text-neutral-dark mb-12">
+          <p className="h5 md:h4 text-neutral-dark mb-12">
             I am a product design leader with 12+ years of experience leading high-performing teams and delivering measurable business impact across platforms. I am at my best when I am coaching designers and creating intuitive experiences for complex systems.
             {/* I am a product design leader with 10+ years of experience leading
             high-performing teams, scaling design systems and operations, and

@@ -24,12 +24,12 @@ export default function Quote({
 
   return (
     <div className="w-full px-4">
-      <div className={`h4 ${textColor} text-center leading-relaxed`}>
+      <div className={`h5 sm:h4 ${textColor} text-center leading-relaxed`}>
         {parts.map((part, index) => {
           if (index % 2 === 1) {
             // Bold text (marked with **)
             return (
-              <span key={index} className="h4-bold">
+              <span key={index} className="h5-bold sm:h4-bold">
                 {part}
               </span>
             );

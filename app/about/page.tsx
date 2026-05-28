@@ -2,6 +2,8 @@ import Hero from '../components/Hero';
 import Quote from '../components/Quote';
 import ProjectCard from '../components/ProjectCard';
 import NavSimple from '../components/navigation/NavSimple';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'About | Delanie Heck',
@@ -54,10 +56,18 @@ export default function About() {
                     Upon moving back to DC, I worked for Fannie Mae as a design strategist. I am still proud of the mortgage insurance service blueprints I co-created with customers there, and the onboarding resource I designed as a result that helped to raise deliveries from $30 to over $110 million in five months.
                     </p>
                     <p className="body-base text-neutral-dark">
-                    After Fannie Mae, I worked for FiscalNote, which at the time was a late stage B2B policy tracking SaaS startup. There I built up a team of designers and researchers, scaled user research recruitment from 29 per year to over 170 per year, and led a strategic initiative to envision a net new unified product in collaboration with product, design, and data science leads.
+                    After Fannie Mae, I worked for FiscalNote, which at the time was a late stage B2B policy tracking SaaS startup. There I built up a team of designers and researchers, scaled user research recruitment from 29 per year to over 170 per year, and{" "}
+                    <Link href="/projects/fiscalnote" className="underline hover:text-purple-mid transition-colors">
+                        led a strategic initiative to envision a net new unified product 
+                    </Link>{" "}
+                        in collaboration with product, design, and data science leads.
                     </p>
                     <p className="body-base text-neutral-dark">
-                    I had the good fortune to have everyone reporting to me at FiscalNote follow me over to Gartner, where I grew our team to six to support 18 product teams across three websites with over nine million active monthly users. My team's insights led to a 20% increase in form submissions, a 41% increase in chat revenue, and a 76% increase in feature engagement.
+                    I had the good fortune to have everyone reporting to me at FiscalNote follow me over to Gartner, where I grew our team to six to support 18 product teams across three websites with over nine million active monthly users. My team's insights led to a{" "}
+                    <Link href="/projects/rapid-prototype-testing" className="underline hover:text-purple-mid transition-colors">
+                        20% increase in form submissions 
+                    </Link>{" "} 
+                    , a 41% increase in chat revenue, and a 76% increase in feature engagement.
                     </p>
                 </div>
                 </section>
@@ -68,7 +78,11 @@ export default function About() {
                     Where I'm at now
                 </h5>
                 <p className="body-base text-neutral-dark">
-                    Currently, I manage UX designers at Ford Motor Company. I am proud of my team's payments platform re-design, which powers Ford's mobile app, Ford.com, in-vehicle infotainment systems, and more. I also worked directly with Ford's mobile app team to redesign how customers sign up for and manage subscriptions, leading to an 170% increase in traffic and 77% increase in orders. Most recently, I've transitioned to a role that oversees the product our commercial customers use to get financing and make payments on their vehicles.
+                    Currently, I manage UX designers at Ford Motor Company. I am proud of my team's payments platform re-design, which powers Ford's mobile app, Ford.com, in-vehicle infotainment systems, and more. I also worked directly with Ford's mobile app team to{" "}
+                    <Link href="/projects/ford-bluecruise" className="underline hover:text-purple-mid transition-colors">
+                        redesign how customers sign up for and manage subscriptions
+                    </Link>{" "}  
+                    , leading to an 170% increase in traffic and 77% increase in orders. Most recently, I've transitioned to a role that oversees the product our commercial customers use to get financing and make payments on their vehicles.
                 </p>
                 </section>
 
@@ -82,7 +96,7 @@ export default function About() {
                     In every organization and industry I've worked in, I've taken pride in building environments where my team feels supported, challenged, and fulfilled in their work. As for me, my most fulfilling roles have been ones where I am able to mentor and advocate for my team while developing close collaborative relationships across product and engineering.
                     </p>
                     <p className="body-base text-neutral-dark">
-                    I am also driven by the desire to learn new things. I consider myself lucky to be in a field where I am challenged to learn how different businesses operate, how to best leverage and evolve various design systems, and, of course, how our ever evolving tool belt as UX practitioners can transform our craft.
+                    I am also driven by the desire to learn new things. I consider myself lucky to be in a field where I am challenged to learn how different businesses operate, how to best design for users ranging from Wall Street traders to small business owners, and how our ever evolving tool belt as UX practitioners can transform our craft. Most recently, I taught myself how to build this portfolio using Github Copilot, Figma's MCP server, and Claude. 
                     </p>
                 </div>
                 </section>
@@ -162,7 +176,7 @@ export default function About() {
         </div>
         {/* Explore More of My Work Section */}
         <div className="py-12 md:py-16 lg:py-24 max-w-[1280px] mx-auto px-6">
-            <h3 className="h3-bold text-neutral-dark mb-8 md:mb-12 lg:mb-12 text-center">
+            <h3 className="h3-bold text-neutral-dark mb-8 md:mb-12 lg:mb-12 text-left md:text-center">
             Explore more of my work
             </h3>
 

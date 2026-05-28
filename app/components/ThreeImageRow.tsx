@@ -20,8 +20,8 @@ export default function ThreeImageRow({ items }: ThreeImageRowProps) {
           {/* Header & Subheader */}
           <div className="mb-3 min-h-[40px] md:min-h-[80px]">
             <p className="body-base-bold hidden lg:block text-neutral-dark text-center">{item.header}</p>
-            <p className="body-sm-bold lg:hidden text-neutral-dark text-center">{item.header}</p>
-            <p className="body-sm text-neutral-dark text-center">{item.subheader}</p>
+            <p className="body-base-bold lg:hidden text-neutral-dark text-center">{item.header}</p>
+            <p className="body-base text-neutral-dark text-center">{item.subheader}</p>
           </div>
 
           {/* Image */}

@@ -250,7 +250,7 @@ export default function FiscalNotePage() {
 
             {/* Explore More of My Work Section */}
             <div className="py-12 md:py-16 lg:py-24">
-                <h3 className="h3-bold text-neutral-dark mb-8 md:mb-12 lg:mb-12 text-center">
+                <h3 className="h3-bold text-neutral-dark mb-8 md:mb-12 lg:mb-12 text-left md:text-center">
                 Explore more of my work
                 </h3>
 

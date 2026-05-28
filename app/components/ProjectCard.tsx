@@ -65,33 +65,33 @@ export default function ProjectCard({
         {/* Text — bottom */}
         <div className="px-6 pt-6 pb-8 md:px-8 md:pt-8 md:pb-10 lg:px-8 lg:pt-8 lg:pb-10 flex flex-col justify-center">
           <h5 className={`h5-bold ${styles.title} mb-2`}>{title}</h5>
-          <p className="body-sm md:body-base text-neutral-dark">{description}</p>
+          <p className="body-base text-neutral-dark">{description}</p>
         </div>
       </Link>
     );
   }
 
   // Default horizontal layout
-  return (
+    return (
     <Link
-      href={href}
-      className={`flex items-stretch rounded-2xl overflow-hidden max-w-[784px] ${styles.bg} ${styles.outline} transition-all duration-200 hover:scale-[1.02]`}
+        href={href}
+        className={`flex flex-col md:flex-row items-stretch rounded-2xl overflow-hidden max-w-full md:max-w-[784px] ${styles.bg} ${styles.outline} transition-all duration-200 hover:scale-[1.02]`}
     >
-      {/* Image — left 40% */}
-      <div className="relative w-2/5 min-h-[220px]">
+        {/* Image — full width on mobile, left 40% on desktop */}
+        <div className="relative w-full h-[220px] md:w-2/5 md:h-auto min-h-[220px]">
         <Image
-          src={image}
-          alt={title}
-          fill
-          className="object-cover"
+            src={image}
+            alt={title}
+            fill
+            className="object-cover"
         />
-      </div>
+        </div>
 
-      {/* Text — right 60% */}
-      <div className="w-3/5 pl-6 pt-12 pr-12 pb-14 flex flex-col justify-center">
+        {/* Text — full width on mobile, right 60% on desktop */}
+        <div className="w-full md:w-3/5 px-6 py-8 md:pl-6 md:pt-12 md:pr-12 md:pb-14 flex flex-col justify-center">
         <h4 className={`h4-bold ${styles.title} mb-3`}>{title}</h4>
         <p className="body-base text-neutral-dark">{description}</p>
-      </div>
+        </div>
     </Link>
-  );
+    );
 }

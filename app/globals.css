@@ -192,31 +192,31 @@ h4.bold {
 .h5,
 h5 {
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 2rem;
   font-weight: 300;
 }
 
 .h5-bold,
 h5.bold {
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1rem;
-  line-height: 1.75rem;
+  font-size: 1.125rem;
+  line-height: 2rem;
   font-weight: 700;
 }
 
 .h5-italic,
 h5.italic {
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1rem;
-  line-height: 1.75rem;
+  font-size: 1.125rem;
+  line-height: 2rem;
   font-style: italic;
 }
 
 .h5-extrabold {
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1rem;
-  line-height: 1.75rem;
+  font-size: 1.125rem;
+  line-height: 2rem;
   font-weight: 800;
 }
 
@@ -261,22 +261,22 @@ h5.italic {
 
 .body-base {
   font-family: 'Lora', serif;
-  font-size: 1rem;
-  line-height: 1.75rem;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
   font-weight: 400;
 }
 
 .body-base-bold {
   font-family: 'Lora', serif;
-  font-size: 1rem;
-  line-height: 1.75rem;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
   font-weight: 600;
 }
 
 .body-base-italic {
   font-family: 'Lora', serif;
-  font-size: 1rem;
-  line-height: 1.75rem;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
   font-style: italic;
 }
 

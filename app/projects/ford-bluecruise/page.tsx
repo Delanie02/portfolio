@@ -86,10 +86,10 @@ export default function FordBlueCruisePage() {
                 </h2>
                 <div className="space-y-4 body-base text-neutral-dark">
                     <p>
-                        As a UX Manager, I partnered with the subscriptions design team to make subscriptions easier to find, understand, and sign up for. First, I helped plan and co-facilitate a workshop with product, marketing, engineering, research, and design leads to align on the long term visions for subscriptions. 
+                        As a UX Manager, I partnered with the subscriptions design team to make subscriptions easier to find, understand, and sign up for. First, I helped plan and co-facilitate a workshop with product, marketing, engineering, research, and design leads to align on the long term vision for subscriptions. 
                     </p>
                     <p>
-                        As someone with introvert tendencies, I always strive to offer people lots of ways to contribute to discussions and decisions. For this workshop, I helped plan the activity flow and built a clear, visually organized Miro board that made it easy for participants to follow along and engage in whatever way felt most comfortable. It turns out that following UX best practices like providing multiple entry points, reducing cognitive load, and creating intuitive wayfinding result in workshops participants that are more excited and present contributors.
+                        I always strive to offer people lots of ways to contribute to discussions and decisions. For this workshop, I helped plan the activity flow and built a clear, visually organized Miro board that made it easy for participants to follow along and engage in whatever way felt most comfortable. By following UX best practices like providing multiple entry points, reducing cognitive load, and creating intuitive wayfinding, I sucessfully designed a workshop that resulted in more excited and present participants.
                     </p>
                 </div>
             </section>
@@ -122,7 +122,7 @@ export default function FordBlueCruisePage() {
                 </h2>
                 <div className="space-y-4 body-base text-neutral-dark mb-12">
                     <p>
-                        After the workshop, we were all aligned on moving forward with updates to the mobile app. The first and most impact decision we made was to move subscriptions out of the profile section and into the app’s home screen. This drove a statistically significant increase in subscriptions traffic (+170%) and orders (+77%). 
+                        After the workshop, we were all aligned on moving forward with updates to the mobile app. The first and most impactful decision we made was to move subscriptions out of the profile section and into the app’s home screen. This drove a statistically significant increase in subscriptions traffic (+170%) and orders (+77%). 
                     </p>
                 </div>
                 <h3 className="h5-bold text-ocean-dark mb-6">
@@ -185,12 +185,12 @@ export default function FordBlueCruisePage() {
                 <h3 className="h5-bold text-ocean-dark mb-6">
                     Simplifying the subscriptions management experience
                 </h3>
-                <div className="space-y-4 body-base text-neutral-dark">
+                <div className="space-y-4 body-base text-neutral-dark mb-4">
                     <p>
                         Once subscribed, users needed a more intuitive way to manage and review their services. We learned through user research that customers often don’t even know they have a free trial to some subscriptions like BlueCruise. With this in mind, I re-designed the manage page, focusing on:
                     </p>
                 </div>
-                <ul className="list-disc list-outside pl-6 space-y-2 body-base text-neutral-dark">
+                <ul className="list-disc list-outside pl-6 space-y-2 body-base text-neutral-dark mb-4">
                     <li>
                         Clarifying and highlighting the plan status.
                     </li>
@@ -323,7 +323,7 @@ export default function FordBlueCruisePage() {
 
             {/* Explore More of My Work Section */}
             <div className="py-12 md:py-16 lg:py-24">
-                <h3 className="h3-bold text-neutral-dark mb-8 md:mb-12 lg:mb-12 text-center">
+                <h3 className="h3-bold text-neutral-dark mb-8 md:mb-12 lg:mb-12 text-left md:text-center">
                 Explore more of my work
                 </h3>
 
