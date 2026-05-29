@@ -176,47 +176,48 @@ h3.italic {
 .h4,
 h4 {
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+  font-size: 1.3125rem;
+  line-height: 2.25rem;
   font-weight: 300;
 }
 
 .h4-bold,
 h4.bold {
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+  font-size: 1.3125rem;
+  line-height: 2.25rem;
   font-weight: 700;
 }
 
 .h5,
 h5 {
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1.125rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  /* 16px — reverted back to smaller */
+  line-height: 1.5rem;
   font-weight: 300;
 }
 
 .h5-bold,
 h5.bold {
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1.125rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 700;
 }
 
 .h5-italic,
 h5.italic {
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1.125rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-style: italic;
 }
 
 .h5-extrabold {
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1.125rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 800;
 }
 
@@ -240,50 +241,50 @@ h5.italic {
 
 .body-sm {
   font-family: 'Lora', serif;
-  font-size: 0.75rem;
-  line-height: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.75rem;
   font-weight: 400;
 }
 
 .body-sm-bold {
   font-family: 'Lora', serif;
-  font-size: 0.75rem;
-  line-height: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.75rem;
   font-weight: 600;
 }
 
 .body-sm-italic {
   font-family: 'Lora', serif;
-  font-size: 0.75rem;
-  line-height: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.75rem;
   font-style: italic;
 }
 
 .body-base {
   font-family: 'Lora', serif;
-  font-size: 1.125rem;
-  line-height: 1.875rem;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  line-height: 1.75;
   font-weight: 400;
 }
 
 .body-base-bold {
   font-family: 'Lora', serif;
-  font-size: 1.125rem;
-  line-height: 1.875rem;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  line-height: 1.75;
   font-weight: 600;
 }
 
 .body-base-italic {
   font-family: 'Lora', serif;
-  font-size: 1.125rem;
-  line-height: 1.875rem;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  line-height: 1.75;
   font-style: italic;
 }
 
 .body-lg {
   font-family: 'Lora', serif;
   font-size: 1.25rem;
-  line-height: 1.875rem;
+  line-height: 2rem;
   font-weight: 400;
 }
 

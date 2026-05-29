@@ -21,6 +21,7 @@ export default function About() {
         subtitle="Delanie Heck"
         imageUrl="/images/about/Me-shadow.png"
         theme="purple"
+        imagePosition="left"
       />
         {/* All page content - centered wrapper */}
         <div className="max-w-[780px] mx-auto px-6">
@@ -38,7 +39,7 @@ export default function About() {
 
                 {/* How I got into UX */}
                 <section className="mb-12 md:mb-12 lg:mb-12">
-                <h5 className="h5-bold text-neutral-dark mb-6">
+                <h5 className="h4-bold text-neutral-dark mb-6">
                     How I got into UX
                 </h5>
                 <p className="body-base text-neutral-dark">
@@ -48,7 +49,7 @@ export default function About() {
 
                 {/* Career Highlights */}
                 <section className="mb-12 md:mb-12 lg:mb-12">
-                <h5 className="h5-bold text-neutral-dark mb-6">
+                <h5 className="h4-bold text-neutral-dark mb-6">
                     Career highlights
                 </h5>
                 <div className="space-y-4">
@@ -74,7 +75,7 @@ export default function About() {
 
                 {/* Where I'm at now */}
                 <section className="mb-12 md:mb-12 lg:mb-12">
-                <h5 className="h5-bold text-neutral-dark mb-6">
+                <h5 className="h4-bold text-neutral-dark mb-6">
                     Where I'm at now
                 </h5>
                 <p className="body-base text-neutral-dark">
@@ -88,7 +89,7 @@ export default function About() {
 
                 {/* What keeps me going */}
                 <section className="mb-12 md:mb-12 lg:mb-12">
-                <h5 className="h5-bold text-neutral-dark mb-6">
+                <h5 className="h4-bold text-neutral-dark mb-6">
                     What keeps me going
                 </h5>
                 <div className="space-y-4">

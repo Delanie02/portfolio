@@ -133,7 +133,7 @@ export default function FiscalNotePage() {
             </div>
 
             <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-                <h3 className="h5-bold text-purple-dark mb-6">
+                <h3 className="h4-bold text-purple-dark mb-6">
                 Storytelling that resonates
                 </h3>
                 <div className="space-y-4 body-base text-neutral-dark">
@@ -181,7 +181,7 @@ export default function FiscalNotePage() {
             </div>
 
             <section id="recommendations" className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-                <h3 className="h5-bold text-purple-dark mb-6">
+                <h3 className="h4-bold text-purple-dark mb-6">
                 Making the business case
                 </h3>
                 <div className="space-y-4 body-base text-neutral-dark">

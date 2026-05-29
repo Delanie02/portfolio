@@ -125,7 +125,7 @@ export default function FordBlueCruisePage() {
                         After the workshop, we were all aligned on moving forward with updates to the mobile app. The first and most impactful decision we made was to move subscriptions out of the profile section and into the app’s home screen. This drove a statistically significant increase in subscriptions traffic (+170%) and orders (+77%). 
                     </p>
                 </div>
-                <h3 className="h5-bold text-ocean-dark mb-6">
+                <h3 className="h4-bold text-ocean-dark mb-6">
                     Communicating value at a glance
                 </h3>
                 <div className="space-y-4 body-base text-neutral-dark">
@@ -182,7 +182,7 @@ export default function FordBlueCruisePage() {
             </div>  
 
             <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-                <h3 className="h5-bold text-ocean-dark mb-6">
+                <h3 className="h4-bold text-ocean-dark mb-6">
                     Simplifying the subscriptions management experience
                 </h3>
                 <div className="space-y-4 body-base text-neutral-dark mb-4">
@@ -238,7 +238,7 @@ export default function FordBlueCruisePage() {
             </div>  
 
             <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-                <h3 className="h5-bold text-ocean-dark mb-6">
+                <h3 className="h4-bold text-ocean-dark mb-6">
                     Pivoting to a new design system
                 </h3>
                 <div className="space-y-4 body-base text-neutral-dark">

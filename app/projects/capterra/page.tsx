@@ -76,7 +76,7 @@ export default function CapterraPage() {
                                             className="object-cover"
                                         />
                                     </div>                     
-                                    <p className="body-base-bold md:body-base-bold text-sand-dark">Senior UX Researcher</p>
+                                    <p className="body-base text-sand-dark">Senior UX Researcher</p>
                                 </div>
                                 <div className="flex gap-2 items-center">
                                     <div className="w-8 h-8 md:w-12 md:h-12 bg-sand-mid rounded-full flex-shrink-0 overflow-hidden relative border border-sand-dark">
@@ -87,7 +87,7 @@ export default function CapterraPage() {
                                             className="object-cover"
                                         />
                                     </div>
-                                    <p className="body-base-bold md:body-base-bold text-sand-dark">UX Researcher</p>
+                                    <p className="body-base text-sand-dark">UX Researcher</p>
                                 </div>
                                 <div className="flex gap-2 items-center">
                                     <div className="w-8 h-8 md:w-12 md:h-12 bg-sand-mid rounded-full flex-shrink-0 overflow-hidden relative border border-sand-dark">
@@ -98,7 +98,7 @@ export default function CapterraPage() {
                                             className="object-cover"
                                         />
                                     </div>
-                                    <p className="body-base-bold md:body-base-bold text-sand-dark">UX Researcher</p>
+                                    <p className="body-base text-sand-dark">UX Researcher</p>
                                 </div>
                                 <div className="flex gap-2 items-center">
                                     <div className="w-8 h-8 md:w-12 md:h-12 bg-sand-mid rounded-full flex-shrink-0 overflow-hidden relative border border-sand-dark">
@@ -109,7 +109,7 @@ export default function CapterraPage() {
                                             className="object-cover"
                                         />
                                     </div>
-                                    <p className="body-base-bold md:body-base-bold text-sand-dark">UX Researcher</p>
+                                    <p className="body-base text-sand-dark">UX Researcher</p>
                                 </div>
                                 <div className="flex gap-2 items-center">
                                     <div className="w-8 h-8 md:w-12 md:h-12 bg-sand-mid rounded-full flex-shrink-0 overflow-hidden relative border border-sand-dark">
@@ -120,7 +120,7 @@ export default function CapterraPage() {
                                             className="object-cover"
                                         />
                                     </div>
-                                    <p className="body-base-bold md:body-base-bold text-sand-dark">UX Researcher</p>
+                                    <p className="body-base text-sand-dark">UX Researcher</p>
                                 </div>
                             </div>
                         </div>
@@ -140,7 +140,7 @@ export default function CapterraPage() {
                                             className="object-cover"
                                         />
                                     </div>
-                                    <p className="body-base-bold md:body-base-bold text-sand-dark">Associate Director, UX (me!)</p>
+                                    <p className="body-base  text-sand-dark">Associate Director, UX (me!)</p>
                                 </div>
                             </div>
                         </div>
@@ -160,7 +160,7 @@ export default function CapterraPage() {
                                             className="object-cover"
                                         />
                                     </div>
-                                    <p className="body-base-bold md:body-base-bold text-sand-dark">Product Director</p>
+                                    <p className="body-base text-sand-dark">Product Director</p>
                                 </div>
                                 <div className="flex gap-2 items-center">
                                     <div className="w-8 h-8 md:w-12 md:h-12 bg-sand-mid rounded-full flex-shrink-0 overflow-hidden relative border border-sand-dark">
@@ -171,7 +171,7 @@ export default function CapterraPage() {
                                             className="object-cover"
                                         />
                                     </div>
-                                    <p className="body-base-bold md:body-base-bold text-sand-dark">Product Director</p>
+                                    <p className="body-base text-sand-dark">Product Director</p>
                                 </div>
                                 <div className="flex gap-2 items-center">
                                     <div className="w-8 h-8 md:w-12 md:h-12 bg-sand-mid rounded-full flex-shrink-0 overflow-hidden relative border border-sand-dark">
@@ -182,7 +182,7 @@ export default function CapterraPage() {
                                             className="object-cover"
                                         />
                                     </div>
-                                    <p className="body-base-bold md:body-base-bold text-sand-dark">SEO Manager</p>
+                                    <p className="body-base text-sand-dark">SEO Manager</p>
                                 </div>
                                 <div className="flex gap-2 items-center">
                                     <div className="w-8 h-8 md:w-12 md:h-12 bg-sand-mid rounded-full flex-shrink-0 overflow-hidden relative border border-sand-dark">
@@ -193,7 +193,7 @@ export default function CapterraPage() {
                                             className="object-cover"
                                         />
                                     </div>
-                                    <p className="body-base-bold md:body-base-bold text-sand-dark">SEO Senior Analyst</p>
+                                    <p className="body-base text-sand-dark">SEO Senior Analyst</p>
                                 </div>
                                 <div className="flex gap-2 items-center">
                                     <div className="w-8 h-8 md:w-12 md:h-12 bg-sand-mid rounded-full flex-shrink-0 overflow-hidden relative border border-sand-dark">
@@ -204,7 +204,7 @@ export default function CapterraPage() {
                                             className="object-cover"
                                         />
                                     </div>
-                                    <p className="body-base-bold md:body-base-bold text-sand-dark">SEO Analyst</p>
+                                    <p className="body-base text-sand-dark">SEO Analyst</p>
                                 </div>
                                 <div className="flex gap-2 items-center">
                                     <div className="w-8 h-8 md:w-12 md:h-12 bg-sand-mid rounded-full flex-shrink-0 overflow-hidden relative border border-sand-dark">
@@ -215,7 +215,8 @@ export default function CapterraPage() {
                                             className="object-cover"
                                         />
                                     </div>
-                                    <p className="body-base-bold md:body-base-bold text-sand-dark">SEO Analyst</p>
+                                    <p className="body-base 
+                                    text-sand-dark">SEO Analyst</p>
                                 </div>
                             </div>
                         </div>
@@ -235,7 +236,7 @@ export default function CapterraPage() {
                                             className="object-cover"
                                         />
                                     </div>
-                                    <p className="body-base-bold md:body-base-bold text-sand-dark">CPO</p>
+                                    <p className="body-base text-sand-dark">CPO</p>
                                 </div>
                                 <div className="flex gap-2 items-center">
                                     <div className="w-8 h-8 md:w-12 md:h-12 bg-sand-mid rounded-full flex-shrink-0 overflow-hidden relative border border-sand-dark">
@@ -246,7 +247,7 @@ export default function CapterraPage() {
                                             className="object-cover"
                                         />
                                     </div>
-                                    <p className="body-base-bold md:body-base-bold text-sand-dark">MVP, Product</p>
+                                    <p className="body-base text-sand-dark">MVP, Product</p>
                                 </div>
                                 <div className="flex gap-2 items-center">
                                     <div className="w-8 h-8 md:w-12 md:h-12 bg-sand-mid rounded-full flex-shrink-0 overflow-hidden relative border border-sand-dark">
@@ -257,7 +258,7 @@ export default function CapterraPage() {
                                             className="object-cover"
                                         />
                                     </div>
-                                    <p className="body-base-bold md:body-base-bold text-sand-dark">VP, SEO</p>
+                                    <p className="body-base text-sand-dark">VP, SEO</p>
                                 </div>
                                 <div className="flex gap-2 items-center">
                                     <div className="w-8 h-8 md:w-12 md:h-12 bg-sand-mid rounded-full flex-shrink-0 overflow-hidden relative border border-sand-dark">
@@ -268,7 +269,7 @@ export default function CapterraPage() {
                                             className="object-cover"
                                         />
                                     </div>
-                                    <p className="body-base-bold md:body-base-bold text-sand-dark">Associate Director, SEO</p>
+                                    <p className="body-base text-sand-dark">Associate Director, SEO</p>
                                 </div>
                                 <div className="flex gap-2 items-center">
                                     <div className="w-8 h-8 md:w-12 md:h-12 bg-sand-mid rounded-full flex-shrink-0 overflow-hidden relative border border-sand-dark">
@@ -279,7 +280,7 @@ export default function CapterraPage() {
                                             className="object-cover"
                                         />
                                     </div>
-                                    <p className="body-base-bold md:body-base-bold text-sand-dark">UX Manager</p>
+                                    <p className="body-base text-sand-dark">UX Manager</p>
                                 </div>
                                 <div className="flex gap-2 items-center">
                                     <div className="w-8 h-8 md:w-12 md:h-12 bg-sand-mid rounded-full flex-shrink-0 overflow-hidden relative border border-sand-dark">
@@ -290,7 +291,7 @@ export default function CapterraPage() {
                                             className="object-cover"
                                         />
                                     </div>
-                                    <p className="body-base-bold md:body-base-bold text-sand-dark">UX Manager</p>
+                                    <p className="body-base text-sand-dark">UX Manager</p>
                                 </div>
                             </div>
                         </div>
@@ -346,7 +347,7 @@ export default function CapterraPage() {
 
             {/* Recommendation #1 */}
             <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-                <h3 className="h5-bold text-sand-dark mb-4">Recommendation #1: Improve reviews discoverability</h3>
+                <h3 className="h4-bold text-sand-dark mb-4">Recommendation #1: Improve reviews discoverability</h3>
                 <div className="body-base text-neutral-dark">
                     <p>
                         First, we recommended improve the discoverability of the most valuable Capterra content — reviews. In particular, we proposed iterating on product pages so that when users land on them, they know immediately that the site offers an easy way for them to find reviews from people like them — it's not just a place to read a canned product description.
@@ -374,7 +375,7 @@ export default function CapterraPage() {
 
             {/* Recommendation #2 */}
             <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-                <h3 className="h5-bold text-sand-dark mb-4">Recommendation #2: Improve comparisons discoverability</h3>
+                <h3 className="h4-bold text-sand-dark mb-4">Recommendation #2: Improve comparisons discoverability</h3>
                 <div className="body-base text-neutral-dark">
                     <p>
                         Secondly, we recommended improving the discoverability of comparisons. We proposed making comparing always accessible through the navigation bar so users wouldn't have to hunt for this valuable feature.
@@ -397,7 +398,7 @@ export default function CapterraPage() {
 
             {/* Recommendation #3 */}
             <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-                <h3 className="h5-bold text-sand-dark mb-4">Recommendation #3: Improve transparency</h3>
+                <h3 className="h4-bold text-sand-dark mb-4">Recommendation #3: Improve transparency</h3>
                 <div className="body-base text-neutral-dark">
                     <p>
                         Finally, we recommended improving transparency. While there was risk to conversion in experimenting with bolder, more prominent transparency into Capterra's business model, we couldn't maintain the status quo and expect sessions to stop declining.
@@ -439,7 +440,7 @@ export default function CapterraPage() {
                     <div className="lg:col-span-2 bg-white rounded-lg p-6 md:p-8 shadow-sm border border-neutral-light">
                         <div className="text-3xl mb-4">📋</div>
                         <h4 className="h5-bold text-sand-dark mb-2">Planning | July 31</h4>
-                        <ul className="body-base text-neutral-dark space-y-2 list-disc list-outside pl-4">
+                        <ul className="body-sm text-neutral-dark space-y-2 list-disc list-outside pl-4">
                             <li>Share the completed research plan with stakeholders for feedback.</li>
                             <li>Share the research plan at demo and/or via Slack.</li>
                             <li>Refine the research plan based on feedback.</li>
@@ -449,7 +450,7 @@ export default function CapterraPage() {
                     <div className="lg:col-span-2 bg-white rounded-lg p-6 md:p-8 shadow-sm border border-neutral-light">
                         <div className="text-3xl mb-4">🚀</div>
                         <h4 className="h5-bold text-sand-dark mb-2">Executing | Aug 3</h4>
-                        <ul className="body-base text-neutral-dark space-y-2 list-disc list-outside pl-4">
+                        <ul className="body-sm text-neutral-dark space-y-2 list-disc list-outside pl-4">
                             <li>Conduct an internal dry-run with stakeholders.</li>
                             <li>Update the research plan based on feedback.</li>
                             <li>Launch test.</li>
@@ -460,7 +461,7 @@ export default function CapterraPage() {
                     <div className="lg:col-span-2 bg-white rounded-lg p-6 md:p-8 shadow-sm border border-neutral-light">
                         <div className="text-3xl mb-4">🔬</div>
                         <h4 className="h5-bold text-sand-dark mb-2">Analyzing | Aug 7</h4>
-                        <ul className="body-base text-neutral-dark space-y-2 list-disc list-outside pl-4">
+                        <ul className="body-sm text-neutral-dark space-y-2 list-disc list-outside pl-4">
                             <li>Analyze quantitative data.</li>
                             <li>Analyze qualitative data.</li>
                             <li>Create and share insights with stakeholders.</li>
@@ -471,7 +472,7 @@ export default function CapterraPage() {
                     <div className="lg:col-span-2 lg:col-start-2 bg-white rounded-lg p-6 md:p-8 shadow-sm border border-neutral-light">
                         <div className="text-3xl mb-4">✍️</div>
                         <h4 className="h5-bold text-sand-dark mb-2">Synthesizing | Aug 21</h4>
-                        <ul className="body-base text-neutral-dark space-y-2 list-disc list-outside pl-4">
+                        <ul className="body-sm text-neutral-dark space-y-2 list-disc list-outside pl-4">
                             <li>Draft synthesis.</li>
                             <li>Share the draft synthesis with stakeholders.</li>
                             <li>Update synthesis based on stakeholder input.</li>
@@ -481,7 +482,7 @@ export default function CapterraPage() {
                     <div className="lg:col-span-2 bg-white rounded-lg p-6 md:p-8 shadow-sm border border-neutral-light">
                         <div className="text-3xl mb-4">📢</div>
                         <h4 className="h5-bold text-sand-dark mb-2">Sharing | Aug 28</h4>
-                        <ul className="body-base text-neutral-dark space-y-2 list-disc list-outside pl-4">
+                        <ul className="body-sm text-neutral-dark space-y-2 list-disc list-outside pl-4">
                             <li>Lead share-out.</li>
                             <li>Post links to the share-out recording and synthesis in Slack.</li>
                         </ul>
@@ -492,7 +493,7 @@ export default function CapterraPage() {
             {/* Impact Section */}
             <section id="impact" className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
                 <h2 className="h3-bold text-sand-dark mb-6">Impact</h2>
-                <div className="body-base text-neutral-dark space-y-4">
+                <div className="body-base text-neutral-dark space-y-4 mb-12">
                     <p>
                         My efforts to build consensus throughout the project paid off. Two out of our three key recommendations made it into the product, and more importantly, contributed to improved search engine rankings. Our proposal to make reviews content the primary focus of the product page resulted in the page pivoting to focus on summarizing review content above the fold. Our proposal to add a disclaimer around affiliate links resulted in disclaimers being added not only to articles, but almost all other pages on the site as well. Only our proposal to make comparison possible through the top navigation bar didn't make it into the product within the following year.
                     </p>

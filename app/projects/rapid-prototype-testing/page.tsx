@@ -62,7 +62,7 @@ export default function RapidPrototypeTestingPage() {
 
             {/* My Role Section */}
             <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-                <h3 className="h5-bold text-mist-dark mb-6">
+                <h3 className="h4-bold text-mist-dark mb-6">
                 My Role as a Design Leader
                 </h3>
                 <div className="space-y-4">
@@ -109,7 +109,7 @@ export default function RapidPrototypeTestingPage() {
                 <h2 className="h3-bold text-mist-dark mb-6 md:mb-6 lg:mb-6">
                 Examples and Recommendations
                 </h2>
-                <h3 className="h5-bold text-mist-dark mb-6">
+                <h3 className="h4-bold text-neutral-dark mb-6">
                 Example #1: Capterra Services
                 </h3>
                 <div className="space-y-4 body-base text-neutral-dark">
@@ -155,7 +155,7 @@ export default function RapidPrototypeTestingPage() {
 
             {/* Example 2 Section */}
             <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-                <h3 className="h5-bold text-mist-dark mb-6">
+                <h3 className="h4-bold text-neutral-dark mb-6">
                 Example #2: Software Advice Forms
                 </h3>
                 <div className="space-y-4 body-base text-neutral-dark">
@@ -214,7 +214,7 @@ export default function RapidPrototypeTestingPage() {
 
             {/* Example 3 Section */}
             <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-                <h3 className="h5-bold text-mist-dark mb-6">
+                <h3 className="h4-bold text-neutral-dark mb-6">
                 Example #3: Capterra Shortlist
                 </h3>
                 <div className="space-y-4 body-base text-neutral-dark">

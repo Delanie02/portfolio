@@ -31,16 +31,22 @@ export default function Hero({
   subtitle,
   imageUrl,
   theme = 'purple',
+  imagePosition = 'right',
   meta,
 }: HeroProps) {
   const { bg, textDark, textMid } = themeColors[theme];
 
+  // When imagePosition is 'left', text appears first (top on mobile, left on desktop)
+  // When imagePosition is 'right' (default), image appears first (top on mobile, right on desktop)
+  const imageOrder = imagePosition === 'left' ? 'order-last sm:order-last' : 'order-first sm:order-last';
+  const textOrder = imagePosition === 'left' ? 'order-first sm:order-first' : 'order-last sm:order-first';
+
   return (
     <div className={`${bg} w-screen -mx-[calc((100vw-100%)/2)] overflow-hidden flex flex-col sm:flex-row sm:items-center sm:min-h-[420px] lg:min-h-[523px]`}>
 
-    {/* Image — renders first (top) on mobile, right side on desktop  */}
+    {/* Image — renders based on imagePosition prop */}
     {imageUrl && (
-        <div className="order-first sm:order-last relative w-full h-[260px] sm:w-1/2 sm:h-[420px] lg:h-[523px]">
+        <div className={`${imageOrder} relative w-full h-[260px] sm:w-1/2 sm:h-[420px] lg:h-[523px]`}>
           <Image
             src={imageUrl}
             alt={title}
@@ -50,8 +56,8 @@ export default function Hero({
         </div>
       )}
 
-      {/* Text Content — renders second (below) on mobile, left side on desktop */}
-      <div className="w-full sm:w-1/2 flex-shrink-0 flex items-center">
+      {/* Text Content — renders based on imagePosition prop */}
+      <div className={`${textOrder} w-full sm:w-1/2 flex-shrink-0 flex items-center`}>
         <div className="flex flex-col gap-4 px-6 py-8 sm:px-8 lg:px-12 lg:py-12 w-full text-left sm:text-right">
 
           {/* Title */}
