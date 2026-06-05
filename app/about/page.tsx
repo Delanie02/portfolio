@@ -30,74 +30,118 @@ export default function About() {
                 {/* Professional Background */}
                 <section className="mb-12 md:mb-12 lg:mb-12">
                 <h3 className="h3-bold text-purple-mid mb-6">
-                    Professional background
+                    I build healthy, high-performing design organizations.
                 </h3>
                 <p className="body-base text-neutral-dark">
-                    I am a product design leader with over twelve years of experience managing teams of designers and researchers in organizations ranging from startups to Fortune 500s, in industries spanning international development, finance, SaaS, and automotive. I am unique in that I've spent the majority of my career in management positions, often in player-coach roles where I've had the good fortune to hone both my leadership and craft skills simultaneously.
+                    Over the last 12 years I've led research and design teams across startups and Fortune 500 companies alike. My strength is helping teams succeed in complex environments by creating clarity, building trust, and scaling effective ways of working.
                 </p>
                 </section>
 
                 {/* How I got into UX */}
                 <section className="mb-12 md:mb-12 lg:mb-12">
-                <h5 className="h4-bold text-neutral-dark mb-6">
-                    How I got into UX
+                <h5 className="h4-bold text-purple-mid mb-6">
+                    What teams hire me to do
                 </h5>
                 <p className="body-base text-neutral-dark">
-                    After spending a year in Uganda crafting eLearning courses for health practitioners, I moved to DC for a role at an international development startup managing a team of three designers and $600,000 in eLearning projects for clients such as USAID and UNICEF. I knew I wanted to deepen my UX skills, so I enrolled Carnegie Mellon University and got my Masters in Design for Interactions.
+                    <ul className="list-disc list-outside pl-6 space-y-2 body-base text-neutral-dark">
+                        <li className="mb-4">
+                            <p className="body-base-bold mb-2">
+                                Navigate ambiguous environments
+                            </p>
+                            <p>
+                                I help teams define priorities, align stakeholders, and make progress when requirements, ownership, or direction are unclear.
+                            </p>
+                        </li>
+                        <li className="mb-4">
+                            <p className="body-base-bold mb-2">
+                                Scale design organizations
+                            </p>
+                            <p>
+                                I establish processes, feedback loops, and operating models that help teams grow without sacrificing quality.
+                            </p>
+                        </li>
+                        <li className="mb-4">
+                            <p className="body-base-bold mb-2">
+                                Develop designers into leaders
+                            </p>
+                            <p>
+                                I enjoy coaching designers through career growth, increasing their influence, and helping them navigate complex organizations.
+                            </p>
+                        </li>
+                        <li className="mb-4">
+                            <p className="body-base-bold mb-2">
+                                Advocate for users at the executive level
+                            </p>
+                            <p>
+                                I have spent much of my career helping organizations balance business goals with customer needs, often in environments where user-centered thinking was not yet mature.
+                            </p>
+                        </li>
+                    </ul>
                 </p>
                 </section>
 
                 {/* Career Highlights */}
                 <section className="mb-12 md:mb-12 lg:mb-12">
-                <h5 className="h4-bold text-neutral-dark mb-6">
+                <h5 className="h4-bold text-purple-mid mb-6">
                     Career highlights
                 </h5>
-                <div className="space-y-4">
-                    <p className="body-base text-neutral-dark">
-                    Upon moving back to DC, I worked for Fannie Mae as a design strategist. I am still proud of the mortgage insurance service blueprints I co-created with customers there, and the onboarding resource I designed as a result that helped to raise deliveries from $30 to over $110 million in five months.
-                    </p>
-                    <p className="body-base text-neutral-dark">
-                    After Fannie Mae, I worked for FiscalNote, which at the time was a late stage B2B policy tracking SaaS startup. There I built up a team of designers and researchers, scaled user research recruitment from 29 per year to over 170 per year, and{" "}
-                    <Link href="/projects/fiscalnote" className="underline hover:text-purple-mid transition-colors">
-                        led a strategic initiative to envision a net new unified product 
-                    </Link>{" "}
-                        in collaboration with product, design, and data science leads.
-                    </p>
-                    <p className="body-base text-neutral-dark">
-                    I had the good fortune to have everyone reporting to me at FiscalNote follow me over to Gartner, where I grew our team to six to support 18 product teams across three websites with over nine million active monthly users. My team's insights led to a{" "}
-                    <Link href="/projects/rapid-prototype-testing" className="underline hover:text-purple-mid transition-colors">
-                        20% increase in form submissions 
-                    </Link>{" "} 
-                    , a 41% increase in chat revenue, and a 76% increase in feature engagement.
-                    </p>
-                </div>
+                <p className="body-base text-neutral-dark">
+                    <ul className="list-disc list-outside pl-6 space-y-2 body-base text-neutral-dark">
+                        <li className="mb-4">
+                            <p>
+                                At Ford Motor Company, I lead design efforts across enterprise-scale payment experiences spanning Ford.com, FordPro.com,{" "}
+                                <Link href="/projects/ford-bluecruise" className="underline hover:text-purple-mid transition-colors">
+                                    mobile applications
+                                </Link>{" "}, and in-vehicle systems, helping align customer and business needs across a highly complex ecosystem.
+                            </p>
+                        </li>
+                        <li className="mb-4">
+                            <p>
+                                At Gartner, I scaled a UX team from three to six researchers and designers to support 18 product teams across three websites with over nine million active monthly users. My team's insights drove measurable business outcomes, including a 20% increase in form submissions, a 41% increase in chat. 
+                            </p>
+                        </li>
+                        <li className="mb-4">
+                            <p>
+                                At {" "}
+                                <Link href="/projects/fiscalnote" className="underline hover:text-purple-mid transition-colors">FiscalNote
+                                </Link>{" "}, a B2B policy tracking SaaS startup, I worked cross-functionally with product, design, and data science to lead a strategic initiative to envision a net new unified product.
+                            </p>
+                        </li>
+                    </ul>
+                </p>
                 </section>
 
                 {/* Where I'm at now */}
                 <section className="mb-12 md:mb-12 lg:mb-12">
-                <h5 className="h4-bold text-neutral-dark mb-6">
-                    Where I'm at now
+                <h5 className="h4-bold text-purple-mid mb-6">
+                    Leadership Philosophy
                 </h5>
-                <p className="body-base text-neutral-dark">
-                    Currently, I manage UX designers at Ford Motor Company. I am proud of my team's payments platform re-design, which powers Ford's mobile app, Ford.com, in-vehicle infotainment systems, and more. I also worked directly with Ford's mobile app team to{" "}
-                    <Link href="/projects/ford-bluecruise" className="underline hover:text-purple-mid transition-colors">
-                        redesign how customers sign up for and manage subscriptions
-                    </Link>{" "}  
-                    , leading to an 170% increase in traffic and 77% increase in orders. Most recently, I've transitioned to a role that oversees the product our commercial customers use to get financing and make payments on their vehicles.
-                </p>
+                <div className="space-y-4 body-base text-neutral-dark">
+                    <p>
+                        I believe great design starts with trust. Teams produce their best work when they feel safe asking questions, sharing unfinished ideas, and giving candid feedback. As a leader, I focus on creating psychological safety, fostering healthy debate, and ensuring designers have the context, visibility, and support they need to succeed.
+                    </p>
+                    <p>
+                        Beyond culture, I believe evidence should drive decisions. Having led both design and research teams, I bring a strong commitment to incorporating user feedback into product development and{" "}
+                        <Link href="/projects/rapid-prototype-testing" className="underline hover:text-purple-mid transition-colors">scaling systems that help teams learn from customers continuously.
+                        </Link>{" "}
+                    </p>
+                    <p>
+                        Throughout the design and product development lifecycle, I help teams understand not only what we're trying to achieve, but why it matters. I believe in setting clear expectations, providing candid feedback, and giving people the opportunities they need to grow into greater ownership and influence.
+                    </p>
+                </div>              
                 </section>
 
                 {/* What keeps me going */}
                 <section className="mb-12 md:mb-12 lg:mb-12">
-                <h5 className="h4-bold text-neutral-dark mb-6">
+                <h5 className="h4-bold text-purple-mid mb-6">
                     What keeps me going
                 </h5>
                 <div className="space-y-4">
                     <p className="body-base text-neutral-dark">
-                    In every organization and industry I've worked in, I've taken pride in building environments where my team feels supported, challenged, and fulfilled in their work. As for me, my most fulfilling roles have been ones where I am able to mentor and advocate for my team while developing close collaborative relationships across product and engineering.
+                    In every organization and industry I've worked in, I've taken pride in building environments where my team feels supported, challenged, and fulfilled in their work. As for me, my most fulfilling roles have been ones where I am helping teams navigate competing business and user needs. Throughout my career, I've worked in complex organizations where customer needs, technical constraints, and business goals often pull in different directions. I enjoy helping teams find pragmatic solutions that move the business forward without losing sight of the user.
                     </p>
                     <p className="body-base text-neutral-dark">
-                    I am also driven by the desire to learn new things. I consider myself lucky to be in a field where I am challenged to learn how different businesses operate, how to best design for users ranging from Wall Street traders to small business owners, and how our ever evolving tool belt as UX practitioners can transform our craft. Most recently, I taught myself how to build this portfolio using Github Copilot, Figma's MCP server, and Claude. 
+                    I am also driven by the desire to learn new things. I consider myself lucky to be in a field where I am challenged to learn how different businesses operate, how to best design for users ranging from Wall Street traders to small business owners, and how our ever evolving tool belt as UX practitioners can transform our craft. Most recently, I taught myself how to build this portfolio using Github Copilot, Figma's MCP server, and Claude.
                     </p>
                 </div>
                 </section>
@@ -146,7 +190,7 @@ export default function About() {
                 Outside of work
                 </h3>
                 <p className="body-base text-neutral-dark">
-                When I'm not designing, I enjoy spending time outside, cooking, trying new restaurants, and catching up with friends and family. I also took up running after adopting a high-energy border collie mix named Pepper, and have since finished two marathons. She has turned out to be quite the personal trainer!
+                When I'm not designing, I enjoy spending time outside, cooking, and catching up with friends. I also took up running after adopting a high-energy border collie mix named Pepper, and have since finished two marathons. She has turned out to be quite the personal trainer!
                 </p>
             </div>
             
