@@ -37,10 +37,10 @@ export default function CapterraPage() {
                 </h2>
                 <div className="body-base text-neutral-dark space-y-4">
                 <p>
-                   Capterra's sessions and return users were in decline, primarily due to diminished visibility in search engine results like Google. Reliance on paid advertising was unsustainable, necessitating a strategic pivot to improve organic reach and user retention.
+                   Capterra was experiencing declining organic traffic and returning users. While teams across Product, SEO, and UX had ideas for improving performance, there was no shared understanding of which user experience investments would have the greatest impact.
                 </p>
                 <p>
-                   We knew from a survey my team ran that most users came to the site to compare software and returned to write reviews, but their satisfaction with the site's UX was a mixed bag. We also knew through collaboration with our search engine optimization (SEO) partners that Google's algorithm rewards sites with high EEAT (Experience, Expertise, Authority, and Trust). If we figured out how to improve the EEAT of our comparison and reviews experiences — the most valuable parts of the site — we should see increased organic and return user sessions over time.
+                   As Associate Director of UX, I led a cross-functional effort to identify opportunities to improve trust, discoverability, and engagement in the parts of the product most critical to long-term growth.
                 </p>
                 </div>
             </section>
@@ -52,7 +52,7 @@ export default function CapterraPage() {
                 </h2>
                 <div className="body-base text-neutral-dark space-y-4">
                 <p>
-                   In order to set my team up for success, I first identified the stakeholders that would need to take ownership of our recommendations.
+                   To set my team up for success, I assembled and aligned a cross-functional group including Product Directors, SEO leaders, UX researchers, and executive stakeholders to ensure findings could translate into action.
                 </p>
                 </div>
             </section>
@@ -340,7 +340,7 @@ export default function CapterraPage() {
                 </h2>
                 <div className="body-base text-neutral-dark space-y-4">
                     <p>
-                        Based on our study's results and in close collaboration with our SEO partners, we uncovered the following three key opportunity areas.
+                        Based on our study's results and in close collaboration with our SEO partners, we recommended the following changes that challenged existing assumptions about conversion optimization and business priorities in favor of long-term trust and organic growth.
                     </p>
                 </div>
             </section>
@@ -350,7 +350,7 @@ export default function CapterraPage() {
                 <h3 className="h4-bold text-sand-dark mb-4">Recommendation #1: Improve reviews discoverability</h3>
                 <div className="body-base text-neutral-dark">
                     <p>
-                        First, we recommended improve the discoverability of the most valuable Capterra content — reviews. In particular, we proposed iterating on product pages so that when users land on them, they know immediately that the site offers an easy way for them to find reviews from people like them — it's not just a place to read a canned product description.
+                        First, we recommended improving the discoverability of the most valuable Capterra content — reviews. In particular, we proposed iterating on product pages so that when users land on them, they know immediately that the site offers an easy way for them to find reviews from people like them — it's not just a place to read a canned product description.
                     </p>
                 </div>
             </section>
@@ -429,7 +429,7 @@ export default function CapterraPage() {
                 <h2 className="h3-bold text-sand-dark mb-6">Driving alignment</h2>
                 <div className="body-base text-neutral-dark space-y-4">
                     <p>
-                        I built consensus on these recommendations throughout the project by proactively seeking feedback from the stakeholders I identified early on. Via the highlighted steps below, I built alignment on the approach and insights so that the focus of the share-out was on next steps.
+                        Because the recommendations would require support across Product, SEO, and executive leadership, I treated stakeholder alignment as a primary workstream rather than a final presentation milestone. Via the highlighted steps below, I proactively sought feedback from the stakeholders I identified early and often. This approach shifted the final readout from a debate about whether the findings were credible to a discussion about which recommendations to prioritize.
                     </p>
                 </div>
             </section>
@@ -495,7 +495,7 @@ export default function CapterraPage() {
                 <h2 className="h3-bold text-sand-dark mb-6">Impact</h2>
                 <div className="body-base text-neutral-dark space-y-4 mb-12">
                     <p>
-                        My efforts to build consensus throughout the project paid off. Two out of our three key recommendations made it into the product, and more importantly, contributed to improved search engine rankings. Our proposal to make reviews content the primary focus of the product page resulted in the page pivoting to focus on summarizing review content above the fold. Our proposal to add a disclaimer around affiliate links resulted in disclaimers being added not only to articles, but almost all other pages on the site as well. Only our proposal to make comparison possible through the top navigation bar didn't make it into the product within the following year.
+                        My efforts to build consensus throughout the project paid off. The study became the foundation for a broader effort to improve trust and content quality across Capterra. Two of the three primary recommendations were implemented, including a redesign that elevated user reviews as the primary focus of product pages and the introduction of transparency disclosures across much of the site. The recommendations contributed to improvements in search visibility while influencing how teams across Product, UX, and SEO approached trust and transparency going forward.
                     </p>
                 </div>
             </section>
