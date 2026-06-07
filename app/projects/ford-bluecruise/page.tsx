@@ -39,7 +39,7 @@ export default function FordBlueCruisePage() {
                 </h2>
                 <div className="body-base text-neutral-dark space-y-4">
                 <p>
-                   Subscription products like BlueCruise, which enables drivers to drive hands free, are an important revenue driver for Ford. And yet, subscriptions were buried two layers deep within Ford’s mobile app for consumers, FordPass. Beyond the discoverability issue, all of the subscriptions pages were in an outdated design system that didn’t match the rest of the app and relied almost exclusively on text to explain the service. 
+                   Subscription products like BlueCruise, which enables drivers to drive hands free, represent an important growth opportunity for Ford. And yet, key subscription experiences suffered from poor discoverability, fragmented information architecture, and an inconsistent customer experience. As a result, Ford was missing opportunities to educate customers about subscription value and convert interest into purchases. 
                 </p>
                 </div>
             </section>
@@ -86,35 +86,32 @@ export default function FordBlueCruisePage() {
                 </h2>
                 <div className="space-y-4 body-base text-neutral-dark">
                     <p>
-                        As a UX Manager, I partnered with the subscriptions design team to make subscriptions easier to find, understand, and sign up for. First, I helped plan and co-facilitate a workshop with product, marketing, engineering, research, and design leads to align on the long term vision for subscriptions. 
-                    </p>
-                    <p>
-                        I always strive to offer people lots of ways to contribute to discussions and decisions. For this workshop, I helped plan the activity flow and built a clear, visually organized Miro board that made it easy for participants to follow along and engage in whatever way felt most comfortable. By following UX best practices like providing multiple entry points, reducing cognitive load, and creating intuitive wayfinding, I sucessfully designed a workshop that resulted in more excited and present participants.
+                        As a UX Manager, I partnered with the subscriptions design team to make subscriptions easier to find, understand, and sign up for. To align stakeholders across Product, Marketing, Engineering, Research, and Design, I co-facilitated a vision workshop that helped establish a shared strategy for improving subscription discovery, education, and conversion.
                     </p>
                 </div>
             </section>
 
-            <div className="flex flex-col gap-16 pb-24 max-w-[784px] mx-auto">
+            {/* <div className="flex flex-col gap-16 pb-24 max-w-[784px] mx-auto"> */}
                 {/* Top decoration */}
-                <div className="flex items-center gap-4 md:gap-6 mb-8 md:mb-8">
+                {/* <div className="flex items-center gap-4 md:gap-6 mb-8 md:mb-8">
                 <div className="flex-1 h-px bg-neutral-dark opacity-30" />
                 <span className="text-2xl md:text-3xl text-ocean-dark">⁂</span>
                 <div className="flex-1 h-px bg-neutral-dark opacity-30" />
-                </div>
+                </div> */}
 
                 {/* Quotes */}
-                <Quote
+                {/* <Quote
                 text='"This is the most exciting and aesthetically pleasing workshop I have ever been to." — Product Manager'
                 theme="ocean"
-                />
+                /> */}
 
                 {/* Bottom decoration */}
-                <div className="flex items-center gap-4 md:gap-6 mb-8 md:mb-8">
+                {/* <div className="flex items-center gap-4 md:gap-6 mb-8 md:mb-8">
                 <div className="flex-1 h-px bg-neutral-dark opacity-30" />
                 <span className="text-2xl md:text-3xl text-ocean-dark">⁂</span>
                 <div className="flex-1 h-px bg-neutral-dark opacity-30" />
-                </div>
-            </div>
+                </div> */}
+            {/* </div> */}
 
             <section id="recommendations" className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
                 <h2 className="h3-bold text-ocean-dark mb-6 md:mb-6 lg:mb-6">
@@ -243,7 +240,7 @@ export default function FordBlueCruisePage() {
                 </h3>
                 <div className="space-y-4 body-base text-neutral-dark">
                     <p>
-                        After completing the entire set of flows in one design system, leadership decided we needed to re-do the work in the design system that the mobile app would be rolling out later in the year. While the system wasn’t as fleshed out and required a few manual work arounds, overall I welcomed the pivot as the newer design system reflected a simpler, more streamlined visual design. 
+                        Midway through the project, Ford made the strategic decision to migrate the mobile application to a new design system. Rather than treating this as rework, I partnered with the team to use the transition as an opportunity to further simplify the experience and align subscription flows with the future direction of the platform.
                     </p>
                 </div>
             </section>
@@ -290,7 +287,7 @@ export default function FordBlueCruisePage() {
                 </h2>
                 <div className="space-y-4 body-base text-neutral-dark">
                     <p>
-                        Beyond the statistically significant increase in subscriptions traffic (+170%) and orders (+77%) we drove by surfacing the entry point on the app’s homepage, my product details and manage re-designs showed clear improvements in terms of clarity and integration with the latest design system. When we shared the updated designs with design leadership, I was proud of the following feedback I received. 
+                        By surfacing subscriptions on the home screen, we significantly increased both awareness and conversion, contributing to Ford's broader strategy of growing recurring subscription revenue through products like BlueCruise. When we shared the updated designs with design leadership, I was proud of the following feedback I received. 
                     </p>
                 </div>
             </section>
