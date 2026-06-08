@@ -37,7 +37,7 @@ export default function FiscalNotePage() {
                 </h2>
                 <div className="body-base text-neutral-dark space-y-4">
                 <p>
-                   As a UX Manager at FiscalNote, a policy tracking startup, I saw how its strategy of acquiring other companies and their products led to several pain points:
+                   FiscalNote, a B2B SaaS policy intelligence platform, had grown through acquisition, resulting in four separate products serving overlapping customer needs. While each product provided value independently, the portfolio created increasing challenges for both customers and the business, such as:
                 </p>
                 <ul className="list-disc list-outside pl-6 space-y-2 body-base text-neutral-dark">
                     <li>Increased development and maintenance costs.</li>
@@ -45,6 +45,9 @@ export default function FiscalNotePage() {
                     <li>Confusion around each product's unique value proposition and idiosyncrasies.</li>
                     <li>Duplication of user effort managing information across siloed products.</li>
                 </ul>
+                <p>
+                    As a UX Manager, I saw an opportunity to help leadership answer a larger strategic question: How might we unify the experience across multiple products while preserving the value customers relied on today?
+                </p>
                 </div>
             </section>
 
@@ -134,11 +137,14 @@ export default function FiscalNotePage() {
 
             <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
                 <h3 className="h4-bold text-purple-dark mb-6">
-                Storytelling that resonates
+                Driving organizational alignment
                 </h3>
                 <div className="space-y-4 body-base text-neutral-dark">
                     <p>
-                        After pitching our final unified concept to the C-Suite, we socialized these needs with the rest of the company via comics. I wrote the comic copy, and a designer on my team illustrated them. Each comic leveraged a Knights of the Round Table analogy to help people immediately connect with each distinct user role. Each comic strip linked to video clips from real users, creating a memorable company-wide resource on what our users need.
+                        After pitching our final unified concept to the C-Suite, we needed to socialize the concept. Each product had dedicated customers, product teams, and business stakeholders. Any proposal to unify the portfolio would require balancing competing priorities, preserving critical workflows, and navigating organizational resistance to change. Success depended as much on building alignment as it did on designing the solution itself.
+                    </p>
+                    <p>
+                        To drive this alignment around our concept and help connect different teams to the underlying user needs, I created a series of short comics and had a designer on my team illustrate them. Each comic leveraged a Knights of the Round Table analogy to help people immediately connect with each distinct user role. Each comic strip linked to video clips from real users, creating a memorable and shared understanding of our users, and why we needed a unified concept to best meet their needs. 
                     </p>
                 </div>
             </section>
@@ -186,7 +192,7 @@ export default function FiscalNotePage() {
                 </h3>
                 <div className="space-y-4 body-base text-neutral-dark">
                     <p>
-                        Beyond meeting user needs, I reiterated the business benefits of the unified concept:
+                        The vision was not solely a user experience exercise. To gain executive support, I partnered with product leaders to connect customer outcomes to the following business outcomes:
                     </p>
                     <ul className="list-disc list-outside pl-6 space-y-2 body-base text-neutral-dark">
                         <li>Reduced development time and costs.</li>
@@ -217,7 +223,10 @@ export default function FiscalNotePage() {
                 </h2>
                 <div className="space-y-4 body-base text-neutral-dark">
                     <p>
-                        Overall, users and executives were excited about the concept. The CPO called the concept the “best output I've seen in my career.” However, while the concept was strong, it was risky to change the status quo. Some customers were hesitant about the change in workflow the unified concept implied. Ultimately, the company decided to split the difference and unify two (FiscalNote and CQ) out of the four products into what is now sold as PolicyNote. 
+                        Overall, users and executives were excited about the concept. The CPO called the concept the “best output I've seen in my career.” However, the initiative also surfaced the organizational and customer challenges associated with large-scale product consolidation. While some customers embraced the vision, others expressed concern about changing established workflows.
+                    </p>
+                    <p>
+                        Ultimately, leadership chose a phased approach, consolidating FiscalNote and CQ into what became PolicyNote rather than immediately unifying all four products. Although the original vision was not implemented in full, the work directly influenced the company's product strategy and helped establish a roadmap for future consolidation efforts.
                     </p>
                 </div>
             </section>
