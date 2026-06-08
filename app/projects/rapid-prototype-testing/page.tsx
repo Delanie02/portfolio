@@ -225,7 +225,7 @@ export default function RapidPrototypeTestingPage() {
             </section>
 
             {/* Example 3 Images */}
-            <div className="flex flex-col gap-16 pb-24 max-w-[980px] mx-auto">
+            <div className="flex flex-col gap-8 pb-24 max-w-[980px] mx-auto">
                 <TwoImageGroup
                     images={[
                     {

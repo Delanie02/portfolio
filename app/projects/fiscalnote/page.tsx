@@ -52,7 +52,7 @@ export default function FiscalNotePage() {
             </section>
 
             {/* Product Images Images */}
-            <div className="flex flex-col gap-16 pb-24 max-w-[980px] mx-auto">
+            <div className="flex flex-col gap-8 pb-24 max-w-[980px] mx-auto">
                 <TwoImageGroup
                     images={[
                     {
@@ -150,7 +150,7 @@ export default function FiscalNotePage() {
             </section>
 
             {/* Comics */}
-            <div className="flex flex-col gap-16 pb-24 max-w-[980px] mx-auto">
+            <div className="flex flex-col gap-8 pb-24 max-w-[980px] mx-auto">
                 <TwoImageGroup
                     images={[
                     {
