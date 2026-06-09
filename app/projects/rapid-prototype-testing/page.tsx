@@ -38,10 +38,22 @@ export default function RapidPrototypeTestingPage() {
                 </h2>
                 <div className="body-base text-neutral-dark space-y-4">
                 <p>
-                    At Gartner, my team supported 18 product teams across three brands. We prioritized research studies on a project-by-project basis, rather than continuously for a given product area. This incentivized us to scope research initiatives broadly to ensure all our research questions were answered in one fell swoop, resulting in bigger, longer studies often involving larger, complex prototypes. In addition, the fact that we had no guaranteed capacity for a given product area disincentivized requests.
+                    At Gartner, my team supported 18 product teams across three brands serving more than nine million monthly users. While user research was highly valued, our operating model made it difficult to influence product decisions at the pace teams were shipping.
                 </p>
                 <p>
-                    This bottleneck limited iteration on our designs and research's ability to inform meaningful design decisions over time or measure impact. We needed a faster, more sustainable way to deliver research—one that would integrate directly into the product development cycle and allow us to learn and act continuously.
+                    Research was typically conducted as large, project-based studies designed to answer every question at once. These studies often took six to eight weeks to complete, limiting teams' ability to iterate, validate assumptions, and learn continuously.
+                </p>
+                <p>
+                    As a result:
+                </p>
+                <ul className="list-disc list-outside pl-6 space-y-2 body-base text-neutral-dark">
+                    <li>Research was often disconnected from sprint cycles.</li>
+                    <li>Product teams hesitated to request studies because of lead times.</li>
+                    <li>Design decisions were made with limited user feedback.</li>
+                    <li>Valuable opportunities for iteration were missed.</li>
+                </ul>
+                <p>
+                    I saw an opportunity to fundamentally change how research and product development worked together.
                 </p>
                 </div>
             </section>
@@ -67,13 +79,17 @@ export default function RapidPrototypeTestingPage() {
                 </h3>
                 <div className="space-y-4">
                     <p className="body-base text-neutral-dark">
-                        As an Associate UX Director, I led this transformation across product areas by:
+                        As Associate Director of UX, I led the creation and rollout of a new rapid-testing operating model designed to embed customer feedback directly into product development.
+                    </p>
+                    <p>
+                        I was responsible for:
                     </p>
                     <ul className="list-disc list-outside pl-6 space-y-2 body-base text-neutral-dark">
-                        <li>Partnering across product, design, and research to develop a scalable rapid testing process.</li>
-                        <li>Coaching teams in shifting from waterfall-style studies to sprint-aligned research.</li>
-                        <li>Defining the new process and pilot scope, and overseeing cross-functional rollouts.</li>
-                        <li>Advocating for and socializing the program with executive stakeholders.</li>
+                        <li>Defining the program vision and success metrics.</li>
+                        <li>Aligning product, design, and research leadership.</li>
+                        <li>Coaching teams on new ways of working.</li>
+                        <li>Scaling adoption across multiple product areas.</li>
+                        <li>Communicating outcomes to executive stakeholders.</li>
                     </ul>
                 </div>              
             </section>
@@ -85,7 +101,19 @@ export default function RapidPrototypeTestingPage() {
                 </h2>
                 <div className="space-y-4">
                     <p className="body-base text-neutral-dark">
-                        I partnered with product to launch and scale a new, rapid way of doing user research that worked in parallel with product development in order to support a more iterative product development process. Instead of testing large, multi-page flows, we scoped each test to 6–7 key questions and a single page or interaction. This allowed us to deliver results within one sprint.
+                        Rather than treating research as a standalone activity, I partnered with product leadership to redesign how teams learned from users. We shifted from large, multi-question studies toward a series of focused experiments designed to answer a small number of high-priority questions each sprint.
+                    </p>
+                    <p>
+                        This allowed teams to:
+                    </p>
+                    <ul className="list-disc list-outside pl-6 space-y-2 body-base text-neutral-dark">
+                        <li>Validate assumptions earlier.</li>
+                        <li>Iterate on designs continuously.</li>
+                        <li>Reduce the cost of failed ideas.</li>
+                        <li>Incorporate customer feedback into ongoing decision-making.</li>
+                    </ul>
+                    <p>
+                        The goal was not simply faster research—it was creating a sustainable system for evidence-based product development.
                     </p>
                 </div>
             </section>
@@ -110,7 +138,7 @@ export default function RapidPrototypeTestingPage() {
                 Examples and Recommendations
                 </h2>
                 <h3 className="h4-bold text-neutral-dark mb-6">
-                Example #1: Capterra Services
+                Example #1: New Product Development
                 </h3>
                 <div className="space-y-4 body-base text-neutral-dark">
                     <p>
@@ -156,11 +184,11 @@ export default function RapidPrototypeTestingPage() {
             {/* Example 2 Section */}
             <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
                 <h3 className="h4-bold text-neutral-dark mb-6">
-                Example #2: Software Advice Forms
+                Example #2: Conversion Optimization
                 </h3>
                 <div className="space-y-4 body-base text-neutral-dark">
                     <p>
-                        I then scaled to a more established team, resulting in speeding up the ability for design to drive conversion and revenue impact. A traditional test this team ran took 7 weeks, focused on improving the trustworthiness of the forms that connect users to software advisors. While that test successfully improved conversion by 18%, we were looking to achieve similar results in less time. My new rapid testing program delivered learnings in 1.5 weeks, with a project impact of $1 million in net new revenue.
+                        I then scaled to a more established team, resulting in speeding up the ability for design to drive conversion and revenue impact. A traditional test this team ran took 7 weeks, focused on improving the trustworthiness of the forms that connect users to software advisors. While that test successfully improved conversion by 18%, we were looking to achieve similar results in less time. My new rapid testing program delivered learnings in 1.5 weeks, with a projected impact of $1 million in net new revenue.
                     </p>
                 </div>
             </section>
@@ -215,7 +243,7 @@ export default function RapidPrototypeTestingPage() {
             {/* Example 3 Section */}
             <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
                 <h3 className="h4-bold text-neutral-dark mb-6">
-                Example #3: Capterra Shortlist
+                Example #3: Product Engagement
                 </h3>
                 <div className="space-y-4 body-base text-neutral-dark">
                     <p>
@@ -268,7 +296,7 @@ export default function RapidPrototypeTestingPage() {
                 </h2>
                 <div className="space-y-4 body-base text-neutral-dark">
                     <p>
-                        The rapid testing program I launched and scaled allowed us to speed up time to insights without sacrificing  reliability or quality, enabling more iteration not just on the designs but on the our understanding of our users and what they need. 
+                        The rapid testing program I launched and scaled allowed us to speed up time to insights without sacrificing  reliability or quality, enabling more iteration not just on the designs but on our understanding of our users and what they need. 
                     </p>
                     <p>
                         After launching this new way of doing research, <b>we tripled the number of tests run quarter-over-quarter</b>. We gathered more user feedback than ever before, meaning our product teams were better positioned than ever before to make more user-centered decisions. Executive leadership recognized the program as a success in C-Suite and team-wide forums.   
