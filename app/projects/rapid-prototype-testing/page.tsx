@@ -77,8 +77,8 @@ export default function RapidPrototypeTestingPage() {
                 <h3 className="h4-bold text-mist-dark mb-6">
                 My Role as a Design Leader
                 </h3>
-                <div className="space-y-4">
-                    <p className="body-base text-neutral-dark">
+                <div className="body-base text-neutral-dark space-y-4">
+                    <p>
                         As Associate Director of UX, I led the creation and rollout of a new rapid-testing operating model designed to embed customer feedback directly into product development.
                     </p>
                     <p>
@@ -99,8 +99,8 @@ export default function RapidPrototypeTestingPage() {
                 <h2 className="h3-bold text-mist-dark mb-6 md:mb-6 lg:mb-6">
                 Approach
                 </h2>
-                <div className="space-y-4">
-                    <p className="body-base text-neutral-dark">
+                <div className="body-base text-neutral-dark space-y-4">
+                    <p>
                         Rather than treating research as a standalone activity, I partnered with product leadership to redesign how teams learned from users. We shifted from large, multi-question studies toward a series of focused experiments designed to answer a small number of high-priority questions each sprint.
                     </p>
                     <p>
