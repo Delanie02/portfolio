@@ -266,7 +266,7 @@ export default function RapidPrototypeTestingPage() {
                         src: "/images/rapid-prototype/Shortlist-rapid-test-1.jpg",
                         alt: "...",
                         header: "Shortlist Rapid Test 1",
-                        subheader: "How useful are product cards alongside the Shortlist grid?",
+                        subheader: "How useful are product cards?",
                     },
                     ]}
                 />
