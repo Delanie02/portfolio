@@ -1,13 +1,14 @@
-import Hero from '../components/Hero';
-import Quote from '../components/Quote';
-import ProjectCard from '../components/ProjectCard';
-import NavSimple from '../components/navigation/NavSimple';
-import Link from 'next/link';
-import Image from 'next/image';
+import Hero from "../components/Hero";
+import Quote from "../components/Quote";
+import ProjectCard from "../components/ProjectCard";
+import NavSimple from "../components/navigation/NavSimple";
+import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
-  title: 'About | Delanie Heck',
-  description: 'Learn more about Delanie Heck, a product design leader with over twelve years of experience managing teams of designers and researchers in organizations ranging from startups to Fortune 500s, in industries spanning international development, finance, SaaS, and automotive.',
+  title: "About | Delanie Heck",
+  description:
+    "Learn more about Delanie Heck, a product design leader with over twelve years of experience managing teams of designers and researchers in organizations ranging from startups to Fortune 500s, in industries spanning international development, finance, SaaS, and automotive.",
 };
 
 export default function About() {
@@ -117,7 +118,7 @@ export default function About() {
                     websites with over nine million active monthly users. My
                     team's insights drove measurable business outcomes,
                     including a 20% increase in form submissions, a 41% increase
-                    in chat, and a 76% increase in feature engagement..
+                    in chat, and a 76% increase in feature engagement.
                   </p>
                 </li>
                 <li className="mb-4">
