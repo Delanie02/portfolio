@@ -1,45 +1,62 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
-import type { NavProjectProps, NavTheme } from './nav.types';
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import type {
+  NavProjectProps,
+  NavTheme,
+  NavProjectSectionLink,
+} from "./nav.types";
 
 const themeConfig: Record<NavTheme, { textClass: string; shadow: string }> = {
   sand: {
-    textClass: 'text-sand-dark',
-    shadow: '0 4px 4px 0 rgba(168, 144, 108, 0.25)',
+    textClass: "text-sand-dark",
+    shadow: "0 4px 4px 0 rgba(168, 144, 108, 0.25)",
   },
   mist: {
-    textClass: 'text-mist-dark',
-    shadow: '0 4px 4px 0 rgba(50, 74, 99, 0.25)',
+    textClass: "text-mist-dark",
+    shadow: "0 4px 4px 0 rgba(50, 74, 99, 0.25)",
   },
   ocean: {
-    textClass: 'text-ocean-dark',
-    shadow: '0 4px 4px 0 rgba(0, 80, 94, 0.25)',
+    textClass: "text-ocean-dark",
+    shadow: "0 4px 4px 0 rgba(0, 80, 94, 0.25)",
   },
   purple: {
-    textClass: 'text-purple-dark',
-    shadow: '0 4px 4px 0 rgba(58, 31, 78, 0.25)',
+    textClass: "text-purple-dark",
+    shadow: "0 4px 4px 0 rgba(58, 31, 78, 0.25)",
   },
 };
 
-const sectionLinks = [
-  { label: 'Challenge', href: '#challenge', id: 'challenge' },
-  { label: 'Approach', href: '#approach', id: 'approach' },
-  { label: 'Recommendations', href: '#recommendations', id: 'recommendations' },
-  { label: 'Impact', href: '#impact', id: 'impact' },
+const defaultSectionLinks: NavProjectSectionLink[] = [
+  { label: "Challenge", href: "#challenge", id: "challenge" },
+  { label: "Approach", href: "#approach", id: "approach" },
+  { label: "Recommendations", href: "#recommendations", id: "recommendations" },
+  { label: "Impact", href: "#impact", id: "impact" },
 ];
 
-export default function NavProject({ theme }: NavProjectProps) {
+export default function NavProject({ theme, sectionLinks }: NavProjectProps) {
   const { textClass, shadow } = themeConfig[theme];
+  const links = sectionLinks ?? defaultSectionLinks;
   const pathname = usePathname();
-  const [activeSection, setActiveSection] = useState<string>('');
+  const [activeSection, setActiveSection] = useState<string>("");
 
   useEffect(() => {
+    const syncActiveSectionFromHash = () => {
+      const hash = window.location.hash.replace("#", "");
+      const matchingLink = links.find((link) => link.id === hash);
+
+      if (matchingLink) {
+        setActiveSection(matchingLink.id);
+      }
+    };
+
+    syncActiveSectionFromHash();
+    window.addEventListener("hashchange", syncActiveSectionFromHash);
+
     const observers: IntersectionObserver[] = [];
 
-    sectionLinks.forEach(({ id }) => {
+    links.forEach(({ id }) => {
       const el = document.getElementById(id);
       if (!el) return;
 
@@ -47,15 +64,18 @@ export default function NavProject({ theme }: NavProjectProps) {
         ([entry]) => {
           if (entry.isIntersecting) setActiveSection(id);
         },
-        { rootMargin: '-20% 0px -60% 0px', threshold: 0 }
+        { rootMargin: "-20% 0px -60% 0px", threshold: 0 },
       );
 
       observer.observe(el);
       observers.push(observer);
     });
 
-    return () => observers.forEach((o) => o.disconnect());
-  }, []);
+    return () => {
+      observers.forEach((o) => o.disconnect());
+      window.removeEventListener("hashchange", syncActiveSectionFromHash);
+    };
+  }, [links]);
 
   return (
     <nav
@@ -64,12 +84,12 @@ export default function NavProject({ theme }: NavProjectProps) {
     >
       {/* Left: Section links — hidden on mobile */}
       <div className={`hidden md:flex items-center gap-8 ${textClass}`}>
-        {sectionLinks.map((link) => (
+        {links.map((link) => (
           <a
             key={link.href}
             href={link.href}
             className={`${
-              activeSection === link.id ? 'h5-bold' : 'h5'
+              activeSection === link.id ? "h5-bold" : "h5"
             } hover:opacity-70 transition-opacity`}
           >
             {link.label}
@@ -82,7 +102,7 @@ export default function NavProject({ theme }: NavProjectProps) {
         <Link
           href="/"
           className={`${
-            pathname === '/' ? 'h5-bold' : 'h5'
+            pathname === "/" ? "h5-bold" : "h5"
           } hover:opacity-70 transition-opacity`}
         >
           Home
@@ -90,7 +110,7 @@ export default function NavProject({ theme }: NavProjectProps) {
         <Link
           href="/about"
           className={`${
-            pathname === '/about' ? 'h5-bold' : 'h5'
+            pathname === "/about" ? "h5-bold" : "h5"
           } hover:opacity-70 transition-opacity`}
         >
           About

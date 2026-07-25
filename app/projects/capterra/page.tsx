@@ -370,7 +370,10 @@ export default function CapterraPage() {
         </div>
 
         {/* Recommendations Section */}
-        <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
+        <section
+          id="recommendations"
+          className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto"
+        >
           <h2 className="h3-bold text-sand-dark mb-6">Recommendations</h2>
           <div className="body-base text-neutral-dark space-y-4">
             <p>

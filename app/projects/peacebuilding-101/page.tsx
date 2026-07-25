@@ -13,7 +13,14 @@ export const metadata = {
 export default function PeacebuildingPage() {
   return (
     <>
-      <NavProject theme="sand" />
+      <NavProject
+        theme="sand"
+        sectionLinks={[
+          { label: "Challenge", href: "#challenge", id: "challenge" },
+          { label: "Approach", href: "#approach", id: "approach" },
+          { label: "Impact", href: "#impact", id: "impact" },
+        ]}
+      />
 
       <Hero
         title="Peacebuilding 101"
