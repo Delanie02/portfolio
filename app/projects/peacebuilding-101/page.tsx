@@ -188,7 +188,7 @@ export default function PeacebuildingPage() {
           <h3 className="h4-bold text-sand-dark mb-4">
             Preserving social learning
           </h3>
-          <div className="body-base text-neutral-dark">
+          <div className="body-base text-neutral-dark space-y-4">
             <p>
               To demonstrate learning of how the Kenya case study can be
               understood through the conflict tree model, users drag and drop
