@@ -40,7 +40,7 @@ export default function TwoImageGroup({
             )}
 
             <div
-              className={`relative w-full aspect-[13/9] ${borderless ? "" : "border border-neutral-mid"}`}
+              className={`relative w-full aspect-[13/9] ${borderless ? "" : "border border-neutral-light"}`}
             >
               <div className="absolute inset-0 overflow-hidden">
                 <Image
@@ -62,7 +62,7 @@ export default function TwoImageGroup({
       {/* Bracket + Captions */}
       {captions && captions.length > 0 && (
         <>
-          <div className="w-full h-4 border-b-2 border-l-2 border-r-2 border-neutral-mid mb-4" />
+          <div className="w-full h-4 border-b-2 border-l-2 border-r-2 border-neutral-light mb-4" />
           <div className="flex flex-col gap-1">
             {captions.map((caption, index) => (
               <p

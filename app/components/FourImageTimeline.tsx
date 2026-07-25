@@ -18,7 +18,6 @@ export default function FourImageGroup({
   captionGroups,
   columns = 2,
 }: FourImageGroupProps) {
-
   // ✅ Split layout: two halves, each with 2 images + their own bracket
   if (columns === 4 && captionGroups && captionGroups.length === 2) {
     const leftImages = images.slice(0, 2);
@@ -26,7 +25,6 @@ export default function FourImageGroup({
 
     return (
       <div className="flex flex-col md:flex-row gap-6">
-
         {/* Left half */}
         <div className="flex-1 flex flex-col">
           <div className="grid grid-cols-2 gap-3 mb-4">
@@ -35,10 +33,14 @@ export default function FourImageGroup({
                 {(image.header || image.subheader) && (
                   <div className="mb-3">
                     {image.header && (
-                      <p className="body-base-bold text-neutral-dark text-center">{image.header}</p>
+                      <p className="body-base-bold text-neutral-dark text-center">
+                        {image.header}
+                      </p>
                     )}
                     {image.subheader && (
-                      <p className="body-base text-neutral-dark text-center">{image.subheader}</p>
+                      <p className="body-base text-neutral-dark text-center">
+                        {image.subheader}
+                      </p>
                     )}
                   </div>
                 )}
@@ -56,11 +58,15 @@ export default function FourImageGroup({
             ))}
           </div>
           {/* Left bracket */}
-          <div className="w-full h-4 border-b-2 border-l-2 border-r-2 border-neutral-mid mb-4" />
+          <div className="w-full h-4 border-b-2 border-l-2 border-r-2 border-neutral-light mb-4" />
           <div className="flex flex-col gap-1">
             {captionGroups[0].map((caption, index) => (
-              <p key={index} className="body-base text-neutral-dark text-center">
-                {caption.label} <span className="body-base-bold">{caption.value}</span>
+              <p
+                key={index}
+                className="body-base text-neutral-dark text-center"
+              >
+                {caption.label}{" "}
+                <span className="body-base-bold">{caption.value}</span>
               </p>
             ))}
           </div>
@@ -74,10 +80,14 @@ export default function FourImageGroup({
                 {(image.header || image.subheader) && (
                   <div className="mb-3">
                     {image.header && (
-                      <p className="body-base-bold text-neutral-dark text-center">{image.header}</p>
+                      <p className="body-base-bold text-neutral-dark text-center">
+                        {image.header}
+                      </p>
                     )}
                     {image.subheader && (
-                      <p className="body-base text-neutral-dark text-center">{image.subheader}</p>
+                      <p className="body-base text-neutral-dark text-center">
+                        {image.subheader}
+                      </p>
                     )}
                   </div>
                 )}
@@ -95,16 +105,19 @@ export default function FourImageGroup({
             ))}
           </div>
           {/* Right bracket */}
-          <div className="w-full h-4 border-b-2 border-l-2 border-r-2 border-neutral-mid mb-4" />
+          <div className="w-full h-4 border-b-2 border-l-2 border-r-2 border-neutral-light mb-4" />
           <div className="flex flex-col gap-1">
             {captionGroups[1].map((caption, index) => (
-              <p key={index} className="body-base text-neutral-dark text-center">
-                {caption.label} <span className="body-base-bold">{caption.value}</span>
+              <p
+                key={index}
+                className="body-base text-neutral-dark text-center"
+              >
+                {caption.label}{" "}
+                <span className="body-base-bold">{caption.value}</span>
               </p>
             ))}
           </div>
         </div>
-
       </div>
     );
   }
@@ -118,10 +131,14 @@ export default function FourImageGroup({
             {(image.header || image.subheader) && (
               <div className="mb-3">
                 {image.header && (
-                  <p className="body-base-bold text-neutral-dark text-center">{image.header}</p>
+                  <p className="body-base-bold text-neutral-dark text-center">
+                    {image.header}
+                  </p>
                 )}
                 {image.subheader && (
-                  <p className="body-base text-neutral-dark text-center">{image.subheader}</p>
+                  <p className="body-base text-neutral-dark text-center">
+                    {image.subheader}
+                  </p>
                 )}
               </div>
             )}
@@ -141,11 +158,15 @@ export default function FourImageGroup({
 
       {captions && captions.length > 0 && (
         <>
-          <div className="w-full h-4 border-b-2 border-l-2 border-r-2 border-neutral-mid mb-4" />
+          <div className="w-full h-4 border-b-2 border-l-2 border-r-2 border-neutral-light mb-4" />
           <div className="flex flex-col gap-1">
             {captions.map((caption, index) => (
-              <p key={index} className="body-base text-neutral-dark text-center">
-                {caption.label} <span className="body-base-bold">{caption.value}</span>
+              <p
+                key={index}
+                className="body-base text-neutral-dark text-center"
+              >
+                {caption.label}{" "}
+                <span className="body-base-bold">{caption.value}</span>
               </p>
             ))}
           </div>

@@ -73,8 +73,16 @@ export default function PeacebuildingPage() {
             height={800}
             className="object-cover"
           />
-          <p className="body-base text-neutral-dark text-center">
-            Participants on the first day of the training. Photo credit: Yohan Perera
+          <p className="body-sm text-neutral-mid text-center">
+            Participants on the first day of the training. Photo credit:{" "}
+            <a
+              href="https://www.behance.net/yohanp"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-sand-mid transition-colors"
+            >
+              Yohan Perrera
+            </a>
           </p>
         </div>
 
@@ -101,17 +109,16 @@ export default function PeacebuildingPage() {
               height={800}
               className="object-cover"
             />
+            <p className="body-sm text-neutral-mid text-center">
+              After completing reflection questions for themselves, learners
+              have the option of watching how participants in the in-person
+              training responded to similar questions.
+            </p>
           </div>
         </div>
 
         <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
           <div className="body-base text-neutral-dark space-y-4">
-            <p>
-              In addition to providing opportunities for personal reflection
-              through free-response questions, I also embedded videos, where
-              appropriate, of how participants in the in-person workshop
-              responded to similar questions.
-            </p>
             <p>
               In order to teach learners in an online context the concept of
               actors mapping, I designed an exercise in which users learn about
@@ -132,6 +139,10 @@ export default function PeacebuildingPage() {
               height={800}
               className="object-cover"
             />
+            <p className="body-sm text-neutral-mid text-center">
+              An interactive map I designed to visualize various actors in a
+              conflict and their relationships to one another.
+            </p>
           </div>
         </div>
 

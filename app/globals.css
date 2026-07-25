@@ -27,7 +27,8 @@ html {
   --color-sand-mid: #d2b48c;
   --color-sand-light: #f5ebdd;
   --color-neutral-dark: #2a2d31;
-  --color-neutral-mid: #b0b7bd;
+  --color-neutral-light: #b0b7bd;
+  --color-neutral-mid: #636c72;
   --color-neutral-balanced-light: #f9faf9;
   --color-neutral-cool-light: #fafcfd;
   --color-neutral-warm-light: #fcfaf7;
@@ -55,26 +56,27 @@ html {
 
 @theme {
   /* Colors */
-  --color-forest-dark: #1C4F20;
-  --color-forest-mid: #237D32;
-  --color-forest-light: #C1EAC6;
-  --color-mist-dark: #324A63;
-  --color-mist-mid: #607A93;
-  --color-mist-light: #DCE8F3;
-  --color-ocean-dark: #00505E;
-  --color-ocean-mid: #007C91;
-  --color-ocean-light: #B2E2E5;
-  --color-purple-dark: #3A1F4E;
-  --color-purple-mid: #6F4C7B;
-  --color-purple-light: #D8CFE8;
-  --color-sand-dark: #A8906C;
-  --color-sand-mid: #D2B48C;
-  --color-sand-light: #F5EBDD;
-  --color-neutral-dark: #2A2D31;
-  --color-neutral-mid: #B0B7BD;
-  --color-neutral-balanced-light: #F9FAF9;
-  --color-neutral-cool-light: #FAFCFD;
-  --color-neutral-warm-light: #FCFAF7;
+  --color-forest-dark: #1c4f20;
+  --color-forest-mid: #237d32;
+  --color-forest-light: #c1eac6;
+  --color-mist-dark: #324a63;
+  --color-mist-mid: #607a93;
+  --color-mist-light: #dce8f3;
+  --color-ocean-dark: #00505e;
+  --color-ocean-mid: #007c91;
+  --color-ocean-light: #b2e2e5;
+  --color-purple-dark: #3a1f4e;
+  --color-purple-mid: #6f4c7b;
+  --color-purple-light: #d8cfe8;
+  --color-sand-dark: #a8906c;
+  --color-sand-mid: #d2b48c;
+  --color-sand-light: #f5ebdd;
+  --color-neutral-dark: #2a2d31;
+  --color-neutral-light: #b0b7bd;
+  --color-neutral-mid: #636c72;
+  --color-neutral-balanced-light: #f9faf9;
+  --color-neutral-cool-light: #fafcfd;
+  --color-neutral-warm-light: #fcfaf7;
   --width-card: 784px;
 }
 
@@ -103,7 +105,7 @@ body {
 
 .h1,
 h1 {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-size: 5rem;
   line-height: 7.5rem;
   font-weight: 400;
@@ -111,7 +113,7 @@ h1 {
 
 .h1-bold,
 h1.bold {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-size: 5rem;
   line-height: 7.5rem;
   font-weight: 700;
@@ -119,7 +121,7 @@ h1.bold {
 
 .h1-italic,
 h1.italic {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-size: 5rem;
   line-height: 7.5rem;
   font-style: italic;
@@ -127,7 +129,7 @@ h1.italic {
 
 .h2,
 h2 {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-size: 3.125rem;
   line-height: 4.6875rem;
   font-weight: 400;
@@ -135,7 +137,7 @@ h2 {
 
 .h2-bold,
 h2.bold {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-size: 3.125rem;
   line-height: 4.6875rem;
   font-weight: 700;
@@ -143,7 +145,7 @@ h2.bold {
 
 .h2-italic,
 h2.italic {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-size: 3.125rem;
   line-height: 4.6875rem;
   font-style: italic;
@@ -151,7 +153,7 @@ h2.italic {
 
 .h3,
 h3 {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-size: 2rem;
   line-height: 3rem;
   font-weight: 300;
@@ -159,7 +161,7 @@ h3 {
 
 .h3-bold,
 h3.bold {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-size: 2rem;
   line-height: 3rem;
   font-weight: 700;
@@ -167,7 +169,7 @@ h3.bold {
 
 .h3-italic,
 h3.italic {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-size: 2rem;
   line-height: 3rem;
   font-style: italic;
@@ -175,7 +177,7 @@ h3.italic {
 
 .h4,
 h4 {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-size: 1.3125rem;
   line-height: 2.25rem;
   font-weight: 300;
@@ -183,7 +185,7 @@ h4 {
 
 .h4-bold,
 h4.bold {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-size: 1.3125rem;
   line-height: 2.25rem;
   font-weight: 700;
@@ -191,7 +193,7 @@ h4.bold {
 
 .h5,
 h5 {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-size: 1rem;
   /* 16px — reverted back to smaller */
   line-height: 1.5rem;
@@ -200,7 +202,7 @@ h5 {
 
 .h5-bold,
 h5.bold {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 700;
@@ -208,14 +210,14 @@ h5.bold {
 
 .h5-italic,
 h5.italic {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   font-style: italic;
 }
 
 .h5-extrabold {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 800;
@@ -226,84 +228,84 @@ h5.italic {
 /* ======================== */
 
 .body-xs {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 0.625rem;
   line-height: 0.75rem;
   font-weight: 400;
 }
 
 .body-xs-bold {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 0.625rem;
   line-height: 0.75rem;
   font-weight: 600;
 }
 
 .body-sm {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 1rem;
   line-height: 1.75rem;
   font-weight: 400;
 }
 
 .body-sm-bold {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 1rem;
   line-height: 1.75rem;
   font-weight: 600;
 }
 
 .body-sm-italic {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 1rem;
   line-height: 1.75rem;
   font-style: italic;
 }
 
 .body-base {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
   line-height: 1.75;
   font-weight: 400;
 }
 
 .body-base-bold {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
   line-height: 1.75;
   font-weight: 600;
 }
 
 .body-base-italic {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
   line-height: 1.75;
   font-style: italic;
 }
 
 .body-lg {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 1.25rem;
   line-height: 2rem;
   font-weight: 400;
 }
 
 .body-lg-bold {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 1.25rem;
   line-height: 1.875rem;
   font-weight: 600;
 }
 
 .body-lg-italic {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 1.25rem;
   line-height: 1.875rem;
   font-style: italic;
 }
 
 .body-lg-medium-italic {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 1.25rem;
   line-height: 1.875rem;
   font-weight: 500;
@@ -315,21 +317,21 @@ h5.italic {
 /* ======================== */
 
 .resume-body-xs {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 0.625rem;
   line-height: 0.75rem;
   font-weight: 300;
 }
 
 .resume-body-xs-regular {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 0.625rem;
   line-height: 0.75rem;
   font-weight: 400;
 }
 
 .resume-body-xs-semibold {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 0.625rem;
   line-height: 0.75rem;
   font-weight: 600;
