@@ -22,7 +22,7 @@ export default function PeacebuildingPage() {
         meta={{
           role: "Director of Learning Experience Design",
           team: "Myself, 1 graphic designer, and 1 illustrator",
-          // reach: "Global humanitarian practitioners",
+          reach: "Up to 1.3 million participants across 34 countries",
           // timeline: "6 months",
         }}
       />
@@ -57,10 +57,10 @@ export default function PeacebuildingPage() {
           <h2 className="h3-bold text-sand-dark mb-6">Approach</h2>
           <div className="body-base text-neutral-dark space-y-4">
             <p>
-              I partnered with subject matter experts and traveled to Madagascar
-              to observe and document the in-person training, identifying which
-              aspects of the experience were essential to learning outcomes
-              versus those that could be redesigned for an online environment.
+              I traveled to Madagascar to film parts of the in-person workshop,
+              understand the facilitation methods and activities that made the
+              experience effective, and identify opportunities to translate
+              those elements into an engaging online experience.
             </p>
           </div>
         </section>
@@ -90,16 +90,44 @@ export default function PeacebuildingPage() {
           <div className="body-base text-neutral-dark space-y-4">
             <p>
               Rather than replicating classroom activities verbatim, I
-              reimagined them as interactive learning experiences that
-              encouraged active participation, reflection, and application. For
-              example, in order to facilitate personal reflection in an online
+              reimagined them as interactive learning experiences that followed
+              the following principles.
+            </p>
+            <ul className="list-disc list-outside pl-6 space-y-2 body-base text-neutral-dark">
+              <li>
+                <b>Support reflection.</b> Reflection activities accumulated
+                throughout the course, helping learners connect new concepts to
+                their own professional experiences.
+              </li>
+              <li>
+                <b>Localize through authentic examples.</b>
+                Real peacebuilding case studies grounded abstract frameworks in
+                practical application.
+              </li>
+              <li>
+                <b>Preserve social learning.</b> Videos from the in-person
+                workshop exposed online learners to diverse interpretations and
+                approaches even in an asynchronous environment.
+              </li>
+              <li>
+                <b>Design for active learning.</b> Learners applied concepts
+                through interactive scenarios rather than passively consuming
+                content.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
+          <h3 className="h4-bold text-sand-dark mb-4">Supporting reflection</h3>
+          <div className="body-base text-neutral-dark">
+            <p>
+              In order to facilitate personal reflection in an online
               environment, I created a digital reflection notebook that captured
               learner responses throughout the course and generated a
               personalized summary learners could download.
             </p>
           </div>
         </section>
-
         <div className="flex flex-col gap-4 pb-12 md:pb-24 lg:pb-24 max-w-[980px] mx-auto">
           <div className="relative w-full h-full min-h-[338px]">
             <Image
@@ -109,16 +137,19 @@ export default function PeacebuildingPage() {
               height={800}
               className="object-cover"
             />
-            <p className="body-sm text-neutral-mid text-center">
-              After completing reflection questions for themselves, learners
-              have the option of watching how participants in the in-person
-              training responded to similar questions.
-            </p>
           </div>
+          <p className="body-sm text-neutral-mid text-center max-w-[720px] mx-auto">
+            After completing reflection questions for themselves, learners have
+            the option of watching how participants in the in-person training
+            responded to similar questions.
+          </p>
         </div>
 
         <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-          <div className="body-base text-neutral-dark space-y-4">
+          <h3 className="h4-bold text-sand-dark mb-4">
+            Localizing through authentic examples
+          </h3>
+          <div className="body-base text-neutral-dark">
             <p>
               In order to teach learners in an online context the concept of
               actors mapping, I designed an exercise in which users learn about
@@ -139,22 +170,25 @@ export default function PeacebuildingPage() {
               height={800}
               className="object-cover"
             />
-            <p className="body-sm text-neutral-mid text-center">
-              An interactive map I designed to visualize various actors in a
-              conflict and their relationships to one another.
-            </p>
           </div>
+          <p className="body-sm text-neutral-mid text-center max-w-[720px] mx-auto">
+            An interactive map I designed to visualize various actors in a
+            conflict and their relationships to one another.
+          </p>
         </div>
 
         <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-          <div className="body-base text-neutral-dark space-y-4">
+          <h3 className="h4-bold text-sand-dark mb-4">
+            Preserving social learning
+          </h3>
+          <div className="body-base text-neutral-dark">
             <p>
               To demonstrate learning of how the Kenya case study can be
               understood through the conflict tree model, users drag and drop
-              aspects onto the appropriate part of the tree—the branches, trunk,
-              or roots—where the branches represent effects of the conflict, the
-              trunk represents the core issues, and the roots represent
-              underlying causes.
+              aspects of the case study onto the appropriate part of the tree —
+              the branches, trunk, or roots — where the branches represent
+              effects of the conflict, the trunk represents the core issues, and
+              the roots represent underlying causes.
             </p>
             <p>
               I also embedded a video of how participants in the in-person
@@ -165,26 +199,32 @@ export default function PeacebuildingPage() {
           </div>
         </section>
 
-        <div className="flex flex-col gap-4 pb-12 md:pb-24 lg:pb-24 max-w-[980px] mx-auto">
+        <div className="flex flex-col gap-8 pb-0 max-w-[980px] mx-auto">
           <TwoImageGroup
             borderless
             images={[
               {
                 src: "/images/peacebuilding/crs-tree-complete.png",
                 alt: "A complete conflict tree model showing the branches, trunk, and roots used to analyze a peacebuilding case study.",
+                caption:
+                  "A drag and drop conflict tree exercise used to analyze a case study from Kenya.",
                 fit: "contain",
               },
               {
                 src: "/images/peacebuilding/crs-ipa-conflict-tree.png",
                 alt: "A second conflict tree diagram showing how the model can be applied to a different case study example.",
+                caption:
+                  "Learners may watch a video of one group's use of the conflict tree model at the in-person workshop.",
                 fit: "contain",
               },
             ]}
           />
         </div>
-
         <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-          <div className="body-base text-neutral-dark space-y-4">
+          <h3 className="h4-bold text-sand-dark mb-4">
+            Designing for active learning
+          </h3>
+          <div className="body-base text-neutral-dark">
             <p>
               While several of the exercises in the online course derived from
               the in-person workshop, some experiences were unique to the online
@@ -208,6 +248,10 @@ export default function PeacebuildingPage() {
             height={800}
             className="object-cover"
           />
+          <p className="body-sm text-neutral-mid text-center">
+            To reflect on their own conflict styles, learners complete and
+            interactive quiz.
+          </p>
         </div>
 
         <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
@@ -225,7 +269,7 @@ export default function PeacebuildingPage() {
           </div>
         </section>
 
-        <div className="flex flex-col gap-8 pb-24 max-w-[980px] mx-auto">
+        <div className="flex flex-col gap-4 pb-12 md:pb-24 lg:pb-24 max-w-[980px] mx-auto">
           <div className="relative w-full h-full min-h-[338px]">
             <Image
               src="/images/peacebuilding/crs-maze-info.png"
@@ -235,6 +279,9 @@ export default function PeacebuildingPage() {
               className="object-cover"
             />
           </div>
+          <p className="body-sm text-neutral-mid text-center">
+            Learners interact with a virtual maze to written and audio content.
+          </p>
         </div>
 
         <section

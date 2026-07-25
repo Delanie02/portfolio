@@ -6,6 +6,7 @@ interface TwoImageGroupProps {
     alt: string;
     header?: string; // 👈 now optional
     subheader?: string; // 👈 now optional
+    caption?: string; // 👈 optional caption below the image
     fit?: "cover" | "contain";
   }[];
   captions?: { label: string; value: string }[];
@@ -25,7 +26,7 @@ export default function TwoImageGroup({
           <div key={index} className="w-full md:w-1/2 flex flex-col">
             {/* Only renders if at least one exists */}
             {(image.header || image.subheader) && (
-              <div className="mb-3">
+              <div>
                 {image.header && (
                   <p className="body-base-bold text-neutral-dark text-center">
                     {image.header}
@@ -55,6 +56,12 @@ export default function TwoImageGroup({
                 />
               </div>
             </div>
+
+            {image.caption && (
+              <p className="body-sm text-neutral-mid text-center">
+                {image.caption}
+              </p>
+            )}
           </div>
         ))}
       </div>
