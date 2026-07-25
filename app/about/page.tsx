@@ -106,7 +106,7 @@ export default function About() {
                       className="underline hover:text-purple-mid transition-colors"
                     >
                       mobile applications
-                    </Link>{" "}
+                    </Link>
                     , and in-vehicle systems, helping align customer and
                     business needs across a highly complex ecosystem.
                   </p>
@@ -129,7 +129,7 @@ export default function About() {
                       className="underline hover:text-purple-mid transition-colors"
                     >
                       FiscalNote
-                    </Link>{" "}
+                    </Link>
                     , a B2B policy tracking SaaS startup, I worked
                     cross-functionally with product, design, and data science to
                     lead a strategic initiative to envision a net new unified
