@@ -18,6 +18,7 @@ const projects = [
     image: "/images/rapid-prototype/cover.png",
     href: "/projects/rapid-prototype-testing",
   },
+
   {
     theme: "ocean" as const,
     title: "Ford BlueCruise",
@@ -41,6 +42,14 @@ const projects = [
       "I designed a global online learning experience that transformed an instructor-led peacebuilding workshop into an interactive, self-paced course for humanitarian practitioners.",
     image: "/images/peacebuilding/cover.png",
     href: "/projects/peacebuilding-101",
+  },
+  {
+    theme: "mist" as const,
+    title: "Introduction to Excel for Data Visualization",
+    description:
+      "I built and optimized a scalable online learning product that combined interactive experiences, learner analytics, and continuous iteration to improve engagement and outcomes.",
+    image: "/images/excel/cover.png",
+    href: "/projects/introduction-to-excel-for-data-visualization",
   },
 ];
 
