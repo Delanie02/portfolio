@@ -107,9 +107,9 @@ export default function PeacebuildingPage() {
                 their own professional experiences.
               </li>
               <li>
-                <b>Localize through authentic examples.</b>
-                Real peacebuilding case studies grounded abstract frameworks in
-                practical application.
+                <b>Localize through authentic examples.</b> Real peacebuilding
+                case studies grounded abstract frameworks in practical
+                application.
               </li>
               <li>
                 <b>Preserve social learning.</b> Videos from the in-person
@@ -256,7 +256,7 @@ export default function PeacebuildingPage() {
             className="object-cover"
           />
           <p className="body-sm text-neutral-mid text-center">
-            To reflect on their own conflict styles, learners complete and
+            To reflect on their own conflict styles, learners complete an
             interactive quiz.
           </p>
         </div>
@@ -287,7 +287,8 @@ export default function PeacebuildingPage() {
             />
           </div>
           <p className="body-sm text-neutral-mid text-center">
-            Learners interact with a virtual maze to written and audio content.
+            Learners interact with a virtual maze to reveal written and audio
+            content.
           </p>
         </div>
 
@@ -299,20 +300,10 @@ export default function PeacebuildingPage() {
           <div className="body-base text-neutral-dark space-y-4">
             <p>
               The project transformed a location-bound annual workshop into a
-              scalable digital learning experience that could reach
-              practitioners globally.
-            </p>
-            <p>
-              Beyond expanding access, the experience preserved many of the
-              instructional qualities that made the in-person workshop
-              successful by emphasizing active participation, reflection,
-              authentic case studies, and continuous feedback.
-            </p>
-            <p>
-              The project also reinforced an approach to learning design that
-              continues to influence my work today. Effective digital learning
-              is created by designing for engagement and human understanding,
-              not by simply translating classroom content onto a screen.
+              scalable digital learning experience that could reach the client's 1.3+ million participants across 34 countries. Beyond expanding access, the experience
+              preserved many of the instructional qualities that made the
+              in-person workshop successful by emphasizing active participation,
+              reflection, authentic case studies, and social learning.
             </p>
           </div>
         </section>
