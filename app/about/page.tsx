@@ -34,91 +34,76 @@ export default function About() {
               I build healthy, high-performing design organizations.
             </h3>
             <p className="body-base text-neutral-dark">
-              Over the last 12 years I've led research and design teams across
-              startups and Fortune 500 companies alike. My strength is helping
-              teams succeed in complex environments by creating clarity,
-              building trust, and scaling effective ways of working.
+              Over the last 12 years I've led research and design teams across startups and Fortune
+              500 companies alike. My strength is helping teams succeed in complex environments by
+              creating clarity, building trust, and scaling effective ways of working.
             </p>
           </section>
 
           {/* How I got into UX */}
           <section className="mb-12 md:mb-12 lg:mb-12">
-            <h5 className="h4-bold text-purple-mid mb-6">
-              What teams hire me to do
-            </h5>
-            <p className="body-base text-neutral-dark">
-              <ul className="list-disc list-outside pl-6 space-y-2 body-base text-neutral-dark">
+            <h5 className="h4-bold text-purple-mid mb-6">What teams hire me to do</h5>
+            <div className="body-base text-neutral-dark">
+              <ul className="body-base text-neutral-dark list-disc list-outside pl-6 space-y-2 body-base text-neutral-dark">
                 <li className="mb-4">
-                  <p className="body-base-bold mb-2">
-                    Navigate ambiguous environments
-                  </p>
+                  <p className="body-base-bold mb-2">Navigate ambiguous environments</p>
                   <p>
-                    I help teams define priorities, align stakeholders, and make
-                    progress when requirements, ownership, or direction are
-                    unclear.
+                    I help teams define priorities, align stakeholders, and make progress when
+                    requirements, ownership, or direction are unclear.
                   </p>
                 </li>
                 <li className="mb-4">
-                  <p className="body-base-bold mb-2">
-                    Scale design organizations
-                  </p>
+                  <p className="body-base-bold mb-2">Scale design organizations</p>
                   <p>
-                    I establish processes, feedback loops, and operating models
-                    that help teams grow without sacrificing quality.
+                    I establish processes, feedback loops, and operating models that help teams grow
+                    without sacrificing quality.
                   </p>
                 </li>
                 <li className="mb-4">
-                  <p className="body-base-bold mb-2">
-                    Develop designers into leaders
-                  </p>
+                  <p className="body-base-bold mb-2">Develop designers into leaders</p>
                   <p>
-                    I enjoy coaching designers through career growth, increasing
-                    their influence, and helping them navigate complex
-                    organizations.
+                    I enjoy coaching designers through career growth, increasing their influence,
+                    and helping them navigate complex organizations.
                   </p>
                 </li>
                 <li className="mb-4">
-                  <p className="body-base-bold mb-2">
-                    Advocate for users at the executive level
-                  </p>
+                  <p className="body-base-bold mb-2">Advocate for users at the executive level</p>
                   <p>
-                    I have spent much of my career helping organizations balance
-                    business goals with customer needs, often in environments
-                    where user-centered thinking was not yet mature.
+                    I have spent much of my career helping organizations balance business goals with
+                    customer needs, often in environments where user-centered thinking was not yet
+                    mature.
                   </p>
                 </li>
               </ul>
-            </p>
+            </div>
           </section>
 
           {/* Career Highlights */}
           <section className="mb-12 md:mb-12 lg:mb-12">
             <h5 className="h4-bold text-purple-mid mb-6">Career highlights</h5>
-            <p className="body-base text-neutral-dark">
+            <div className="body-base text-neutral-dark">
               <ul className="list-disc list-outside pl-6 space-y-2 body-base text-neutral-dark">
                 <li className="mb-4">
                   <p>
-                    At Ford Motor Company, I lead design efforts across
-                    enterprise-scale payment experiences spanning Ford.com,
-                    FordPro.com,{" "}
+                    At Ford Motor Company, I lead design efforts across enterprise-scale payment
+                    experiences spanning Ford.com, FordPro.com,{" "}
                     <Link
                       href="/projects/ford-bluecruise"
                       className="underline hover:text-purple-mid transition-colors"
                     >
                       mobile applications
                     </Link>
-                    , and in-vehicle systems, helping align customer and
-                    business needs across a highly complex ecosystem.
+                    , and in-vehicle systems, helping align customer and business needs across a
+                    highly complex ecosystem.
                   </p>
                 </li>
                 <li className="mb-4">
                   <p>
-                    At Gartner, I scaled a UX team from three to six researchers
-                    and designers to support 18 product teams across three
-                    websites with over nine million active monthly users. My
-                    team's insights drove measurable business outcomes,
-                    including a 20% increase in form submissions, a 41% increase
-                    in chat, and a 76% increase in feature engagement.
+                    At Gartner, I scaled a UX team from three to six researchers and designers to
+                    support 18 product teams across three websites with over nine million active
+                    monthly users. My team's insights drove measurable business outcomes, including
+                    a 20% increase in form submissions, a 41% increase in chat, and a 76% increase
+                    in feature engagement.
                   </p>
                 </li>
                 <li className="mb-4">
@@ -130,92 +115,75 @@ export default function About() {
                     >
                       FiscalNote
                     </Link>
-                    , a B2B policy tracking SaaS startup, I worked
-                    cross-functionally with product, design, and data science to
-                    lead a strategic initiative to envision a net new unified
-                    product.
+                    , a B2B policy tracking SaaS startup, I worked cross-functionally with product,
+                    design, and data science to lead a strategic initiative to envision a net new
+                    unified product.
                   </p>
                 </li>
               </ul>
-            </p>
+            </div>
           </section>
 
           {/* Where I'm at now */}
           <section className="mb-12 md:mb-12 lg:mb-12">
-            <h5 className="h4-bold text-purple-mid mb-6">
-              Leadership philosophy
-            </h5>
+            <h5 className="h4-bold text-purple-mid mb-6">Leadership philosophy</h5>
             <div className="space-y-4 body-base text-neutral-dark">
               <p>
-                I believe great design starts with trust. Teams produce their
-                best work when they feel safe asking questions, sharing
-                unfinished ideas, and giving candid feedback. As a leader, I
-                focus on creating psychological safety, fostering healthy
-                debate, and ensuring designers have the context, visibility, and
-                support they need to succeed.
+                I believe great design starts with trust. Teams produce their best work when they
+                feel safe asking questions, sharing unfinished ideas, and giving candid feedback. As
+                a leader, I focus on creating psychological safety, fostering healthy debate, and
+                ensuring designers have the context, visibility, and support they need to succeed.
               </p>
               <p>
-                Beyond culture, I believe evidence should drive decisions.
-                Having led both design and research teams, I bring a strong
-                commitment to incorporating user feedback into product
-                development and{" "}
+                Beyond culture, I believe evidence should drive decisions. Having led both design
+                and research teams, I bring a strong commitment to incorporating user feedback into
+                product development and{" "}
                 <Link
                   href="/projects/rapid-prototype-testing"
                   className="underline hover:text-purple-mid transition-colors"
                 >
-                  scaling systems that help teams learn from customers
-                  continuously.
+                  scaling systems that help teams learn from customers continuously.
                 </Link>{" "}
               </p>
               <p>
-                Throughout the design and product development lifecycle, I help
-                teams understand not only what we're trying to achieve, but why
-                it matters. I believe in setting clear expectations, providing
-                candid feedback, and giving people the opportunities they need
-                to grow into greater ownership and influence.
+                Throughout the design and product development lifecycle, I help teams understand not
+                only what we're trying to achieve, but why it matters. I believe in setting clear
+                expectations, providing candid feedback, and giving people the opportunities they
+                need to grow into greater ownership and influence.
               </p>
             </div>
           </section>
 
           {/* What keeps me going */}
           <section className="mb-12 md:mb-12 lg:mb-12">
-            <h5 className="h4-bold text-purple-mid mb-6">
-              What keeps me going
-            </h5>
+            <h5 className="h4-bold text-purple-mid mb-6">What keeps me going</h5>
             <div className="space-y-4">
               <p className="body-base text-neutral-dark">
-                In every organization and industry I've worked in, I've taken
-                pride in building environments where my team feels supported,
-                challenged, and fulfilled in their work. As for me, my most
-                fulfilling roles have been ones where I am helping teams
-                navigate competing business and user needs. Throughout my
-                career, I've worked in complex organizations where customer
-                needs, technical constraints, and business goals often pull in
-                different directions. I enjoy helping teams find pragmatic
-                solutions that move the business forward without losing sight of
-                the user.
+                In every organization and industry I've worked in, I've taken pride in building
+                environments where my team feels supported, challenged, and fulfilled in their work.
+                As for me, my most fulfilling roles have been ones where I am helping teams navigate
+                competing business and user needs. Throughout my career, I've worked in complex
+                organizations where customer needs, technical constraints, and business goals often
+                pull in different directions. I enjoy helping teams find pragmatic solutions that
+                move the business forward without losing sight of the user.
               </p>
               <p className="body-base text-neutral-dark">
-                I am also driven by the desire to learn new things. I consider
-                myself lucky to be in a field where I am challenged to learn how
-                different businesses operate, how to best design for users
-                ranging from Wall Street traders to small business owners, and
-                how our ever evolving tool belt as UX practitioners can
-                transform our craft. Most recently, I taught myself how to build
-                this portfolio using Github Copilot, Figma's MCP server, and
-                Claude.
+                I am also driven by the desire to learn new things. I consider myself lucky to be in
+                a field where I am challenged to learn how different businesses operate, how to best
+                design for users ranging from Wall Street traders to small business owners, and how
+                our ever evolving tool belt as UX practitioners can transform our craft. Most
+                recently, I taught myself how to build this portfolio using Github Copilot, Figma's
+                MCP server, and Claude.
               </p>
             </div>
           </section>
 
           {/* How Others Describe Me Section */}
           <section className="py-12 md:py-12 lg:py-12">
-            <h3 className="h3-bold text-purple-mid mb-6 md:mb-6 lg:mb-6">
-              How others describe me
-            </h3>
+            <h3 className="h3-bold text-purple-mid mb-6 md:mb-6 lg:mb-6">How others describe me</h3>
             <p className="body-base text-neutral-dark">
-              Below are some quotes I've gotten from performance reviews and
-              LinkedIn recommendations.
+              Below are some quotes I've gotten from performance reviews and LinkedIn
+              recommendations.
             </p>
           </section>
         </div>
@@ -224,9 +192,7 @@ export default function About() {
         <div className="space-y-8 md:space-y-12 lg:space-y-12">
           <div className="flex items-center gap-4 md:gap-6 lg:gap-6 mb-8 md:mb-8 lg:mb-8">
             <div className="flex-1 h-px bg-neutral-dark opacity-30" />
-            <span className="text-2xl md:text-3xl lg:text-3xl text-purple-dark">
-              ⁂
-            </span>
+            <span className="text-2xl md:text-3xl lg:text-3xl text-purple-dark">⁂</span>
             <div className="flex-1 h-px bg-neutral-dark opacity-30" />
           </div>
           <Quote
@@ -244,23 +210,19 @@ export default function About() {
 
           <div className="flex items-center gap-4 md:gap-6 lg:gap-6 mt-8 md:mt-8 lg:mt-8">
             <div className="flex-1 h-px bg-neutral-dark opacity-30" />
-            <span className="text-2xl md:text-3xl lg:text-3xl text-purple-dark">
-              ⁂
-            </span>
+            <span className="text-2xl md:text-3xl lg:text-3xl text-purple-dark">⁂</span>
             <div className="flex-1 h-px bg-neutral-dark opacity-30" />
           </div>
         </div>
 
         {/* Outside of Work Section */}
         <div className="py-12 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-          <h3 className="h3-bold text-purple-mid mb-6 md:mb-6 lg:mb-6">
-            Outside of work
-          </h3>
+          <h3 className="h3-bold text-purple-mid mb-6 md:mb-6 lg:mb-6">Outside of work</h3>
           <p className="body-base text-neutral-dark">
-            When I'm not designing, I enjoy spending time outside, cooking, and
-            catching up with friends. I also took up running after adopting a
-            high-energy border collie mix named Pepper, and have since finished
-            two marathons. She has turned out to be quite the personal trainer!
+            When I'm not designing, I enjoy spending time outside, cooking, and catching up with
+            friends. I also took up running after adopting a high-energy border collie mix named
+            Pepper, and have since finished two marathons. She has turned out to be quite the
+            personal trainer!
           </p>
         </div>
 
@@ -269,21 +231,21 @@ export default function About() {
           <div className="relative h-[300px] md:h-[280px] lg:h-[340px] rounded-lg overflow-hidden">
             <img
               src="/images/about/Pepper-crop-2.jpeg"
-              alt="Outside of work"
+              alt="Portrait of Pepper, the author’s energetic border collie, outdoors in a relaxed setting."
               className="w-full h-full object-cover"
             />
           </div>
           <div className="relative h-[300px] md:h-[280px] lg:h-[340px] rounded-lg overflow-hidden">
             <img
               src="/images/about/MCM-monument.jpeg"
-              alt="Outside of work"
+              alt="A photo of the author runnigng with the Washington Monument."
               className="w-full h-full object-cover"
             />
           </div>
           <div className="relative h-[300px] md:h-[280px] lg:h-[340px] rounded-lg overflow-hidden">
             <img
               src="/images/about/Pepper-pemi.jpeg"
-              alt="Outside of work"
+              alt="Pepper on a trail."
               className="w-full h-full object-cover"
             />
           </div>

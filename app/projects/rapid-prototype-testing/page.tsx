@@ -74,7 +74,7 @@ export default function RapidPrototypeTestingPage() {
           <div className="block md:hidden">
             <Image
               src="/images/rapid-prototype/3-steps-mobile.svg"
-              alt="Process diagram"
+              alt="Three-step process diagram showing a rapid testing approach that moves from quick research to learning and iteration."
               width={600}
               height={400}
             />
@@ -84,7 +84,7 @@ export default function RapidPrototypeTestingPage() {
           <div className="hidden md:block">
             <Image
               src="/images/rapid-prototype/3-steps.svg"
-              alt="Process diagram"
+              alt="Three-step process diagram showing a rapid testing approach that moves from quick research to learning and iteration."
               width={1200}
               height={600}
             />
@@ -151,7 +151,7 @@ export default function RapidPrototypeTestingPage() {
           <div className="block md:hidden">
             <Image
               src="/images/rapid-prototype/5-cycles-mobile.svg"
-              alt="Process diagram"
+              alt="Five-cycle research process diagram showing how rapid user testing feeds each next sprint of learning and iteration."
               width={600}
               height={400}
             />
@@ -161,7 +161,7 @@ export default function RapidPrototypeTestingPage() {
           <div className="hidden md:block">
             <Image
               src="/images/rapid-prototype/5-cycles.svg"
-              alt="Process diagram"
+              alt="Five-cycle research process diagram showing how rapid user testing feeds each next sprint of learning and iteration."
               width={1200}
               height={600}
             />

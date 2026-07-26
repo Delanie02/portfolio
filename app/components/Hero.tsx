@@ -108,30 +108,26 @@ export default function Hero({
           {meta && (
             <div className="flex flex-col gap-2 mt-2 sm:ps-24">
               {meta.role && (
-                <div className="flex items-baseline justify-center sm:justify-end whitespace-nowrap">
+                <div className="flex flex-wrap items-baseline justify-center gap-x-1 sm:justify-end">
                   <span className={`h5-bold ${textDark}`}>Role:</span>
-                  <span className="mx-1" />
                   <span className={`h5 ${textDark}`}>{meta.role}</span>
                 </div>
               )}
               {meta.team && (
-                <div className="flex items-baseline justify-center sm:justify-end whitespace-nowrap">
+                <div className="flex flex-wrap items-baseline justify-center gap-x-1 sm:justify-end">
                   <span className={`h5-bold ${textDark}`}>Team:</span>
-                  <span className="mx-1" />
                   <span className={`h5 ${textDark}`}>{meta.team}</span>
                 </div>
               )}
               {meta.reach && (
-                <div className="flex items-baseline justify-center sm:justify-end whitespace-nowrap">
+                <div className="flex flex-wrap items-baseline justify-center gap-x-1 sm:justify-end">
                   <span className={`h5-bold ${textDark}`}>Reach:</span>
-                  <span className="mx-1" />
                   <span className={`h5 ${textDark}`}>{meta.reach}</span>
                 </div>
               )}
               {meta.timeline && (
-                <div className="flex items-baseline justify-center sm:justify-end whitespace-nowrap">
+                <div className="flex flex-wrap items-baseline justify-center gap-x-1 sm:justify-end">
                   <span className={`h5-bold ${textDark}`}>Timeline:</span>
-                  <span className="mx-1" />
                   <span className={`h5 ${textDark}`}>{meta.timeline}</span>
                 </div>
               )}

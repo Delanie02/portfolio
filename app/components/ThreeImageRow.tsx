@@ -31,7 +31,7 @@ export default function ThreeImageRow({ items }: ThreeImageRowProps) {
               alt={item.alt}
               width={800}
               height={600}
-              className="w-full h-autoobject-cover"
+              className="w-full h-auto object-cover"
             />
           </div>
 
