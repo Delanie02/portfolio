@@ -58,7 +58,7 @@ export default function TwoImageGroup({
             </div>
 
             {image.caption && (
-              <p className="body-sm text-neutral-mid text-center">
+              <p className="body-sm text-neutral-mid text-center mt-3">
                 {image.caption}
               </p>
             )}

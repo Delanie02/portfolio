@@ -51,6 +51,14 @@ const projects = [
     image: "/images/excel/cover.png",
     href: "/projects/introduction-to-excel-for-data-visualization",
   },
+  {
+    theme: "ocean" as const,
+    title: "Compact of Mayors",
+    description:
+      "I designed a digital learning experience that transformed complex climate action requirements into an engaging journey for city leaders around the world.",
+    image: "/images/compact-of-mayors/cover.png",
+    href: "/projects/compact-of-mayors",
+  },
 ];
 
 export default function Home() {
@@ -63,16 +71,14 @@ export default function Home() {
         <div className="py-16">
           {/* Heading */}
           <h2 className="text-neutral-dark mb-6">
-            Hi. I&apos;m{" "}
-            <span className="h2-bold text-purple-mid">Delanie Heck.</span>
+            Hi. I&apos;m <span className="h2-bold text-purple-mid">Delanie Heck.</span>
           </h2>
 
           {/* Bio */}
           <p className="h4 md:h3 text-neutral-dark mb-12">
-            I am a product design leader with 12+ years of experience leading
-            high-performing teams and delivering measurable business impact
-            across platforms. I am at my best when I am coaching designers and
-            creating intuitive experiences for complex systems.
+            I am a product design leader with 12+ years of experience leading high-performing teams
+            and delivering measurable business impact across platforms. I am at my best when I am
+            coaching designers and creating intuitive experiences for complex systems.
           </p>
 
           {/* Project Cards */}

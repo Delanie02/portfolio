@@ -159,7 +159,7 @@ export default function ExcelPage() {
             />
           </div>
           <p className="body-sm text-neutral-mid text-center max-w-[720px] mx-auto">
-            This walkthrough demonstrates the interactive exercises designed to help learners apply
+            This walkthrough demonstrates the interactive exercises I designed to help learners apply
             Excel concepts through practice and feedback.
           </p>
         </div>

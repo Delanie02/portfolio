@@ -346,14 +346,14 @@ export default function RapidPrototypeTestingPage() {
                 alt: "...",
                 header: "Shortlist Rapid Test 2",
                 subheader:
-                  "How useful is seeing other products outside of the Shortlist grid?",
+                  "How useful is seeing more products?",
               },
               {
                 src: "/images/rapid-prototype/Shortlist Rapid Test 3.png",
                 alt: "...",
                 header: "Shortlist Rapid Test 3",
                 subheader:
-                  "How useful are updated product cards alongside the Shortlist grid?",
+                  "How useful are expanded product cards?",
               },
             ]}
           />
