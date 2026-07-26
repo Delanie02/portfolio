@@ -106,27 +106,27 @@ export default function Hero({
 
           {/* Project Metadata — only renders if meta is passed */}
           {meta && (
-            <div className="flex flex-col gap-2 mt-2 sm:ps-24">
+            <div className="flex flex-col items-center gap-2 mt-2 w-full text-center sm:items-end sm:ps-24 sm:text-right">
               {meta.role && (
-                <div className="flex flex-wrap items-baseline justify-center gap-x-1 sm:justify-end">
+                <div className="flex flex-wrap items-baseline justify-center gap-x-1 w-full text-center sm:justify-end sm:text-right">
                   <span className={`h5-bold ${textDark}`}>Role:</span>
                   <span className={`h5 ${textDark}`}>{meta.role}</span>
                 </div>
               )}
               {meta.team && (
-                <div className="flex flex-wrap items-baseline justify-center gap-x-1 sm:justify-end">
+                <div className="flex flex-wrap items-baseline justify-center gap-x-1 w-full text-center sm:justify-end sm:text-right">
                   <span className={`h5-bold ${textDark}`}>Team:</span>
                   <span className={`h5 ${textDark}`}>{meta.team}</span>
                 </div>
               )}
               {meta.reach && (
-                <div className="flex flex-wrap items-baseline justify-center gap-x-1 sm:justify-end">
+                <div className="flex flex-wrap items-baseline justify-center gap-x-1 w-full text-center sm:justify-end sm:text-right">
                   <span className={`h5-bold ${textDark}`}>Reach:</span>
                   <span className={`h5 ${textDark}`}>{meta.reach}</span>
                 </div>
               )}
               {meta.timeline && (
-                <div className="flex flex-wrap items-baseline justify-center gap-x-1 sm:justify-end">
+                <div className="flex flex-wrap items-baseline justify-center gap-x-1 w-full text-center sm:justify-end sm:text-right">
                   <span className={`h5-bold ${textDark}`}>Timeline:</span>
                   <span className={`h5 ${textDark}`}>{meta.timeline}</span>
                 </div>
