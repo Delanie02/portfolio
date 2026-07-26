@@ -159,8 +159,8 @@ export default function ExcelPage() {
             />
           </div>
           <p className="body-sm text-neutral-mid text-center max-w-[720px] mx-auto">
-            This walkthrough demonstrates the interactive exercises I designed to help learners apply
-            Excel concepts through practice and feedback.
+            This walkthrough demonstrates the interactive exercises I designed to help learners
+            apply Excel concepts through practice and feedback.
           </p>
         </div>
 
@@ -212,7 +212,7 @@ export default function ExcelPage() {
           <div className="body-base text-neutral-dark space-y-4">
             <p>
               Within the first month, more than 200 learners enrolled in the course, growing to more
-              than 600 learners by December 2016. Rather than treating launch as the end of the
+              than 600 learners within six months. Rather than treating launch as the end of the
               design process, this course established a continuous improvement model by combining
               quantitative learner behavior data with qualitative feedback to deliver the best
               possible learning experience for students.
