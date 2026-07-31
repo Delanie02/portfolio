@@ -23,7 +23,7 @@ export default function Quote({
   const parts = text.split(/\*\*(.*?)\*\*/);
 
   return (
-    <div className="w-full px-4">
+    <div className="motion-scroll-reveal w-full px-4">
       <div className={`h4 ${textColor} text-center leading-relaxed`}>
         {parts.map((part, index) => {
           if (index % 2 === 1) {

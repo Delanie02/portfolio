@@ -94,10 +94,121 @@ html {
 }
 
 body {
-  background: #f9faf9;
+  background: #f7f7f4;
   color: var(--foreground);
   margin: 0;
   padding: 0;
+}
+
+/* ======================== */
+/* MOTION SYSTEM */
+/* ======================== */
+
+:root {
+  --motion-duration-fast: 180ms;
+  --motion-duration-base: 240ms;
+  --motion-duration-slow: 420ms;
+  --motion-ease-standard: cubic-bezier(0.2, 0.75, 0.2, 1);
+  --motion-ease-emphasized: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fade-rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-soft {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.motion-nav-shell {
+  animation: fade-in-soft var(--motion-duration-base) var(--motion-ease-standard) both;
+}
+
+.motion-nav-link {
+  transition:
+    opacity var(--motion-duration-fast) var(--motion-ease-standard),
+    color var(--motion-duration-fast) var(--motion-ease-standard),
+    transform var(--motion-duration-fast) var(--motion-ease-standard);
+}
+
+.motion-nav-link:hover {
+  transform: translateY(-1px);
+}
+
+.motion-hero-image {
+  animation: fade-rise-in var(--motion-duration-slow) var(--motion-ease-emphasized) both;
+}
+
+.motion-hero-copy {
+  animation: fade-rise-in var(--motion-duration-slow) var(--motion-ease-emphasized) both;
+  animation-delay: 80ms;
+}
+
+.motion-hero-meta {
+  animation: fade-rise-in var(--motion-duration-slow) var(--motion-ease-emphasized) both;
+  animation-delay: 160ms;
+}
+
+.motion-card {
+  transition:
+    transform var(--motion-duration-base) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-base) var(--motion-ease-standard),
+    filter var(--motion-duration-base) var(--motion-ease-standard),
+    background-color var(--motion-duration-base) var(--motion-ease-standard);
+}
+
+.motion-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(31, 35, 40, 0.12);
+  filter: saturate(1.03);
+}
+
+/* Scroll reveal for key headers and evidence modules. */
+.motion-scroll-reveal {
+  will-change: opacity, transform;
+}
+
+@supports (animation-timeline: view()) {
+  .motion-scroll-reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    animation-name: fade-rise-in;
+    animation-duration: 1ms;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: entry 15% cover 32%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .motion-card:hover,
+  .motion-nav-link:hover {
+    transform: none;
+    box-shadow: none;
+    filter: none;
+  }
 }
 
 /* ======================== */
@@ -311,29 +422,4 @@ h5.italic {
   line-height: 1.875rem;
   font-weight: 500;
   font-style: italic;
-}
-
-/* ======================== */
-/* RESUME STYLES (Source Sans Pro) */
-/* ======================== */
-
-.resume-body-xs {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.625rem;
-  line-height: 0.75rem;
-  font-weight: 300;
-}
-
-.resume-body-xs-regular {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.625rem;
-  line-height: 0.75rem;
-  font-weight: 400;
-}
-
-.resume-body-xs-semibold {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.625rem;
-  line-height: 0.75rem;
-  font-weight: 600;
 }

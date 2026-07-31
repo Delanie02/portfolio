@@ -19,7 +19,7 @@ export default function TwoImageGroup({
   borderless = false,
 }: TwoImageGroupProps) {
   return (
-    <div className="flex flex-col">
+    <div className="motion-scroll-reveal flex flex-col">
       {/* Two Images Side by Side */}
       <div className="flex flex-col md:flex-row gap-6 mb-4">
         {images.map((image, index) => (

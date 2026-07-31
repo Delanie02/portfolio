@@ -24,7 +24,7 @@ export default function FourImageGroup({
     const rightImages = images.slice(2, 4);
 
     return (
-      <div className="flex flex-col md:flex-row gap-6">
+      <div className="motion-scroll-reveal flex flex-col md:flex-row gap-6">
         {/* Left half */}
         <div className="flex-1 flex flex-col">
           <div className="grid grid-cols-2 gap-3 mb-4">
@@ -124,7 +124,7 @@ export default function FourImageGroup({
 
   // ✅ Default: 2-image layout with single bracket
   return (
-    <div className="flex flex-col">
+    <div className="motion-scroll-reveal flex flex-col">
       <div className="flex flex-col md:flex-row gap-6 mb-4">
         {images.map((image, index) => (
           <div key={index} className="w-full md:w-1/2 flex flex-col">

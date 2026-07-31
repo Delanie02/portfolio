@@ -79,7 +79,7 @@ export default function NavProject({ theme, sectionLinks }: NavProjectProps) {
 
   return (
     <nav
-      className="sticky top-0 z-50 w-full bg-neutral-balanced-light h-[4.5rem] flex items-center px-8 lg:px-16"
+      className="motion-nav-shell sticky top-0 z-50 w-full bg-neutral-balanced-light h-[4.5rem] flex items-center px-8 lg:px-16"
       style={{ boxShadow: shadow }}
     >
       {/* Left: Section links — hidden on mobile */}
@@ -90,7 +90,7 @@ export default function NavProject({ theme, sectionLinks }: NavProjectProps) {
             href={link.href}
             className={`${
               activeSection === link.id ? "h5-bold" : "h5"
-            } hover:opacity-70 transition-opacity`}
+            } motion-nav-link hover:opacity-70`}
           >
             {link.label}
           </a>
@@ -103,7 +103,7 @@ export default function NavProject({ theme, sectionLinks }: NavProjectProps) {
           href="/"
           className={`${
             pathname === "/" ? "h5-bold" : "h5"
-          } hover:opacity-70 transition-opacity`}
+            } motion-nav-link hover:opacity-70`}
         >
           Home
         </Link>
@@ -111,7 +111,7 @@ export default function NavProject({ theme, sectionLinks }: NavProjectProps) {
           href="/about"
           className={`${
             pathname === "/about" ? "h5-bold" : "h5"
-          } hover:opacity-70 transition-opacity`}
+            } motion-nav-link hover:opacity-70`}
         >
           About
         </Link>

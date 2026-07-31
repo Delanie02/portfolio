@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from "next/link";
+import Image from "next/image";
 
-type CardTheme = 'sand' | 'mist' | 'ocean' | 'purple';
-type CardLayout = 'horizontal' | 'vertical';
+type CardTheme = "sand" | "mist" | "ocean" | "purple";
+type CardLayout = "horizontal" | "vertical";
 
 interface ProjectCardProps {
   theme: CardTheme;
@@ -15,24 +15,24 @@ interface ProjectCardProps {
 
 const cardStyles: Record<CardTheme, { bg: string; outline: string; title: string }> = {
   sand: {
-    bg: 'bg-sand-light',
-    outline: 'ring-0 hover:ring-4 ring-sand-mid',
-    title: 'text-sand-dark',
+    bg: "bg-sand-light",
+    outline: "ring-0 hover:ring-4 ring-sand-mid",
+    title: "text-sand-dark",
   },
   mist: {
-    bg: 'bg-mist-light',
-    outline: 'ring-0 hover:ring-4 ring-mist-mid',
-    title: 'text-mist-dark',
+    bg: "bg-mist-light",
+    outline: "ring-0 hover:ring-4 ring-mist-mid",
+    title: "text-mist-dark",
   },
   ocean: {
-    bg: 'bg-ocean-light',
-    outline: 'ring-0 hover:ring-4 ring-ocean-mid',
-    title: 'text-ocean-dark',
+    bg: "bg-ocean-light",
+    outline: "ring-0 hover:ring-4 ring-ocean-mid",
+    title: "text-ocean-dark",
   },
   purple: {
-    bg: 'bg-purple-light',
-    outline: 'ring-0 hover:ring-4 ring-purple-mid',
-    title: 'text-purple-dark',
+    bg: "bg-purple-light",
+    outline: "ring-0 hover:ring-4 ring-purple-mid",
+    title: "text-purple-dark",
   },
 };
 
@@ -42,11 +42,11 @@ export default function ProjectCard({
   description,
   image,
   href,
-  layout = 'horizontal',
+  layout = "horizontal",
 }: ProjectCardProps) {
   const styles = cardStyles[theme];
 
-  if (layout === 'vertical') {
+  if (layout === "vertical") {
     return (
       <Link
         href={href}
@@ -54,12 +54,7 @@ export default function ProjectCard({
       >
         {/* Image — top */}
         <div className="relative w-full h-[220px] md:h-[240px] lg:h-[280px]">
-          <Image
-            src={image}
-            alt={title}
-            fill
-            className="object-cover"
-          />
+          <Image src={image} alt={title} fill className="object-cover" />
         </div>
 
         {/* Text — bottom */}
@@ -72,26 +67,21 @@ export default function ProjectCard({
   }
 
   // Default horizontal layout
-    return (
+  return (
     <Link
-        href={href}
-        className={`flex flex-col md:flex-row items-stretch rounded-2xl overflow-hidden max-w-full md:max-w-[784px] ${styles.bg} ${styles.outline} transition-all duration-200 hover:scale-[1.02]`}
+      href={href}
+      className={`flex flex-col md:flex-row items-stretch rounded-2xl overflow-hidden max-w-full md:max-w-[784px] ${styles.bg} ${styles.outline} transition-all duration-200 hover:scale-[1.02]`}
     >
-        {/* Image — full width on mobile, left 40% on desktop */}
-        <div className="relative w-full h-[220px] md:w-2/5 md:h-auto min-h-[220px]">
-        <Image
-            src={image}
-            alt={title}
-            fill
-            className="object-cover"
-        />
-        </div>
+      {/* Image — full width on mobile, left 40% on desktop */}
+      <div className="relative w-full h-[220px] md:w-2/5 md:h-auto min-h-[220px]">
+        <Image src={image} alt={title} fill className="object-cover" />
+      </div>
 
-        {/* Text — full width on mobile, right 60% on desktop */}
-        <div className="w-full md:w-3/5 px-6 py-8 md:pl-6 md:pt-12 md:pr-12 md:pb-14 flex flex-col justify-center">
+      {/* Text — full width on mobile, right 60% on desktop */}
+      <div className="w-full md:w-3/5 px-6 py-8 md:pl-6 md:pt-12 md:pr-12 md:pb-14 flex flex-col justify-center">
         <h4 className={`h4-bold ${styles.title} mb-3`}>{title}</h4>
         <p className="body-base text-neutral-dark">{description}</p>
-        </div>
+      </div>
     </Link>
-    );
+  );
 }

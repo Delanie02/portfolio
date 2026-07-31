@@ -7,13 +7,13 @@ export default function NavSimple() {
   const pathname = usePathname();
 
   return (
-    <nav className="w-full h-[4.5rem] flex items-center justify-end bg-neutral-balanced-light px-8 lg:px-16">
+    <nav className="motion-nav-shell w-full h-[4.5rem] flex items-center justify-end bg-neutral-balanced-light px-8 lg:px-16">
       <div className="flex items-center gap-8">
         <Link
           href="/"
           className={`${
             pathname === '/' ? 'h5-bold' : 'h5'
-          } text-neutral-dark hover:opacity-70 transition-opacity`}
+          } motion-nav-link text-neutral-dark hover:opacity-70`}
         >
           Home
         </Link>
@@ -21,7 +21,7 @@ export default function NavSimple() {
           href="/about"
           className={`${
             pathname === '/about' ? 'h5-bold' : 'h5'
-          } text-neutral-dark hover:opacity-70 transition-opacity`}
+          } motion-nav-link text-neutral-dark hover:opacity-70`}
         >
           About
         </Link>

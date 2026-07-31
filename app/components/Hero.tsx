@@ -77,7 +77,7 @@ export default function Hero({
       {/* Image — renders based on imagePosition prop */}
       {imageUrl && (
         <div
-          className={`${imageOrder} relative w-full h-[260px] sm:w-1/2 sm:h-[420px] lg:h-[523px]`}
+          className={`${imageOrder} motion-hero-image relative w-full h-[260px] sm:w-1/2 sm:h-[420px] lg:h-[523px]`}
         >
           <Image
             src={imageUrl}
@@ -92,7 +92,7 @@ export default function Hero({
       <div
         className={`${textOrder} w-full sm:w-1/2 flex-shrink-0 flex items-center`}
       >
-        <div className="flex flex-col gap-4 px-6 py-8 sm:px-8 lg:px-12 lg:py-12 w-full text-left sm:text-right">
+        <div className="motion-hero-copy flex flex-col gap-4 px-6 py-8 sm:px-8 lg:px-12 lg:py-12 w-full text-left sm:text-right">
           {/* Title */}
           <h2 className={`h2-bold ${textDark} text-center sm:text-right`}>
             {title}
@@ -106,7 +106,7 @@ export default function Hero({
 
           {/* Project Metadata — only renders if meta is passed */}
           {meta && (
-            <div className="flex flex-col items-center gap-2 mt-2 w-full text-center sm:items-end sm:ps-24 sm:text-right">
+            <div className="motion-hero-meta flex flex-col items-center gap-2 mt-2 w-full text-center sm:items-end sm:ps-24 sm:text-right">
               {meta.role && (
                 <div className="flex flex-wrap items-baseline justify-center gap-x-1 w-full text-center sm:justify-end sm:text-right">
                   <span className={`h5-bold ${textDark}`}>Role:</span>
