@@ -32,39 +32,30 @@ export default function CapterraPage() {
       {/* All page content - centered wrapper */}
       <div className="max-w-[1280px] mx-auto px-6">
         {/* Challenge Section */}
-        <section
-          id="challenge"
-          className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto"
-        >
+        <section id="challenge" className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
           <h2 className="h3-bold text-sand-dark mb-6">Challenge</h2>
           <div className="body-base text-neutral-dark space-y-4">
             <p>
-              Capterra was experiencing declining organic traffic and returning
-              users. While teams across Product, SEO, and UX had ideas for
-              improving performance, there was no shared understanding of which
-              user experience investments would have the greatest impact.
+              Capterra was experiencing declining organic traffic and returning users. While teams
+              across Product, SEO, and UX had ideas for improving performance, there was no shared
+              understanding of which user experience investments would have the greatest impact.
             </p>
             <p>
-              As Associate Director of UX, I led a cross-functional effort to
-              identify opportunities to improve trust, discoverability, and
-              engagement in the parts of the product most critical to long-term
-              growth.
+              As Associate Director of UX, I led a cross-functional effort to identify opportunities
+              to improve trust, discoverability, and engagement in the parts of the product most
+              critical to long-term growth.
             </p>
           </div>
         </section>
 
         {/* Approach Section */}
-        <section
-          id="approach"
-          className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto"
-        >
+        <section id="approach" className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
           <h2 className="h3-bold text-sand-dark mb-6">Approach</h2>
           <div className="body-base text-neutral-dark space-y-4">
             <p>
-              To set my team up for success, I assembled and aligned a
-              cross-functional group including Product Directors, SEO leaders,
-              UX researchers, and executive stakeholders to ensure findings
-              could translate into action.
+              To set my team up for success, I assembled and aligned a cross-functional group
+              including Product Directors, SEO leaders, UX researchers, and executive stakeholders
+              to ensure findings could translate into action.
             </p>
           </div>
         </section>
@@ -76,9 +67,7 @@ export default function CapterraPage() {
               {/* Drivers Column */}
               <div>
                 <div className="border-b-2 border-sand-dark pb-4 mb-6">
-                  <h5 className="h5-bold text-sand-dark text-center">
-                    Drivers
-                  </h5>
+                  <h5 className="h5-bold text-sand-dark text-center">Drivers</h5>
                 </div>
                 <div className="space-y-4">
                   <div className="flex gap-2 items-center">
@@ -90,9 +79,7 @@ export default function CapterraPage() {
                         className="object-cover"
                       />
                     </div>
-                    <p className="body-base text-sand-dark">
-                      Senior UX Researcher
-                    </p>
+                    <p className="body-base text-sand-dark">Senior UX Researcher</p>
                   </div>
                   <div className="flex gap-2 items-center">
                     <div className="w-8 h-8 md:w-12 md:h-12 bg-sand-mid rounded-full flex-shrink-0 overflow-hidden relative border border-sand-dark">
@@ -144,9 +131,7 @@ export default function CapterraPage() {
               {/* Approver Column */}
               <div>
                 <div className="border-b-2 border-sand-dark pb-4 mb-6">
-                  <h5 className="h5-bold text-sand-dark text-center">
-                    Approver
-                  </h5>
+                  <h5 className="h5-bold text-sand-dark text-center">Approver</h5>
                 </div>
                 <div className="space-y-4">
                   <div className="flex gap-2 items-center">
@@ -158,9 +143,7 @@ export default function CapterraPage() {
                         className="object-cover"
                       />
                     </div>
-                    <p className="body-base  text-sand-dark">
-                      Associate Director, UX (me!)
-                    </p>
+                    <p className="body-base  text-sand-dark">Associate Director, UX (me!)</p>
                   </div>
                 </div>
               </div>
@@ -168,9 +151,7 @@ export default function CapterraPage() {
               {/* Consulted Column */}
               <div>
                 <div className="border-b-2 border-sand-dark pb-4 mb-6">
-                  <h5 className="h5-bold text-sand-dark text-center">
-                    Consulted
-                  </h5>
+                  <h5 className="h5-bold text-sand-dark text-center">Consulted</h5>
                 </div>
                 <div className="space-y-4">
                   <div className="flex gap-2 items-center">
@@ -215,9 +196,7 @@ export default function CapterraPage() {
                         className="object-cover"
                       />
                     </div>
-                    <p className="body-base text-sand-dark">
-                      SEO Senior Analyst
-                    </p>
+                    <p className="body-base text-sand-dark">SEO Senior Analyst</p>
                   </div>
                   <div className="flex gap-2 items-center">
                     <div className="w-8 h-8 md:w-12 md:h-12 bg-sand-mid rounded-full flex-shrink-0 overflow-hidden relative border border-sand-dark">
@@ -252,9 +231,7 @@ export default function CapterraPage() {
               {/* Informed Column */}
               <div>
                 <div className="border-b-2 border-sand-dark pb-4 mb-6">
-                  <h5 className="h5-bold text-sand-dark text-center">
-                    Informed
-                  </h5>
+                  <h5 className="h5-bold text-sand-dark text-center">Informed</h5>
                 </div>
                 <div className="space-y-4">
                   <div className="flex gap-2 items-center">
@@ -299,9 +276,7 @@ export default function CapterraPage() {
                         className="object-cover"
                       />
                     </div>
-                    <p className="body-base text-sand-dark">
-                      Associate Director, SEO
-                    </p>
+                    <p className="body-base text-sand-dark">Associate Director, SEO</p>
                   </div>
                   <div className="flex gap-2 items-center">
                     <div className="w-8 h-8 md:w-12 md:h-12 bg-sand-mid rounded-full flex-shrink-0 overflow-hidden relative border border-sand-dark">
@@ -335,10 +310,9 @@ export default function CapterraPage() {
         <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
           <div className="body-base text-neutral-dark space-y-6">
             <p>
-              Once I identified stakeholders, I led my team in a one-month 110
-              participant study to identify where Capterra could improve in
-              EEAT. We found that the most valuable parts of the site — reviews
-              and comparisons — were among the least trustworthy or
+              Once I identified stakeholders, I led my team in a one-month 110 participant study to
+              identify where Capterra could improve in EEAT. We found that the most valuable parts
+              of the site — reviews and comparisons — were among the least trustworthy or
               discoverable.
             </p>
           </div>
@@ -370,17 +344,14 @@ export default function CapterraPage() {
         </div>
 
         {/* Recommendations Section */}
-        <section
-          id="recommendations"
-          className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto"
-        >
+        <section id="recommendations" className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
           <h2 className="h3-bold text-sand-dark mb-6">Recommendations</h2>
           <div className="body-base text-neutral-dark space-y-4">
             <p>
-              Based on our study's results and in close collaboration with our
-              SEO partners, we recommended the following changes that challenged
-              existing assumptions about conversion optimization and business
-              priorities in favor of long-term trust and organic growth.
+              Based on our study's results and in close collaboration with our SEO partners, we
+              recommended the following changes that challenged existing assumptions about
+              conversion optimization and business priorities in favor of long-term trust and
+              organic growth.
             </p>
           </div>
         </section>
@@ -392,12 +363,11 @@ export default function CapterraPage() {
           </h3>
           <div className="body-base text-neutral-dark">
             <p>
-              First, we recommended improving the discoverability of the most
-              valuable Capterra content — reviews. In particular, we proposed
-              iterating on product pages so that when users land on them, they
-              know immediately that the site offers an easy way for them to find
-              reviews from people like them — it's not just a place to read a
-              canned product description.
+              First, we recommended improving the discoverability of the most valuable Capterra
+              content — reviews. In particular, we proposed iterating on product pages so that when
+              users land on them, they know immediately that the site offers an easy way for them to
+              find reviews from people like them — it's not just a place to read a canned product
+              description.
             </p>
           </div>
         </section>
@@ -408,12 +378,12 @@ export default function CapterraPage() {
             images={[
               {
                 src: "/images/capterra/CA profile current state.png",
-                alt: "Screenshot of FiscalNote, a policy tracking software. The screenshot shows the search functionality with filter options.",
+                alt: "Screenshot of Capterra's current state product page, where reviews are one of three panels above the fold.",
                 header: "Before: Reviews lack prominency.",
               },
               {
                 src: "/images/capterra/CA profile proposed no outline.png",
-                alt: "Screenshot of CQ, a policy tracking software. The screenshot shows the bill analysis page.",
+                alt: "Proposed mock-up of Capterra's product page, with all three panels devoted to reviews content above the fold.",
                 header: "Proposed: Reviews are brought to the forefront.",
               },
             ]}
@@ -427,10 +397,9 @@ export default function CapterraPage() {
           </h3>
           <div className="body-base text-neutral-dark">
             <p>
-              Secondly, we recommended improving the discoverability of
-              comparisons. We proposed making comparing always accessible
-              through the navigation bar so users wouldn't have to hunt for this
-              valuable feature.
+              Secondly, we recommended improving the discoverability of comparisons. We proposed
+              making comparing always accessible through the navigation bar so users wouldn't have
+              to hunt for this valuable feature.
             </p>
           </div>
         </section>
@@ -452,15 +421,12 @@ export default function CapterraPage() {
 
         {/* Recommendation #3 */}
         <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-          <h3 className="h4-bold text-sand-dark mb-4">
-            Recommendation #3: Improve transparency
-          </h3>
+          <h3 className="h4-bold text-sand-dark mb-4">Recommendation #3: Improve transparency</h3>
           <div className="body-base text-neutral-dark">
             <p>
-              Finally, we recommended improving transparency. While there was
-              risk to conversion in experimenting with bolder, more prominent
-              transparency into Capterra's business model, we couldn't maintain
-              the status quo and expect sessions to stop declining.
+              Finally, we recommended improving transparency. While there was risk to conversion in
+              experimenting with bolder, more prominent transparency into Capterra's business model,
+              we couldn't maintain the status quo and expect sessions to stop declining.
             </p>
           </div>
         </section>
@@ -472,8 +438,7 @@ export default function CapterraPage() {
               {
                 src: "/images/capterra/CA article current state no outline.png",
                 alt: "Screenshot of FiscalNote, a policy tracking software. The screenshot shows the search functionality with filter options.",
-                header:
-                  "Before: Affiliate links are not clearly identified as such.",
+                header: "Before: Affiliate links are not clearly identified as such.",
               },
               {
                 src: "/images/capterra/CA article proposed no exclude.png",
@@ -489,14 +454,12 @@ export default function CapterraPage() {
           <h2 className="h3-bold text-sand-dark mb-6">Driving alignment</h2>
           <div className="body-base text-neutral-dark space-y-4">
             <p>
-              Because the recommendations would require support across Product,
-              SEO, and executive leadership, I treated stakeholder alignment as
-              a primary workstream rather than a final presentation milestone.
-              Via the highlighted steps below, I proactively sought feedback
-              from the stakeholders I identified early and often. This approach
-              shifted the final readout from a debate about whether the findings
-              were credible to a discussion about which recommendations to
-              prioritize.
+              Because the recommendations would require support across Product, SEO, and executive
+              leadership, I treated stakeholder alignment as a primary workstream rather than a
+              final presentation milestone. Via the highlighted steps below, I proactively sought
+              feedback from the stakeholders I identified early and often. This approach shifted the
+              final readout from a debate about whether the findings were credible to a discussion
+              about which recommendations to prioritize.
             </p>
           </div>
         </section>
@@ -506,14 +469,9 @@ export default function CapterraPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 md:gap-8 lg:gap-8">
             <div className="lg:col-span-2 bg-white rounded-lg p-6 md:p-8 shadow-sm">
               <div className="text-3xl mb-4">📋</div>
-              <h4 className="h5-bold text-sand-dark mb-2">
-                Planning | July 31
-              </h4>
+              <h4 className="h5-bold text-sand-dark mb-2">Planning | July 31</h4>
               <ul className="body-sm text-neutral-dark space-y-2 list-disc list-outside pl-4">
-                <li>
-                  Share the completed research plan with stakeholders for
-                  feedback.
-                </li>
+                <li>Share the completed research plan with stakeholders for feedback.</li>
                 <li>Share the research plan at demo and/or via Slack.</li>
                 <li>Refine the research plan based on feedback.</li>
               </ul>
@@ -543,9 +501,7 @@ export default function CapterraPage() {
 
             <div className="lg:col-span-2 lg:col-start-2 bg-white rounded-lg p-6 md:p-8 shadow-sm">
               <div className="text-3xl mb-4">✍️</div>
-              <h4 className="h5-bold text-sand-dark mb-2">
-                Synthesizing | Aug 21
-              </h4>
+              <h4 className="h5-bold text-sand-dark mb-2">Synthesizing | Aug 21</h4>
               <ul className="body-sm text-neutral-dark space-y-2 list-disc list-outside pl-4">
                 <li>Draft synthesis.</li>
                 <li>Share the draft synthesis with stakeholders.</li>
@@ -558,31 +514,24 @@ export default function CapterraPage() {
               <h4 className="h5-bold text-sand-dark mb-2">Sharing | Aug 28</h4>
               <ul className="body-sm text-neutral-dark space-y-2 list-disc list-outside pl-4">
                 <li>Lead share-out.</li>
-                <li>
-                  Post links to the share-out recording and synthesis in Slack.
-                </li>
+                <li>Post links to the share-out recording and synthesis in Slack.</li>
               </ul>
             </div>
           </div>
         </div>
 
         {/* Impact Section */}
-        <section
-          id="impact"
-          className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto"
-        >
+        <section id="impact" className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
           <h2 className="h3-bold text-sand-dark mb-6">Impact</h2>
           <div className="body-base text-neutral-dark space-y-4 mb-12">
             <p>
-              My efforts to build consensus throughout the project paid off. The
-              study became the foundation for a broader effort to improve trust
-              and content quality across Capterra. Two of the three primary
-              recommendations were implemented, including a redesign that
-              elevated user reviews as the primary focus of product pages and
-              the introduction of transparency disclosures across much of the
-              site. The recommendations contributed to improvements in search
-              visibility while influencing how teams across Product, UX, and SEO
-              approached trust and transparency going forward.
+              My efforts to build consensus throughout the project paid off. The study became the
+              foundation for a broader effort to improve trust and content quality across Capterra.
+              Two of the three primary recommendations were implemented, including a redesign that
+              elevated user reviews as the primary focus of product pages and the introduction of
+              transparency disclosures across much of the site. The recommendations contributed to
+              improvements in search visibility while influencing how teams across Product, UX, and
+              SEO approached trust and transparency going forward.
             </p>
           </div>
         </section>
@@ -590,8 +539,8 @@ export default function CapterraPage() {
         {/* Final Designs Image */}
         <div className="flex flex-col gap-4 pb-12 md:pb-24 lg:pb-24 max-w-[980px] mx-auto">
           <p className="body-base-bold font-semibold text-neutral-dark text-center">
-            Final Designs: Affiliate links are addressed up front, and reviews
-            content is rightfully the primary focus.
+            Final Designs: Affiliate links are addressed up front, and reviews content is rightfully
+            the primary focus.
           </p>
           <div className="relative w-full]">
             <Image

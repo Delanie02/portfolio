@@ -45,7 +45,6 @@ export default function ExcelPage() {
               challenge was creating an experience that could compete in already crowded online
               learning market.
             </p>
-            <p></p>
           </div>
         </section>
 
@@ -55,7 +54,7 @@ export default function ExcelPage() {
             <p>
               My design process began with identifying in-demand Excel skills and how this course
               could differentiate itself from other courses available online. Based on this
-              research, I identifying the following learning outcomes:
+              research, I identified the following learning outcomes:
             </p>
             <ul className="list-disc list-outside pl-6 space-y-2 body-base text-neutral-dark">
               <li>Clean and prepare data for analysis.</li>
