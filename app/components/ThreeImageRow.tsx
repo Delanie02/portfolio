@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 interface ImageCardItem {
   header: string;
@@ -13,15 +13,13 @@ interface ThreeImageRowProps {
 
 export default function ThreeImageRow({ items }: ThreeImageRowProps) {
   return (
-    <div className="motion-scroll-reveal flex flex-col md:flex-row gap-8 md:gap-6 lg:gap-8 my-6">
+    <div className="motion-scroll-reveal flex flex-col md:flex-row gap-6 mb-4">
       {items.map((item, index) => (
         <div key={index} className="flex flex-col flex-1">
-
           {/* Header & Subheader */}
-          <div className="mb-3 min-h-[40px] md:min-h-[80px]">
-            <p className="body-base-bold hidden lg:block text-neutral-dark text-center">{item.header}</p>
-            <p className="body-base-bold lg:hidden text-neutral-dark text-center">{item.header}</p>
-            <p className="body-base text-neutral-dark text-center">{item.subheader}</p>
+          <div>
+            <p className="h5-bold text-neutral-dark text-center mb-3">{item.header}</p>
+            <p className="body-sm text-neutral-mid text-center mb-3">{item.subheader}</p>
           </div>
 
           {/* Image */}
@@ -34,7 +32,6 @@ export default function ThreeImageRow({ items }: ThreeImageRowProps) {
               className="w-full h-auto object-cover"
             />
           </div>
-
         </div>
       ))}
     </div>

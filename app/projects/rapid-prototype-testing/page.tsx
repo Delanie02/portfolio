@@ -225,13 +225,13 @@ export default function RapidPrototypeTestingPage() {
                 src: "/images/rapid-prototype/PPL form traditional test 1.png",
                 alt: "...",
                 header: "Traditional Test 1",
-                subheader: "How trustworthy are current-state Software Advice forms?",
+                subheader: "How trustworthy are current-state forms?",
               },
               {
                 src: "/images/rapid-prototype/PPL form traditional test 2.png",
                 alt: "...",
                 header: "Traditional Test 2",
-                subheader: "How trustworthy are the re-designed Software Advice forms?",
+                subheader: "How trustworthy are the re-designed forms?",
               },
             ]}
             captions={[
@@ -256,7 +256,7 @@ export default function RapidPrototypeTestingPage() {
                 src: "/images/rapid-prototype/PPL form rapid test 2.png",
                 alt: "...",
                 header: "Rapid Test 2",
-                subheader: "How trustworthy are the re-designed Capterra forms?",
+                subheader: "How trustworthy are the re-designed forms?",
               },
             ]}
             captions={[

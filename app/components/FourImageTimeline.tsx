@@ -31,16 +31,12 @@ export default function FourImageGroup({
             {leftImages.map((image, index) => (
               <div key={index} className="flex flex-col">
                 {(image.header || image.subheader) && (
-                  <div className="mb-3">
+                  <div>
                     {image.header && (
-                      <p className="body-base-bold text-neutral-dark text-center">
-                        {image.header}
-                      </p>
+                      <p className="h5-bold text-neutral-dark text-center mb-3">{image.header}</p>
                     )}
                     {image.subheader && (
-                      <p className="body-base text-neutral-dark text-center">
-                        {image.subheader}
-                      </p>
+                      <p className="body-sm text-neutral-mid text-center mb-3">{image.subheader}</p>
                     )}
                   </div>
                 )}
@@ -61,12 +57,8 @@ export default function FourImageGroup({
           <div className="w-full h-4 border-b-2 border-l-2 border-r-2 border-neutral-light mb-4" />
           <div className="flex flex-col gap-1">
             {captionGroups[0].map((caption, index) => (
-              <p
-                key={index}
-                className="body-base text-neutral-dark text-center"
-              >
-                {caption.label}{" "}
-                <span className="body-base-bold">{caption.value}</span>
+              <p key={index} className="body-sm text-neutral-mid text-center">
+                {caption.label} <span className="body-sm-bold">{caption.value}</span>
               </p>
             ))}
           </div>
@@ -78,16 +70,12 @@ export default function FourImageGroup({
             {rightImages.map((image, index) => (
               <div key={index} className="flex flex-col">
                 {(image.header || image.subheader) && (
-                  <div className="mb-3">
+                  <div>
                     {image.header && (
-                      <p className="body-base-bold text-neutral-dark text-center">
-                        {image.header}
-                      </p>
+                      <p className="h5-bold text-neutral-dark text-center mb-3">{image.header}</p>
                     )}
                     {image.subheader && (
-                      <p className="body-base text-neutral-dark text-center">
-                        {image.subheader}
-                      </p>
+                      <p className="body-sm text-neutral-mid text-center mb-3">{image.subheader}</p>
                     )}
                   </div>
                 )}
@@ -108,12 +96,8 @@ export default function FourImageGroup({
           <div className="w-full h-4 border-b-2 border-l-2 border-r-2 border-neutral-light mb-4" />
           <div className="flex flex-col gap-1">
             {captionGroups[1].map((caption, index) => (
-              <p
-                key={index}
-                className="body-base text-neutral-dark text-center"
-              >
-                {caption.label}{" "}
-                <span className="body-base-bold">{caption.value}</span>
+              <p key={index} className="body-sm text-neutral-mid text-center">
+                {caption.label} <span className="body-sm-bold">{caption.value}</span>
               </p>
             ))}
           </div>
@@ -129,27 +113,18 @@ export default function FourImageGroup({
         {images.map((image, index) => (
           <div key={index} className="w-full md:w-1/2 flex flex-col">
             {(image.header || image.subheader) && (
-              <div className="mb-3">
+              <div>
                 {image.header && (
-                  <p className="body-base-bold text-neutral-dark text-center">
-                    {image.header}
-                  </p>
+                  <p className="h5-bold text-neutral-dark text-center mb-3">{image.header}</p>
                 )}
                 {image.subheader && (
-                  <p className="body-base text-neutral-dark text-center">
-                    {image.subheader}
-                  </p>
+                  <p className="body-sm text-neutral-mid text-center mb-3">{image.subheader}</p>
                 )}
               </div>
             )}
             <div className="relative w-full aspect-[13/9]">
               <div className="absolute inset-0 overflow-hidden">
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  className="object-cover object-top"
-                />
+                <Image src={image.src} alt={image.alt} fill className="object-cover object-top" />
               </div>
             </div>
           </div>
@@ -161,12 +136,8 @@ export default function FourImageGroup({
           <div className="w-full h-4 border-b-2 border-l-2 border-r-2 border-neutral-light mb-4" />
           <div className="flex flex-col gap-1">
             {captions.map((caption, index) => (
-              <p
-                key={index}
-                className="body-base text-neutral-dark text-center"
-              >
-                {caption.label}{" "}
-                <span className="body-base-bold">{caption.value}</span>
+              <p key={index} className="body-sm text-neutral-mid text-center">
+                {caption.label} <span className="body-sm-bold">{caption.value}</span>
               </p>
             ))}
           </div>

@@ -405,8 +405,8 @@ export default function CapterraPage() {
         </section>
 
         {/* Comparison Image */}
-        <div className="flex flex-col gap-4 pb-12 md:pb-24 lg:pb-24 max-w-[980px] mx-auto">
-          <p className="body-base-bold text-neutral-dark text-center">
+        <div className="flex flex-col pb-12 md:pb-24 lg:pb-24 max-w-[980px] mx-auto">
+          <p className="h5-bold text-neutral-dark text-center mb-3">
             Proposed: Comparing is always accessible through the nav bar.
           </p>
           <div className="relative w-full aspect-[13/9] border border-neutral-light">
@@ -537,8 +537,8 @@ export default function CapterraPage() {
         </section>
 
         {/* Final Designs Image */}
-        <div className="flex flex-col gap-4 pb-12 md:pb-24 lg:pb-24 max-w-[980px] mx-auto">
-          <p className="body-base-bold font-semibold text-neutral-dark text-center">
+        <div className="flex flex-col pb-12 md:pb-24 lg:pb-24 max-w-[980px] mx-auto">
+          <p className="h5-bold text-neutral-dark text-center mb-3">
             Final Designs: Affiliate links are addressed up front, and reviews content is rightfully
             the primary focus.
           </p>

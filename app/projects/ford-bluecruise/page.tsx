@@ -157,19 +157,19 @@ export default function FordBlueCruisePage() {
                 <ThreeImageRow
                 items={[
                     {
-                        header: "After: A hero image communicates the offering instantly",
+                        header: "After: Hero image",
                         src: "/images/ford-bluecruise/Phoenix-home.png",
                         alt: "A mock-up of a BlueCruise home screen.",
                         subheader: ''
                     },
                     {
-                        header: "After: Value propositions are easy to scan and understand.",
+                        header: "After: Value propositions",
                         src: "/images/ford-bluecruise/Value Props.png",
                         alt: "A mock-up of a screen showing the benefits of BlueCruise.",
                         subheader: ''
                     },
                     {
-                        header: "After: “How it works” explains the offering with simple illustrations.",
+                        header: "After: How it works illustrations",
                         src: "/images/ford-bluecruise/How It Works.png",
                         alt: "A mock-up of a screen showing the 'How It Works' section of BlueCruise page on a mobile device.",
                         subheader: ''
