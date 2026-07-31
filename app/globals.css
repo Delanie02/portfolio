@@ -147,6 +147,13 @@ body {
   transform: translateY(-1px);
 }
 
+.motion-filter {
+  transition:
+    color var(--motion-duration-fast) var(--motion-ease-standard),
+    border-color var(--motion-duration-fast) var(--motion-ease-standard),
+    opacity var(--motion-duration-fast) var(--motion-ease-standard);
+}
+
 .motion-hero-image {
   animation: fade-rise-in var(--motion-duration-slow) var(--motion-ease-emphasized) both;
 }
