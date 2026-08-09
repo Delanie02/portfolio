@@ -24,6 +24,15 @@ const filterOptions: { key: ActiveFilter; label: string }[] = [
 
 const projects: ProjectItem[] = [
   {
+    theme: "purple",
+    title: "Ford Pro",
+    description:
+      "I led a cross-functional payments initiative across Ford Credit and Ford Pro, raising the quality bar while aligning teams around a clearer, more transparent customer payment experience.",
+    image: "/images/fordpro/cover.png",
+    href: "/projects/fordpro",
+    category: "leadership",
+  },
+  {
     theme: "sand",
     title: "Capterra",
     description:

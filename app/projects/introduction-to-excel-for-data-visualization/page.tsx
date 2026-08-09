@@ -238,10 +238,10 @@ export default function ExcelPage() {
             <ProjectCard
               layout="vertical"
               theme="purple"
-              title="FiscalNote"
-              description="I led a cross-functional team to envision a unified future-state unified product for FiscalNote, a B2B policy tracking SaaS company."
-              image="/images/fiscalnote/cover.png"
-              href="/projects/fiscalnote"
+              title="Ford Pro"
+              description="I led a cross-functional payments initiative across Ford Credit and Ford Pro, raising the quality bar while aligning teams around a clearer, more transparent customer payment experience."
+              image="/images/fordpro/cover.png"
+              href="/projects/fordpro"
             />
             <ProjectCard
               layout="vertical"

@@ -50,11 +50,11 @@ export default function FordBlueCruisePage() {
                     columns={4}
                     images={[
                     {
-                        src: "/images/ford-bluecruise/FordPass Home.png",
+                        src: "/images/ford-bluecruise/FordPass Home Markup.png",
                         alt: "Mobile screenshot of the FordPass home screen. The screen has a bottom navigation bar with icons for vehicle, energy, and service.",
                     },
                     {
-                        src: "/images/ford-bluecruise/FordPass Account.png",
+                        src: "/images/ford-bluecruise/FordPass Account Markup.png",
                         alt: "Mobile screenshot of the FordPass account screen. The screen shows the user's settings and other services.",
                     },
                     {
@@ -69,7 +69,7 @@ export default function FordBlueCruisePage() {
                     captionGroups={[
                         // 👇 Left bracket — spans first two images
                         [
-                        { label: "Before:", value: "The app hid subscriptions within the Account page" },
+                        { label: "Before:", value: "The app hid 'connected services' within the Account page" },
                         ],
                         // 👇 Right bracket — spans last two images
                         [
@@ -345,10 +345,10 @@ export default function FordBlueCruisePage() {
                 <ProjectCard
                     layout="vertical"
                     theme="purple"
-                    title="FiscalNote"
-                    description="I led a cross-functional team to envision a unified future-state unified product for FiscalNote, a B2B policy tracking SaaS company."
-                    image="/images/fiscalnote/cover.png"
-                    href="/projects/fiscalnote"
+                    title="Ford Pro"
+                    description="I led a cross-functional payments initiative across Ford Credit and Ford Pro, raising the quality bar while aligning teams around a clearer, more transparent customer payment experience."
+                    image="/images/fordpro/cover.png"
+                    href="/projects/fordpro"
                 />
                 {/* <ProjectCard
                     layout="vertical"
