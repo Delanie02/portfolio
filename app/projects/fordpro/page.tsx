@@ -173,7 +173,7 @@ export default function FordProPage() {
         </section>
 
         <div className="flex flex-col pb-12 md:pb-24 lg:pb-24 max-w-[980px] mx-auto">
-          <div className="relative w-full">
+          <div className="relative w-full pb-4 md:pb-4">
             <Image
               src="/images/fordpro/groups.png"
               alt="Existing Ford Pro grouping functionality referenced to align the new payments experience with established patterns."
@@ -181,11 +181,11 @@ export default function FordProPage() {
               height={900}
               className="object-cover rounded"
             />
-            <div className="absolute left-4 right-4 bottom-4 md:left-auto md:right-8 md:bottom-8 md:max-w-[400px] border border-neutral-light border-l-4 border-l-purple-mid bg-white/98 px-5 py-5 md:px-6 md:py-6 backdrop-blur-[2px] shadow-[0_12px_32px_rgba(42,45,49,0.16)]">
+            <div className="absolute left-4 right-4 -bottom-4 md:left-auto md:right-8 md:-bottom-4 md:max-w-[400px] rounded-2xl bg-white/98 px-8 pt-8 pb-10 md:px-8 md:pt-8 md:pb-10 backdrop-blur-[2px] shadow-[0_12px_32px_rgba(42,45,49,0.16)]">
               <p className="h5-bold text-purple-dark mb-2">Reducing siloed solutions</p>
               <p className="body-sm text-neutral-dark">
-                Ideally, Ford Credit would integrate with the existing Ford Pro grouping
-                functionality. This way, users could set up groups once and use them to pay for the
+                Ideally, Ford Credit would integrate with this existing Ford Pro grouping
+                functionality so that users could set up groups once and use them to pay for the
                 vehicles and equipment added to each group.
               </p>
             </div>
@@ -237,7 +237,7 @@ export default function FordProPage() {
           </div>
         </section>
 
-        <div className="flex flex-col gap-16 pb-24 max-w-[980px] mx-auto">
+        <div className="flex flex-col gap-16 pb-24 max-w-[1240px] mx-auto">
           <TwoImageGroup
             borderless
             images={[
