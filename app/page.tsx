@@ -120,14 +120,13 @@ export default function Home() {
           <h2 className="text-neutral-dark mb-6">
             Hi. I&apos;m <span className="h2-bold text-purple-mid">Delanie Heck.</span>
           </h2>
-
           {/* Bio */}
           <p className="h4 md:h3 text-neutral-dark mb-12">
-            I am a product design leader with 12+ years of experience leading high-performing teams
-            and delivering measurable business impact across platforms. I am at my best when I am
-            coaching designers and creating intuitive experiences for complex systems.
+            I am a product design leader with 12+ years of experience leading multidisciplinary teams and delivering measurable business impact across enterprise
+            platforms, two-sided marketplaces, and B2B SaaS products. My strength is helping teams
+            succeed in complex environments by creating clarity, building trust, and scaling
+            effective ways of working.
           </p>
-
           {/* Project Filters */}
           <div
             className="flex flex-wrap items-center gap-x-6 gap-y-3 mb-8"
@@ -154,7 +153,6 @@ export default function Home() {
               );
             })}
           </div>
-
           {/* Project Cards */}
           <div className="flex flex-col gap-6">
             {filteredProjects.map((project) => (
