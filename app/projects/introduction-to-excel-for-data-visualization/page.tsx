@@ -26,6 +26,7 @@ export default function ExcelPage() {
         title="Introduction to Excel for Data Visualization"
         imageUrl="/images/excel/hero.png"
         theme="mist"
+        imageVerticalAlign="center"
         meta={{
           role: "Director of Learning Experience Design",
           team: "Myself and 1 developer",

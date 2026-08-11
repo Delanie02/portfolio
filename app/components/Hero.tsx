@@ -15,6 +15,7 @@ interface HeroProps {
   imageUrl?: string;
   theme?: ThemeColor;
   imagePosition?: "right" | "left";
+  imageVerticalAlign?: "bottom" | "center";
   meta?: ProjectMeta;
 }
 
@@ -55,9 +56,11 @@ export default function Hero({
   imageUrl,
   theme = "purple",
   imagePosition = "right",
+  imageVerticalAlign = "bottom",
   meta,
 }: HeroProps) {
   const { bg, textDark, textMid } = themeColors[theme];
+  const imageVerticalClass = imageVerticalAlign === "center" ? "object-center" : "object-bottom";
 
   // When imagePosition is 'left', text appears first (top on mobile, left on desktop)
   // When imagePosition is 'right' (default), image appears first (top on mobile, right on desktop)
@@ -83,7 +86,7 @@ export default function Hero({
             src={imageUrl}
             alt={title}
             fill
-            className="object-contain object-bottom"
+            className={`object-contain ${imageVerticalClass}`}
           />
         </div>
       )}

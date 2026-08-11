@@ -19,6 +19,7 @@ export default function FordProPage() {
         title="Ford Pro"
         imageUrl="/images/fordpro/hero.png"
         theme="purple"
+        imageVerticalAlign="center"
         meta={{
           role: "UX Manager",
           team: "65 engineers, 8 designers, 17 product managers",
