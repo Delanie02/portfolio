@@ -174,7 +174,7 @@ export default function FordProPage() {
         </section>
 
         <div className="flex flex-col pb-12 md:pb-24 lg:pb-24 max-w-[980px] mx-auto">
-          <div className="relative w-full pb-4 md:pb-4">
+          <div className="relative w-full pb-0 md:pb-4">
             <Image
               src="/images/fordpro/groups.png"
               alt="Existing Ford Pro grouping functionality referenced to align the new payments experience with established patterns."
@@ -182,7 +182,7 @@ export default function FordProPage() {
               height={900}
               className="object-cover rounded"
             />
-            <div className="absolute left-4 right-4 -bottom-4 md:left-auto md:right-8 md:-bottom-4 md:max-w-[400px] rounded-2xl bg-white/98 px-8 pt-8 pb-10 md:px-8 md:pt-8 md:pb-10 backdrop-blur-[2px] shadow-[0_12px_32px_rgba(42,45,49,0.16)]">
+            <div className="relative z-10 mx-4 -mt-4 rounded-2xl bg-white/98 px-6 pt-6 pb-7 shadow-[0_12px_32px_rgba(42,45,49,0.14)] md:absolute md:left-auto md:right-8 md:-bottom-4 md:mx-0 md:mt-0 md:max-w-[400px] md:px-8 md:pt-8 md:pb-10 md:backdrop-blur-[2px] md:shadow-[0_12px_32px_rgba(42,45,49,0.16)]">
               <p className="h5-bold text-purple-dark mb-2">Reducing siloed solutions</p>
               <p className="body-sm text-neutral-dark">
                 Ideally, Ford Credit would integrate with this existing Ford Pro grouping
