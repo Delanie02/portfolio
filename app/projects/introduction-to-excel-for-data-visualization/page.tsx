@@ -1,13 +1,14 @@
 import Hero from "../../components/Hero";
 import Image from "next/image";
 import ProjectCard from "../../components/ProjectCard";
+import { projectCards } from "../../data/projects";
 import TwoImageGroup from "../../components/TwoImageGroup";
 import NavProject from "../../components/navigation/NavProject";
 
 export const metadata = {
   title: "Introduction to Excel for Data Visualization | Delanie Heck — Product Design",
   description:
-    "Designing an interactive online course that taught practical Excel skills through bite-sized lessons, guided practice, and data-informed iteration.",
+    "Building an online learning product that combined interactive lessons, learner analytics, and iteration to improve engagement and outcomes.",
 };
 
 export default function ExcelPage() {
@@ -228,30 +229,9 @@ export default function ExcelPage() {
 
           {/* Case Study Cards - Vertical Layout */}
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-8">
-            <ProjectCard
-              layout="vertical"
-              theme="sand"
-              title="Capterra"
-              description="Uncovering UX opportunity areas to reverse declining organic traffic and improve user retention for Capterra."
-              image="/images/capterra/cover.png"
-              href="/projects/capterra"
-            />
-            <ProjectCard
-              layout="vertical"
-              theme="purple"
-              title="Ford Pro"
-              description="I led a cross-functional payments initiative across Ford Credit and Ford Pro, raising the quality bar while aligning teams around a clearer, more transparent customer payment experience."
-              image="/images/fordpro/cover.png"
-              href="/projects/fordpro"
-            />
-            <ProjectCard
-              layout="vertical"
-              theme="ocean"
-              title="Ford BlueCruise"
-              description="Redesigning the subscription experience in FordPass to help customers find, learn about, and activate services."
-              image="/images/ford-bluecruise/cover.png"
-              href="/projects/ford-bluecruise"
-            />
+            <ProjectCard layout="vertical" {...projectCards.capterra} />
+            <ProjectCard layout="vertical" {...projectCards.fordPro} />
+            <ProjectCard layout="vertical" {...projectCards.fordBlueCruise} />
           </div>
         </div>
       </div>

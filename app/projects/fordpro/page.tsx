@@ -1,5 +1,6 @@
 import Hero from "../../components/Hero";
 import ProjectCard from "../../components/ProjectCard";
+import { projectCards } from "../../data/projects";
 import Image from "next/image";
 import TwoImageGroup from "../../components/TwoImageGroup";
 import NavProject from "../../components/navigation/NavProject";
@@ -7,7 +8,7 @@ import NavProject from "../../components/navigation/NavProject";
 export const metadata = {
   title: "Ford Pro | Delanie Heck — Product Design",
   description:
-    "Leading a cross-functional payments initiative at Ford Credit and Ford Pro while raising design quality, protecting team focus, and aligning stakeholders around customer transparency.",
+    "Leading a high-stakes payments initiative across Ford Credit and Ford Pro while raising design quality and aligning stakeholders around a clearer customer experience.",
 };
 
 export default function FordProPage() {
@@ -283,30 +284,9 @@ export default function FordProPage() {
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-8">
-            <ProjectCard
-              layout="vertical"
-              theme="sand"
-              title="Capterra"
-              description="Uncovering UX opportunity areas to reverse declining organic traffic and improve user retention for Capterra."
-              image="/images/capterra/cover.png"
-              href="/projects/capterra"
-            />
-            <ProjectCard
-              layout="vertical"
-              theme="mist"
-              title="Rapid Prototype Testing"
-              description="Piloting a rapid and continuous way of doing research that tripled user tests run quarter-over-quarter."
-              image="/images/rapid-prototype/cover.png"
-              href="/projects/rapid-prototype-testing"
-            />
-            <ProjectCard
-              layout="vertical"
-              theme="ocean"
-              title="Ford BlueCruise"
-              description="Redesigning the subscription experience in FordPass to help customers find, learn about, and activate services."
-              image="/images/ford-bluecruise/cover.png"
-              href="/projects/ford-bluecruise"
-            />
+            <ProjectCard layout="vertical" {...projectCards.capterra} />
+            <ProjectCard layout="vertical" {...projectCards.rapidPrototypeTesting} />
+            <ProjectCard layout="vertical" {...projectCards.fordBlueCruise} />
           </div>
         </div>
       </div>

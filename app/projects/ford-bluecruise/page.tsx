@@ -1,356 +1,328 @@
-import Hero from '../../components/Hero';
-import Quote from '../../components/Quote';
-import ProjectCard from '../../components/ProjectCard';
-import Image from 'next/image';
-import TwoImageGroup from '../../components/TwoImageGroup';
-import ThreeImageRow from '../../components/ThreeImageRow';
-import NavProject from '../../components/navigation/NavProject';
-import FourImageTimeline from '../../components/FourImageTimeline';
+import Hero from "../../components/Hero";
+import Quote from "../../components/Quote";
+import ProjectCard from "../../components/ProjectCard";
+import { projectCards } from "../../data/projects";
+import Image from "next/image";
+import TwoImageGroup from "../../components/TwoImageGroup";
+import ThreeImageRow from "../../components/ThreeImageRow";
+import NavProject from "../../components/navigation/NavProject";
+import FourImageTimeline from "../../components/FourImageTimeline";
 
 export const metadata = {
-  title: 'Ford BlueCruise | Delanie Heck — Product Design',
-  description: 'Redesigning the subscription experience in FordPass to make subscriptions easier to find, understand, and activate.',
+  title: "Ford BlueCruise | Delanie Heck — Product Design",
+  description:
+    "Redesigning the FordPass subscription experience to make services like BlueCruise easier to understand, evaluate, and activate.",
 };
 
 export default function FordBlueCruisePage() {
   return (
     <>
-        <NavProject theme="ocean" />
+      <NavProject theme="ocean" />
 
-        {/* Hero Section */}
-        <Hero
-            title="Ford BlueCruise"
-            imageUrl="/images/ford-bluecruise/hero.png"
-            theme="ocean"
-            meta={{
-                role: "UX Manager",
-                team: "1 PMs, 2 designers, 1 UX researcher",
-                reach: "Over 55,000 user sessions/week",
-                timeline: "3 months",
-            }}
-        />
+      {/* Hero Section */}
+      <Hero
+        title="Ford BlueCruise"
+        imageUrl="/images/ford-bluecruise/hero.png"
+        theme="ocean"
+        meta={{
+          role: "UX Manager",
+          team: "1 PMs, 2 designers, 1 UX researcher",
+          reach: "Over 55,000 user sessions/week",
+          timeline: "3 months",
+        }}
+      />
 
-        {/* All page content - centered wrapper */}
-        <div className="max-w-[1280px] mx-auto px-6">
-            {/* Challenge Section */}
-            <section id="challenge" className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-                <h2 className="h3-bold text-ocean-dark mb-6">
-                Challenge
-                </h2>
-                <div className="body-base text-neutral-dark space-y-4">
-                <p>
-                   Subscription products like BlueCruise, which enables drivers to drive hands free, represent an important growth opportunity for Ford. And yet, key subscription experiences suffered from poor discoverability, fragmented information architecture, and an inconsistent customer experience. As a result, Ford was missing opportunities to educate customers about subscription value and convert interest into purchases. 
-                </p>
-                </div>
-            </section>
+      {/* All page content - centered wrapper */}
+      <div className="max-w-[1280px] mx-auto px-6">
+        {/* Challenge Section */}
+        <section id="challenge" className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
+          <h2 className="h3-bold text-ocean-dark mb-6">Challenge</h2>
+          <div className="body-base text-neutral-dark space-y-4">
+            <p>
+              Subscription products like BlueCruise, which enables drivers to drive hands free,
+              represent an important growth opportunity for Ford. And yet, key subscription
+              experiences suffered from poor discoverability, fragmented information architecture,
+              and an inconsistent customer experience. As a result, Ford was missing opportunities
+              to educate customers about subscription value and convert interest into purchases.
+            </p>
+          </div>
+        </section>
 
-            {/* Product Images */}
-            <div className="flex flex-col gap-16 pb-24 max-w-[980px] mx-auto">
-                <FourImageTimeline
-                    columns={4}
-                    images={[
-                    {
-                        src: "/images/ford-bluecruise/FordPass Home Markup.png",
-                        alt: "Mobile screenshot of the FordPass home screen. The screen has a bottom navigation bar with icons for vehicle, energy, and service.",
-                    },
-                    {
-                        src: "/images/ford-bluecruise/FordPass Account Markup.png",
-                        alt: "Mobile screenshot of the FordPass account screen. The screen shows the user's settings and other services.",
-                    },
-                    {
-                        src: "/images/ford-bluecruise/FordPass BlueCruise.png",
-                        alt: "Mobile screenshot of the FordPass BlueCruise screen.",
-                    },
-                    {
-                        src: "/images/ford-bluecruise/FordPass Manage.png",
-                        alt: "Mobile screenshot of the FordPass Manage screen.",
-                    },
-                    ]}
-                    captionGroups={[
-                        // 👇 Left bracket — spans first two images
-                        [
-                        { label: "Before:", value: "The app hid 'connected services' within the Account page" },
-                        ],
-                        // 👇 Right bracket — spans last two images
-                        [
-                        { label: "Before:", value: "The subscriptions pages' design system was outdated" },
-                        ],
-                    ]}
-                />
-            </div>
+        {/* Product Images */}
+        <div className="flex flex-col gap-16 pb-24 max-w-[980px] mx-auto">
+          <FourImageTimeline
+            columns={4}
+            images={[
+              {
+                src: "/images/ford-bluecruise/FordPass Home Markup.png",
+                alt: "Mobile screenshot of the FordPass home screen. The screen has a bottom navigation bar with icons for vehicle, energy, and service.",
+              },
+              {
+                src: "/images/ford-bluecruise/FordPass Account Markup.png",
+                alt: "Mobile screenshot of the FordPass account screen. The screen shows the user's settings and other services.",
+              },
+              {
+                src: "/images/ford-bluecruise/FordPass BlueCruise.png",
+                alt: "Mobile screenshot of the FordPass BlueCruise screen.",
+              },
+              {
+                src: "/images/ford-bluecruise/FordPass Manage.png",
+                alt: "Mobile screenshot of the FordPass Manage screen.",
+              },
+            ]}
+            captionGroups={[
+              // 👇 Left bracket — spans first two images
+              [
+                {
+                  label: "Before:",
+                  value: "The app hid 'connected services' within the Account page",
+                },
+              ],
+              // 👇 Right bracket — spans last two images
+              [{ label: "Before:", value: "The subscriptions pages' design system was outdated" }],
+            ]}
+          />
+        </div>
 
-            {/* Approach Section */}
-            <section id="approach" className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-                <h2 className="h3-bold text-ocean-dark mb-6 md:mb-6 lg:mb-6">
-                Approach
-                </h2>
-                <div className="space-y-4 body-base text-neutral-dark">
-                    <p>
-                        As a UX Manager, I partnered with the subscriptions design team to make subscriptions easier to find, understand, and sign up for. To align stakeholders across Product, Marketing, Engineering, Research, and Design, I co-facilitated a vision workshop that helped establish a shared strategy for improving subscription discovery, education, and conversion.
-                    </p>
-                </div>
-            </section>
+        {/* Approach Section */}
+        <section id="approach" className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
+          <h2 className="h3-bold text-ocean-dark mb-6 md:mb-6 lg:mb-6">Approach</h2>
+          <div className="space-y-4 body-base text-neutral-dark">
+            <p>
+              As a UX Manager, I partnered with the subscriptions design team to make subscriptions
+              easier to find, understand, and sign up for. To align stakeholders across Product,
+              Marketing, Engineering, Research, and Design, I co-facilitated a vision workshop that
+              helped establish a shared strategy for improving subscription discovery, education,
+              and conversion.
+            </p>
+          </div>
+        </section>
 
-            {/* <div className="flex flex-col gap-16 pb-24 max-w-[784px] mx-auto"> */}
-                {/* Top decoration */}
-                {/* <div className="flex items-center gap-4 md:gap-6 mb-8 md:mb-8">
+        {/* <div className="flex flex-col gap-16 pb-24 max-w-[784px] mx-auto"> */}
+        {/* Top decoration */}
+        {/* <div className="flex items-center gap-4 md:gap-6 mb-8 md:mb-8">
                 <div className="flex-1 h-px bg-neutral-dark opacity-30" />
                 <span className="text-2xl md:text-3xl text-ocean-dark">⁂</span>
                 <div className="flex-1 h-px bg-neutral-dark opacity-30" />
                 </div> */}
 
-                {/* Quotes */}
-                {/* <Quote
+        {/* Quotes */}
+        {/* <Quote
                 text='"This is the most exciting and aesthetically pleasing workshop I have ever been to." — Product Manager'
                 theme="ocean"
                 /> */}
 
-                {/* Bottom decoration */}
-                {/* <div className="flex items-center gap-4 md:gap-6 mb-8 md:mb-8">
+        {/* Bottom decoration */}
+        {/* <div className="flex items-center gap-4 md:gap-6 mb-8 md:mb-8">
                 <div className="flex-1 h-px bg-neutral-dark opacity-30" />
                 <span className="text-2xl md:text-3xl text-ocean-dark">⁂</span>
                 <div className="flex-1 h-px bg-neutral-dark opacity-30" />
                 </div> */}
-            {/* </div> */}
+        {/* </div> */}
 
-            <section id="recommendations" className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-                <h2 className="h3-bold text-ocean-dark mb-6 md:mb-6 lg:mb-6">
-                Recommendations
-                </h2>
-                <div className="space-y-4 body-base text-neutral-dark mb-12">
-                    <p>
-                        After the workshop, we were all aligned on moving forward with updates to the mobile app. The first and most impactful decision we made was to move subscriptions out of the profile section and into the app’s home screen. This drove a statistically significant increase in subscriptions traffic (+170%) and orders (+77%). 
-                    </p>
-                </div>
-                <h3 className="h4-bold text-ocean-dark mb-6">
-                    Communicating value at a glance
-                </h3>
-                <div className="space-y-4 body-base text-neutral-dark">
-                    <p>
-                        Now that we had solved the discoverability issue, we shifted focus to updating the design to transform what had been walls of text into a clear, engaging explanation of the product. 
-                    </p>
-                    <p className="mb-4">
-                        Key elements I introduced:
-                    </p>
-                </div>
-                <ul className="list-disc list-outside pl-6 space-y-2 body-base text-neutral-dark">
-                    <li>
-                        A prominent hero image showing hands-free driving to communicate value instantly.
-                    </li>
-                    <li>
-                        Value propositions broken into visual, scannable sections.
-                        </li>
-                    <li>
-                        “How it works” content supported by simple illustrations
-                    </li>
-                    <li>
-                        Testimonials, FAQs, and payment details.
-                    </li>
-                    <li>
-                        A more visual design aligned with the rest of the app’s design system.
-                    </li>
-                </ul>
-            </section>
+        <section id="recommendations" className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
+          <h2 className="h3-bold text-ocean-dark mb-6 md:mb-6 lg:mb-6">Recommendations</h2>
+          <div className="space-y-4 body-base text-neutral-dark mb-12">
+            <p>
+              After the workshop, we were all aligned on moving forward with updates to the mobile
+              app. The first and most impactful decision we made was to move subscriptions out of
+              the profile section and into the app’s home screen. This drove a statistically
+              significant increase in subscriptions traffic (+170%) and orders (+77%).
+            </p>
+          </div>
+          <h3 className="h4-bold text-ocean-dark mb-6">Communicating value at a glance</h3>
+          <div className="space-y-4 body-base text-neutral-dark">
+            <p>
+              Now that we had solved the discoverability issue, we shifted focus to updating the
+              design to transform what had been walls of text into a clear, engaging explanation of
+              the product.
+            </p>
+            <p className="mb-4">Key elements I introduced:</p>
+          </div>
+          <ul className="list-disc list-outside pl-6 space-y-2 body-base text-neutral-dark">
+            <li>
+              A prominent hero image showing hands-free driving to communicate value instantly.
+            </li>
+            <li>Value propositions broken into visual, scannable sections.</li>
+            <li>“How it works” content supported by simple illustrations</li>
+            <li>Testimonials, FAQs, and payment details.</li>
+            <li>A more visual design aligned with the rest of the app’s design system.</li>
+          </ul>
+        </section>
 
-            {/* Phoenix Images */}
-            <div className="space-y-8 md:space-y-12 lg:space-y-12 pb-24 max-w-[980px] mx-auto">
-                <ThreeImageRow
-                items={[
-                    {
-                        header: "After: Hero image",
-                        src: "/images/ford-bluecruise/Phoenix-home.png",
-                        alt: "A mock-up of a BlueCruise home screen.",
-                        subheader: ''
-                    },
-                    {
-                        header: "After: Value propositions",
-                        src: "/images/ford-bluecruise/Value Props.png",
-                        alt: "A mock-up of a screen showing the benefits of BlueCruise.",
-                        subheader: ''
-                    },
-                    {
-                        header: "After: How it works illustrations",
-                        src: "/images/ford-bluecruise/How It Works.png",
-                        alt: "A mock-up of a screen showing the 'How It Works' section of BlueCruise page on a mobile device.",
-                        subheader: ''
-                    },
-                ]}
-                />
-            </div>  
+        {/* Phoenix Images */}
+        <div className="space-y-8 md:space-y-12 lg:space-y-12 pb-24 max-w-[980px] mx-auto">
+          <ThreeImageRow
+            items={[
+              {
+                header: "After: Hero image",
+                src: "/images/ford-bluecruise/Phoenix-home.png",
+                alt: "A mock-up of a BlueCruise home screen.",
+                subheader: "",
+              },
+              {
+                header: "After: Value propositions",
+                src: "/images/ford-bluecruise/Value Props.png",
+                alt: "A mock-up of a screen showing the benefits of BlueCruise.",
+                subheader: "",
+              },
+              {
+                header: "After: How it works illustrations",
+                src: "/images/ford-bluecruise/How It Works.png",
+                alt: "A mock-up of a screen showing the 'How It Works' section of BlueCruise page on a mobile device.",
+                subheader: "",
+              },
+            ]}
+          />
+        </div>
 
-            <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-                <h3 className="h4-bold text-ocean-dark mb-6">
-                    Simplifying the subscriptions management experience
-                </h3>
-                <div className="space-y-4 body-base text-neutral-dark mb-4">
-                    <p>
-                        Once subscribed, users needed a more intuitive way to manage and review their services. We learned through user research that customers often don’t even know they have a free trial to some subscriptions like BlueCruise. With this in mind, I re-designed the manage page, focusing on:
-                    </p>
-                </div>
-                <ul className="list-disc list-outside pl-6 space-y-2 body-base text-neutral-dark mb-4">
-                    <li>
-                        Clarifying and highlighting the plan status.
-                    </li>
-                    <li>
-                        Surfacing actions above the fold.
-                    </li>
-                    <li>
-                        Updating the design system to match the rest of the mobile app.
-                    </li>
-                    <li>
-                        Ideating future-state gamification concepts.
-                    </li>
-                </ul>
-                <div className="space-y-4 body-base text-neutral-dark">
-                    <p>
-                        When our user research partner tested these updated designs, participants described the  flow as “a piece of cake,” validating that we were headed in the right direction. 
-                    </p>
-                </div>
-            </section>
+        <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
+          <h3 className="h4-bold text-ocean-dark mb-6">
+            Simplifying the subscriptions management experience
+          </h3>
+          <div className="space-y-4 body-base text-neutral-dark mb-4">
+            <p>
+              Once subscribed, users needed a more intuitive way to manage and review their
+              services. We learned through user research that customers often don’t even know they
+              have a free trial to some subscriptions like BlueCruise. With this in mind, I
+              re-designed the manage page, focusing on:
+            </p>
+          </div>
+          <ul className="list-disc list-outside pl-6 space-y-2 body-base text-neutral-dark mb-4">
+            <li>Clarifying and highlighting the plan status.</li>
+            <li>Surfacing actions above the fold.</li>
+            <li>Updating the design system to match the rest of the mobile app.</li>
+            <li>Ideating future-state gamification concepts.</li>
+          </ul>
+          <div className="space-y-4 body-base text-neutral-dark">
+            <p>
+              When our user research partner tested these updated designs, participants described
+              the flow as “a piece of cake,” validating that we were headed in the right direction.
+            </p>
+          </div>
+        </section>
 
-            {/* Progress Images */}
-            <div className="space-y-8 md:space-y-12 lg:space-y-12 pb-24 max-w-[980px] mx-auto">
-                <ThreeImageRow
-                items={[
-                    {
-                        header: "Before",
-                        src: "/images/ford-bluecruise/FordPass Manage.png",
-                        alt: "The original BlueCruise home screen.",
-                        subheader: ''
-                    },
-                    {
-                        header: "MVP",
-                        src: "/images/ford-bluecruise/MVP.png",
-                        alt: "A mock-up of a screen showing the manage screen for BlueCruise.",
-                        subheader: ''
-                    },
-                    {
-                        header: "Future State",
-                        src: "/images/ford-bluecruise/future-state.png",
-                        alt: "A mock-up of a screen showing a future state BlueCruise screen, with streaks, stats, and gamificaiton elements",
-                        subheader: ''
-                    },
-                ]}
-                />
-            </div>  
+        {/* Progress Images */}
+        <div className="space-y-8 md:space-y-12 lg:space-y-12 pb-24 max-w-[980px] mx-auto">
+          <ThreeImageRow
+            items={[
+              {
+                header: "Before",
+                src: "/images/ford-bluecruise/FordPass Manage.png",
+                alt: "The original BlueCruise home screen.",
+                subheader: "",
+              },
+              {
+                header: "MVP",
+                src: "/images/ford-bluecruise/MVP.png",
+                alt: "A mock-up of a screen showing the manage screen for BlueCruise.",
+                subheader: "",
+              },
+              {
+                header: "Future State",
+                src: "/images/ford-bluecruise/future-state.png",
+                alt: "A mock-up of a screen showing a future state BlueCruise screen, with streaks, stats, and gamificaiton elements",
+                subheader: "",
+              },
+            ]}
+          />
+        </div>
 
-            <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-                <h3 className="h4-bold text-ocean-dark mb-6">
-                    Pivoting to a new design system
-                </h3>
-                <div className="space-y-4 body-base text-neutral-dark">
-                    <p>
-                        Midway through the project, Ford made the strategic decision to migrate the mobile application to a new design system. Rather than treating this as rework, I partnered with the team to use the transition as an opportunity to further simplify the experience and align subscription flows with the future direction of the platform.
-                    </p>
-                </div>
-            </section>
+        <section className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
+          <h3 className="h4-bold text-ocean-dark mb-6">Pivoting to a new design system</h3>
+          <div className="space-y-4 body-base text-neutral-dark">
+            <p>
+              Midway through the project, Ford made the strategic decision to migrate the mobile
+              application to a new design system. Rather than treating this as rework, I partnered
+              with the team to use the transition as an opportunity to further simplify the
+              experience and align subscription flows with the future direction of the platform.
+            </p>
+          </div>
+        </section>
 
-            {/* Orion Images */}
-            <div className="flex flex-col gap-16 pb-24 max-w-[980px] mx-auto">
-                <FourImageTimeline
-                    columns={4}
-                    images={[
-                    {
-                        src: "/images/ford-bluecruise/Phoenix-home.png",
-                        alt: "Mobile screenshot of the BlueCruise screen.",
-                    },
-                    {
-                        src: "/images/ford-bluecruise/Ford Blue Cruise Manage Phoenix.png",
-                        alt: "Mobile screenshot of the manage page for BlueCruise.",
-                    },
-                    {
-                        src: "/images/ford-bluecruise/Orion-home.png",
-                        alt: "Mobile screenshot of an updated FordPass BlueCruise screen.",
-                    },
-                    {
-                        src: "/images/ford-bluecruise/Manage - Orion.png",
-                        alt: "Mobile screenshot of an updated FordPass Manage screen.",
-                    },
-                    ]}
-                    captionGroups={[
-                        // 👇 Left bracket — spans first two images
-                        [
-                        { label: "", value: "Before" },
-                        ],
-                        // 👇 Right bracket — spans last two images
-                        [
-                        { label: "", value: "After" },
-                        ],
-                    ]}
-                />
-            </div>
+        {/* Orion Images */}
+        <div className="flex flex-col gap-16 pb-24 max-w-[980px] mx-auto">
+          <FourImageTimeline
+            columns={4}
+            images={[
+              {
+                src: "/images/ford-bluecruise/Phoenix-home.png",
+                alt: "Mobile screenshot of the BlueCruise screen.",
+              },
+              {
+                src: "/images/ford-bluecruise/Ford Blue Cruise Manage Phoenix.png",
+                alt: "Mobile screenshot of the manage page for BlueCruise.",
+              },
+              {
+                src: "/images/ford-bluecruise/Orion-home.png",
+                alt: "Mobile screenshot of an updated FordPass BlueCruise screen.",
+              },
+              {
+                src: "/images/ford-bluecruise/Manage - Orion.png",
+                alt: "Mobile screenshot of an updated FordPass Manage screen.",
+              },
+            ]}
+            captionGroups={[
+              // 👇 Left bracket — spans first two images
+              [{ label: "", value: "Before" }],
+              // 👇 Right bracket — spans last two images
+              [{ label: "", value: "After" }],
+            ]}
+          />
+        </div>
 
-            {/* Impact Section */}
-            <section id="impact" className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
-                <h2 className="h3-bold text-ocean-dark mb-6 md:mb-6 lg:mb-6">
-                Impact
-                </h2>
-                <div className="space-y-4 body-base text-neutral-dark">
-                    <p>
-                        By surfacing subscriptions on the home screen, we significantly increased both awareness and conversion, contributing to Ford's broader strategy of growing recurring subscription revenue through products like BlueCruise. When we shared the updated designs with design leadership, I was proud of the following feedback I received. 
-                    </p>
-                </div>
-            </section>
-            
-            <div className="flex flex-col gap-16 pb-24 max-w-[784px] mx-auto">
-                {/* Top decoration */}
-                <div className="flex items-center gap-4 md:gap-6 mb-8 md:mb-8">
-                <div className="flex-1 h-px bg-neutral-dark opacity-30" />
-                <span className="text-2xl md:text-3xl text-ocean-dark">⁂</span>
-                <div className="flex-1 h-px bg-neutral-dark opacity-30" />
-                </div>
+        {/* Impact Section */}
+        <section id="impact" className="py-6 md:py-12 lg:py-12 max-w-[580px] mx-auto">
+          <h2 className="h3-bold text-ocean-dark mb-6 md:mb-6 lg:mb-6">Impact</h2>
+          <div className="space-y-4 body-base text-neutral-dark">
+            <p>
+              By surfacing subscriptions on the home screen, we significantly increased both
+              awareness and conversion, contributing to Ford's broader strategy of growing recurring
+              subscription revenue through products like BlueCruise. When we shared the updated
+              designs with design leadership, I was proud of the following feedback I received.
+            </p>
+          </div>
+        </section>
 
-                {/* Quotes */}
-                <Quote
-                text='“Amazing work. That was a glowing review.” — Digital Product Design Lead.'
-                theme="ocean"
-                />
-                <Quote text='“This stuff looks so good. You should show the existing in there just for a cold bath of current reality.” — FordPass Design Lead.'
+        <div className="flex flex-col gap-16 pb-24 max-w-[784px] mx-auto">
+          {/* Top decoration */}
+          <div className="flex items-center gap-4 md:gap-6 mb-8 md:mb-8">
+            <div className="flex-1 h-px bg-neutral-dark opacity-30" />
+            <span className="text-2xl md:text-3xl text-ocean-dark">⁂</span>
+            <div className="flex-1 h-px bg-neutral-dark opacity-30" />
+          </div>
 
-                theme="ocean"
-                />
+          {/* Quotes */}
+          <Quote
+            text="“Amazing work. That was a glowing review.” — Digital Product Design Lead."
+            theme="ocean"
+          />
+          <Quote
+            text="“This stuff looks so good. You should show the existing in there just for a cold bath of current reality.” — FordPass Design Lead."
 
-                {/* Bottom decoration */}
-                <div className="flex items-center gap-4 md:gap-6 mb-8 md:mb-8">
-                <div className="flex-1 h-px bg-neutral-dark opacity-30" />
-                <span className="text-2xl md:text-3xl text-ocean-dark">⁂</span>
-                <div className="flex-1 h-px bg-neutral-dark opacity-30" />
-                </div>
-            </div>
+            theme="ocean"
+          />
 
-            {/* Explore More of My Work Section */}
-            <div className="py-12 md:py-16 lg:py-24">
-                <h3 className="h3-bold text-neutral-dark mb-8 md:mb-12 lg:mb-12 text-left md:text-center">
-                Explore more of my work
-                </h3>
+          {/* Bottom decoration */}
+          <div className="flex items-center gap-4 md:gap-6 mb-8 md:mb-8">
+            <div className="flex-1 h-px bg-neutral-dark opacity-30" />
+            <span className="text-2xl md:text-3xl text-ocean-dark">⁂</span>
+            <div className="flex-1 h-px bg-neutral-dark opacity-30" />
+          </div>
+        </div>
 
-                {/* Case Study Cards - Vertical Layout */}
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-8">
-                <ProjectCard
-                    layout="vertical"
-                    theme="sand"
-                    title="Capterra"
-                    description="Uncovering UX opportunity areas to reverse declining organic traffic and improve user retention for Capterra."
-                    image="/images/capterra/cover.png"
-                    href="/projects/capterra"
-                />
-                <ProjectCard
-                    layout="vertical"
-                    theme="mist"
-                    title="Rapid Prototype Testing"
-                    description="Piloting a rapid and continuous way of doing research that tripled user tests run quarter-over-quarter."
-                    image="/images/rapid-prototype/cover.png"
-                    href="/projects/rapid-prototype-testing"
-                />
-                <ProjectCard
-                    layout="vertical"
-                    theme="purple"
-                    title="Ford Pro"
-                    description="I led a cross-functional payments initiative across Ford Credit and Ford Pro, raising the quality bar while aligning teams around a clearer, more transparent customer payment experience."
-                    image="/images/fordpro/cover.png"
-                    href="/projects/fordpro"
-                />
-                {/* <ProjectCard
+        {/* Explore More of My Work Section */}
+        <div className="py-12 md:py-16 lg:py-24">
+          <h3 className="h3-bold text-neutral-dark mb-8 md:mb-12 lg:mb-12 text-left md:text-center">
+            Explore more of my work
+          </h3>
+
+          {/* Case Study Cards - Vertical Layout */}
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-8">
+            <ProjectCard layout="vertical" {...projectCards.capterra} />
+            <ProjectCard layout="vertical" {...projectCards.rapidPrototypeTesting} />
+            <ProjectCard layout="vertical" {...projectCards.fordPro} />
+            {/* <ProjectCard
                     layout="vertical"
                     theme="ocean"
                     title="Ford BlueCruise"
@@ -358,9 +330,9 @@ export default function FordBlueCruisePage() {
                     image="/images/ford-bluecruise/cover.png"
                     href="/projects/ford-bluecruise"
                 /> */}
-                </div>
-            </div>
+          </div>
         </div>
-    </>  
+      </div>
+    </>
   );
 }

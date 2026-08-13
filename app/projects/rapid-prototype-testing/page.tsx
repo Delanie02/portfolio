@@ -1,6 +1,7 @@
 import Hero from "../../components/Hero";
 import Quote from "../../components/Quote";
 import ProjectCard from "../../components/ProjectCard";
+import { projectCards } from "../../data/projects";
 import Image from "next/image";
 import ThreeImageRow from "../../components/ThreeImageRow";
 import TwoImageGroup from "../../components/TwoImageGroup";
@@ -9,7 +10,7 @@ import NavProject from "../../components/navigation/NavProject";
 export const metadata = {
   title: "Rapid Prototype Testing | Delanie Heck — Product Design",
   description:
-    "Pioneering a rapid testing process to support continuous research and iteration across product teams.",
+    "Establishing a faster research practice that tripled user testing and helped product teams learn continuously.",
 };
 
 export default function RapidPrototypeTestingPage() {
@@ -380,30 +381,9 @@ export default function RapidPrototypeTestingPage() {
 
           {/* Case Study Cards - Vertical Layout */}
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-8">
-            <ProjectCard
-              layout="vertical"
-              theme="sand"
-              title="Capterra"
-              description="Uncovering UX opportunity areas to reverse declining organic traffic and improve user retention for Capterra."
-              image="/images/capterra/cover.png"
-              href="/projects/capterra"
-            />
-            <ProjectCard
-              layout="vertical"
-              theme="purple"
-              title="Ford Pro"
-              description="I led a cross-functional payments initiative across Ford Credit and Ford Pro, raising the quality bar while aligning teams around a clearer, more transparent customer payment experience."
-              image="/images/fordpro/cover.png"
-              href="/projects/fordpro"
-            />
-            <ProjectCard
-              layout="vertical"
-              theme="ocean"
-              title="Ford BlueCruise"
-              description="Redesigning the subscription experience in FordPass to help customers find, learn about, and activate services."
-              image="/images/ford-bluecruise/cover.png"
-              href="/projects/ford-bluecruise"
-            />
+            <ProjectCard layout="vertical" {...projectCards.capterra} />
+            <ProjectCard layout="vertical" {...projectCards.fordPro} />
+            <ProjectCard layout="vertical" {...projectCards.fordBlueCruise} />
           </div>
         </div>
       </div>

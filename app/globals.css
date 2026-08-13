@@ -3,8 +3,8 @@
 @import "tailwindcss";
 
 html {
-  background-color: #f9faf9;
-  /* background-color: #f7f7f4; */
+  background-color: #f7f7f4;
+  /* background-color: #f9faf9; my original background color*/
 }
 
 :root {
@@ -30,7 +30,7 @@ html {
   --color-neutral-dark: #2a2d31;
   --color-neutral-light: #b0b7bd;
   --color-neutral-mid: #636c72;
-  --color-neutral-balanced-light: #f9faf9;
+  --color-neutral-balanced-light: #f7f7f4;
   --color-neutral-cool-light: #fafcfd;
   --color-neutral-warm-light: #fcfaf7;
 
@@ -75,7 +75,7 @@ html {
   --color-neutral-dark: #2a2d31;
   --color-neutral-light: #b0b7bd;
   --color-neutral-mid: #636c72;
-  --color-neutral-balanced-light: #f9faf9;
+  --color-neutral-balanced-light: #f7f7f4;
   --color-neutral-cool-light: #fafcfd;
   --color-neutral-warm-light: #fcfaf7;
   --width-card: 784px;
@@ -94,7 +94,7 @@ html {
 }
 
 body {
-  background: #f7f7f4;
+  background: var(--color-neutral-balanced-light);
   color: var(--foreground);
   margin: 0;
   padding: 0;

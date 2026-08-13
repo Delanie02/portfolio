@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import Quote from "../components/Quote";
 import ProjectCard from "../components/ProjectCard";
+import { projectCards } from "../data/projects";
 import NavSimple from "../components/navigation/NavSimple";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,7 +9,7 @@ import Image from "next/image";
 export const metadata = {
   title: "About | Delanie Heck",
   description:
-    "Learn more about Delanie Heck, a product design leader with over twelve years of experience managing teams of designers and researchers in organizations ranging from startups to Fortune 500s, in industries spanning international development, finance, SaaS, and automotive.",
+    "Learn more about Delanie Heck, a product design leader with 12+ years of experience building high-performing teams and driving clarity across complex product organizations.",
 };
 
 export default function About() {
@@ -259,30 +260,9 @@ export default function About() {
 
         {/* Case Study Cards - Vertical Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-8">
-          <ProjectCard
-            layout="vertical"
-            theme="sand"
-            title="Capterra"
-            description="Uncovering UX opportunity areas to reverse declining organic traffic and improve user retention for Capterra."
-            image="/images/capterra/cover.png"
-            href="/projects/capterra"
-          />
-          <ProjectCard
-            layout="vertical"
-            theme="mist"
-            title="Rapid Prototype Testing"
-            description="Piloting a rapid and continuous way of doing research that tripled user tests run quarter-over-quarter."
-            image="/images/rapid-prototype/cover.png"
-            href="/projects/rapid-prototype-testing"
-          />
-          <ProjectCard
-            layout="vertical"
-            theme="purple"
-            title="FiscalNote"
-            description="I led a cross-functional team to envision a unified future-state unified product for FiscalNote, a B2B policy tracking SaaS company."
-            image="/images/fiscalnote/cover.png"
-            href="/projects/fiscalnote"
-          />
+          <ProjectCard layout="vertical" {...projectCards.capterra} />
+          <ProjectCard layout="vertical" {...projectCards.rapidPrototypeTesting} />
+          <ProjectCard layout="vertical" {...projectCards.fiscalNote} />
           {/* <ProjectCard
                 layout="vertical"
                 theme="ocean"
